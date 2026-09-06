@@ -75,6 +75,7 @@ public class AtomicLibraryTests
 
         Assert.Equal("1s2 2s2 2p6", parsed.ToString());
         Assert.Equal(10, fromNumber.ElectronCount);
+        Assert.Throws<ArgumentOutOfRangeException>(() => ElectronConfiguration.FromAtomicNumber(0));
     }
 
     [Fact]
@@ -108,6 +109,16 @@ public class AtomicLibraryTests
 
         var exception = Assert.Throws<FormatException>(() => ElementDataLoader.LoadFromJson(path));
         Assert.Contains("Z=999 (Xx)", exception.Message);
+    }
+
+    [Fact]
+    public void IsotopeDataLoader_LoadDecayChains_InvalidDecayMode_IncludesContext()
+    {
+        var path = Path.GetTempFileName();
+        File.WriteAllText(path, """[{ "ParentAtomicNumber": 92, "ParentMassNumber": 238, "Steps": [{ "AtomicNumber": 90, "MassNumber": 234, "DecayMode": "InvalidMode" }] }]""");
+
+        var exception = Assert.Throws<FormatException>(() => IsotopeDataLoader.LoadDecayChains(path));
+        Assert.Contains("parent Z=92, A=238, step Z=90, A=234", exception.Message);
     }
 
     [Fact]

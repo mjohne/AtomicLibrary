@@ -63,7 +63,15 @@ public sealed class ElectronConfiguration
         return new ElectronConfiguration(orbitals);
     }
 
-    public static ElectronConfiguration FromAtomicNumber(int atomicNumber) => FromElectronCount(atomicNumber);
+    public static ElectronConfiguration FromAtomicNumber(int atomicNumber)
+    {
+        if (atomicNumber < 1)
+        {
+            throw new ArgumentOutOfRangeException(nameof(atomicNumber));
+        }
+
+        return FromElectronCount(atomicNumber);
+    }
 
     public static ElectronConfiguration Parse(string configuration)
     {

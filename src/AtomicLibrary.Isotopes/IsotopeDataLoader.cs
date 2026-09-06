@@ -48,11 +48,19 @@ public static class IsotopeDataLoader
         {
             ParentAtomicNumber = r.ParentAtomicNumber,
             ParentMassNumber = r.ParentMassNumber,
-            Steps = r.Steps.Select(s => new DecayChainStep
+            Steps = r.Steps.Select(s =>
             {
-                AtomicNumber = s.AtomicNumber,
-                MassNumber = s.MassNumber,
-                DecayMode = Enum.Parse<DecayMode>(s.DecayMode, ignoreCase: true)
+                if (!Enum.TryParse<DecayMode>(s.DecayMode, ignoreCase: true, out var decayMode))
+                {
+                    throw new FormatException($"Invalid decay mode '{s.DecayMode}' for decay chain parent Z={r.ParentAtomicNumber}, A={r.ParentMassNumber}, step Z={s.AtomicNumber}, A={s.MassNumber}.");
+                }
+
+                return new DecayChainStep
+                {
+                    AtomicNumber = s.AtomicNumber,
+                    MassNumber = s.MassNumber,
+                    DecayMode = decayMode
+                };
             }).ToList()
         }).ToList();
     }

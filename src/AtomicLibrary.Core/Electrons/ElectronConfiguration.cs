@@ -76,7 +76,7 @@ public sealed class ElectronConfiguration
         {
             if (token.StartsWith("[", StringComparison.Ordinal))
             {
-                continue;
+                throw new FormatException("Bracketed noble-gas notation is not supported.");
             }
 
             var nPart = new StringBuilder();
@@ -111,7 +111,7 @@ public sealed class ElectronConfiguration
                 'p' => OrbitalType.P,
                 'd' => OrbitalType.D,
                 'f' => OrbitalType.F,
-                _ => OrbitalType.S
+                _ => throw new FormatException($"Unsupported orbital type '{typePart}'.")
             };
 
             orbitals.Add(new Orbital(n, type, electrons));

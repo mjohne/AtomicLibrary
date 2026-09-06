@@ -2145,7 +2145,7 @@
     "AtomicMass": 221.015535637,
     "IsStable": false,
     "HalfLifeSeconds": 1542.0,
-    "DecayMode": "BetaMinus",
+    "DecayMode": "Alpha",
     "DecayEnergyMeV": null,
     "NaturalAbundance": null
   },
@@ -2225,7 +2225,7 @@
     "AtomicMass": 230.033132267,
     "IsStable": false,
     "HalfLifeSeconds": 2379394180800.0,
-    "DecayMode": "BetaMinus",
+    "DecayMode": "Alpha",
     "DecayEnergyMeV": null,
     "NaturalAbundance": 0.02
   },
@@ -2235,7 +2235,7 @@
     "AtomicMass": 232.038053606,
     "IsStable": false,
     "HalfLifeSeconds": 4.41797328e+17,
-    "DecayMode": "BetaMinus",
+    "DecayMode": "Alpha",
     "DecayEnergyMeV": null,
     "NaturalAbundance": 99.98
   },

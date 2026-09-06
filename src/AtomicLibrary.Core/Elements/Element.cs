@@ -29,7 +29,9 @@ public sealed class Element
         or ElementCategory.Lanthanide
         or ElementCategory.Actinide;
 
-    public bool IsNonMetal => !IsMetal;
+    public bool IsNonMetal => Category is ElementCategory.Nonmetal
+        or ElementCategory.Halogen
+        or ElementCategory.NobleGas;
 
     public override string ToString() => $"{Symbol} ({AtomicNumber})";
 }

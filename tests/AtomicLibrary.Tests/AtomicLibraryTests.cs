@@ -68,6 +68,23 @@ public class AtomicLibraryTests
     }
 
     [Fact]
+    public void ElectronConfiguration_Parse_And_FromAtomicNumber_Work()
+    {
+        var parsed = ElectronConfiguration.Parse("1s2 2s2 2p6");
+        var fromNumber = ElectronConfiguration.FromAtomicNumber(10);
+
+        Assert.Equal("1s2 2s2 2p6", parsed.ToString());
+        Assert.Equal(10, fromNumber.ElectronCount);
+    }
+
+    [Fact]
+    public void ElectronConfiguration_Parse_Throws_ForUnsupportedFormats()
+    {
+        Assert.Throws<FormatException>(() => ElectronConfiguration.Parse("[Ar] 4s2 3d10"));
+        Assert.Throws<FormatException>(() => ElectronConfiguration.Parse("2x6"));
+    }
+
+    [Fact]
     public void RadioactiveDecayCalculator_UsesExpectedValues_ForCarbon14()
     {
         const double yearInSeconds = 365.2425 * 24 * 3600;
@@ -80,6 +97,15 @@ public class AtomicLibraryTests
         Assert.InRange(decayConstant, 3.8e-12, 3.9e-12);
         Assert.InRange(remainingHalfLife, 0.4999, 0.5001);
         Assert.InRange(activity, 3.8e8, 3.9e8);
+    }
+
+    [Fact]
+    public void RadioactiveDecayCalculator_Guards_InvalidArguments()
+    {
+        Assert.Throws<ArgumentOutOfRangeException>(() => RadioactiveDecayCalculator.DecayConstant(0));
+        Assert.Throws<ArgumentOutOfRangeException>(() => RadioactiveDecayCalculator.RemainingFraction(10, -1));
+        Assert.Throws<ArgumentOutOfRangeException>(() => RadioactiveDecayCalculator.RemainingAtoms(-1, 10, 1));
+        Assert.Throws<ArgumentOutOfRangeException>(() => RadioactiveDecayCalculator.Activity(-1, 10));
     }
 
     [Fact]

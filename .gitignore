@@ -1,0 +1,23 @@
+## Build outputs
+bin/
+obj/
+out/
+
+## IDE
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+## Test artifacts
+TestResults/
+*.trx
+
+## NuGet
+*.nupkg
+*.snupkg
+
+## OS files
+.DS_Store
+Thumbs.db

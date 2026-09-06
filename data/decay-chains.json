@@ -1,0 +1,43 @@
+[
+  {
+    "ParentAtomicNumber": 92,
+    "ParentMassNumber": 238,
+    "Steps": [
+      {
+        "AtomicNumber": 90,
+        "MassNumber": 234,
+        "DecayMode": "Alpha"
+      },
+      {
+        "AtomicNumber": 91,
+        "MassNumber": 234,
+        "DecayMode": "BetaMinus"
+      },
+      {
+        "AtomicNumber": 92,
+        "MassNumber": 234,
+        "DecayMode": "BetaMinus"
+      },
+      {
+        "AtomicNumber": 90,
+        "MassNumber": 230,
+        "DecayMode": "Alpha"
+      },
+      {
+        "AtomicNumber": 88,
+        "MassNumber": 226,
+        "DecayMode": "Alpha"
+      },
+      {
+        "AtomicNumber": 86,
+        "MassNumber": 222,
+        "DecayMode": "Alpha"
+      },
+      {
+        "AtomicNumber": 84,
+        "MassNumber": 218,
+        "DecayMode": "Alpha"
+      }
+    ]
+  }
+]

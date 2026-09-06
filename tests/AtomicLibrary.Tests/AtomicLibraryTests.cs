@@ -82,6 +82,11 @@ public class AtomicLibraryTests
     {
         Assert.Throws<FormatException>(() => ElectronConfiguration.Parse("[Ar] 4s2 3d10"));
         Assert.Throws<FormatException>(() => ElectronConfiguration.Parse("2x6"));
+        Assert.Throws<FormatException>(() => ElectronConfiguration.Parse("1s2 invalid 2p6"));
+        Assert.Throws<FormatException>(() => ElectronConfiguration.Parse("1s3"));
+        Assert.Throws<FormatException>(() => ElectronConfiguration.Parse("1s2x"));
+        Assert.Throws<FormatException>(() => ElectronConfiguration.Parse("1sp2"));
+        Assert.Throws<FormatException>(() => ElectronConfiguration.Parse("1s0"));
     }
 
     [Fact]

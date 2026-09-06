@@ -80,7 +80,7 @@ public partial class Form1 : Form
         var element = _periodicTable.GetByAtomicNumber(row.AtomicNumber);
         var isotopes = _isotopes.GetByAtomicNumber(element.AtomicNumber).OrderBy(i => i.MassNumber).ToList();
 
-        lblElementDetails.Text =
+        txtElementDetails.Text =
             $"{element.NameEnglish} / {element.NameGerman} ({element.Symbol})\n" +
             $"Ordnungszahl: {element.AtomicNumber}, Gruppe: {element.Group}, Periode: {element.Period}, Block: {element.Block}\n" +
             $"Kategorie: {element.Category}\n" +
@@ -91,17 +91,25 @@ public partial class Form1 : Form
 
         lblElectronConfiguration.Text = $"Elektronenkonfiguration: {element.ElectronConfiguration}";
 
-        lvIsotopes.Items.Clear();
-        foreach (var isotope in isotopes)
+        lvIsotopes.BeginUpdate();
+        try
         {
-            lvIsotopes.Items.Add(new ListViewItem(
-            [
-                isotope.ToString(),
-                isotope.IsStable ? "Ja" : "Nein",
-                isotope.HalfLifeSeconds?.ToString("G6") ?? "-",
-                isotope.DecayMode.ToString(),
-                isotope.NaturalAbundance?.ToString("G6") ?? "-"
-            ]));
+            lvIsotopes.Items.Clear();
+            foreach (var isotope in isotopes)
+            {
+                lvIsotopes.Items.Add(new ListViewItem(
+                [
+                    isotope.ToString(),
+                    isotope.IsStable ? "Ja" : "Nein",
+                    isotope.HalfLifeSeconds?.ToString("G6") ?? "-",
+                    isotope.DecayMode.ToString(),
+                    isotope.NaturalAbundance?.ToString("G6") ?? "-"
+                ]));
+            }
+        }
+        finally
+        {
+            lvIsotopes.EndUpdate();
         }
     }
 

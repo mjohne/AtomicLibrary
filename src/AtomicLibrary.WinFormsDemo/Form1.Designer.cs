@@ -10,7 +10,7 @@ partial class Form1
     private TabPage tabOverview = null!;
     private TabPage tabDetails = null!;
     private TableLayoutPanel detailsLayout = null!;
-    private Label lblElementDetails = null!;
+    private TextBox txtElementDetails = null!;
     private Label lblElectronConfiguration = null!;
     private ListView lvIsotopes = null!;
 
@@ -34,7 +34,7 @@ partial class Form1
         tabOverview = new TabPage();
         tabDetails = new TabPage();
         detailsLayout = new TableLayoutPanel();
-        lblElementDetails = new Label();
+        txtElementDetails = new TextBox();
         lblElectronConfiguration = new Label();
         lvIsotopes = new ListView();
 
@@ -81,10 +81,18 @@ partial class Form1
         detailsLayout.RowStyles.Add(new RowStyle(SizeType.Absolute, 40));
         detailsLayout.RowStyles.Add(new RowStyle(SizeType.Percent, 100));
 
-        lblElementDetails.Dock = DockStyle.Fill;
-        lblElementDetails.Text = "Element wählen...";
+        txtElementDetails.Dock = DockStyle.Fill;
+        txtElementDetails.Multiline = true;
+        txtElementDetails.ReadOnly = true;
+        txtElementDetails.ScrollBars = ScrollBars.Vertical;
+        txtElementDetails.BorderStyle = BorderStyle.None;
+        txtElementDetails.BackColor = SystemColors.Control;
+        txtElementDetails.Text = "Element wählen...";
 
         lblElectronConfiguration.Dock = DockStyle.Fill;
+        lblElectronConfiguration.AutoSize = false;
+        lblElectronConfiguration.AutoEllipsis = true;
+        lblElectronConfiguration.TextAlign = ContentAlignment.MiddleLeft;
 
         lvIsotopes.Dock = DockStyle.Fill;
         lvIsotopes.View = View.Details;
@@ -95,7 +103,7 @@ partial class Form1
         lvIsotopes.Columns.Add("Zerfall", 120);
         lvIsotopes.Columns.Add("Häufigkeit (%)", 120);
 
-        detailsLayout.Controls.Add(lblElementDetails, 0, 0);
+        detailsLayout.Controls.Add(txtElementDetails, 0, 0);
         detailsLayout.Controls.Add(lblElectronConfiguration, 0, 1);
         detailsLayout.Controls.Add(lvIsotopes, 0, 2);
 

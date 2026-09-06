@@ -2105,7 +2105,7 @@
     "AtomicMass": 207.981246035,
     "IsStable": false,
     "HalfLifeSeconds": 91452046.896,
-    "DecayMode": "BetaMinus",
+    "DecayMode": "Alpha",
     "DecayEnergyMeV": null,
     "NaturalAbundance": null
   },
@@ -2115,7 +2115,7 @@
     "AtomicMass": 208.982430361,
     "IsStable": false,
     "HalfLifeSeconds": 3913062048.0,
-    "DecayMode": "BetaMinus",
+    "DecayMode": "Alpha",
     "DecayEnergyMeV": null,
     "NaturalAbundance": null
   },
@@ -2125,7 +2125,7 @@
     "AtomicMass": 208.986168701,
     "IsStable": false,
     "HalfLifeSeconds": 19512.0,
-    "DecayMode": "BetaMinus",
+    "DecayMode": "Alpha",
     "DecayEnergyMeV": null,
     "NaturalAbundance": null
   },
@@ -2135,7 +2135,7 @@
     "AtomicMass": 209.987147423,
     "IsStable": false,
     "HalfLifeSeconds": 29160.0,
-    "DecayMode": "BetaMinus",
+    "DecayMode": "Alpha",
     "DecayEnergyMeV": null,
     "NaturalAbundance": null
   },
@@ -2165,7 +2165,7 @@
     "AtomicMass": 222.017582615,
     "IsStable": false,
     "HalfLifeSeconds": 852.0,
-    "DecayMode": "BetaMinus",
+    "DecayMode": "Alpha",
     "DecayEnergyMeV": null,
     "NaturalAbundance": null
   },
@@ -2175,7 +2175,7 @@
     "AtomicMass": 223.019734241,
     "IsStable": false,
     "HalfLifeSeconds": 1320.0,
-    "DecayMode": "BetaMinus",
+    "DecayMode": "Alpha",
     "DecayEnergyMeV": null,
     "NaturalAbundance": null
   },
@@ -2185,7 +2185,7 @@
     "AtomicMass": 225.023610502,
     "IsStable": false,
     "HalfLifeSeconds": 1280448.0,
-    "DecayMode": "BetaMinus",
+    "DecayMode": "Alpha",
     "DecayEnergyMeV": null,
     "NaturalAbundance": null
   },
@@ -2205,7 +2205,7 @@
     "AtomicMass": 226.026096999,
     "IsStable": false,
     "HalfLifeSeconds": 105732.0,
-    "DecayMode": "BetaMinus",
+    "DecayMode": "Alpha",
     "DecayEnergyMeV": null,
     "NaturalAbundance": null
   },
@@ -2215,7 +2215,7 @@
     "AtomicMass": 227.027750594,
     "IsStable": false,
     "HalfLifeSeconds": 687057958.944,
-    "DecayMode": "BetaMinus",
+    "DecayMode": "Alpha",
     "DecayEnergyMeV": null,
     "NaturalAbundance": null
   },
@@ -2245,7 +2245,7 @@
     "AtomicMass": 230.034539717,
     "IsStable": false,
     "HalfLifeSeconds": 1503359.9999999998,
-    "DecayMode": "BetaMinus",
+    "DecayMode": "Alpha",
     "DecayEnergyMeV": null,
     "NaturalAbundance": null
   },
@@ -2255,7 +2255,7 @@
     "AtomicMass": 231.0358825,
     "IsStable": false,
     "HalfLifeSeconds": 1030334482800.0,
-    "DecayMode": "BetaMinus",
+    "DecayMode": "Alpha",
     "DecayEnergyMeV": null,
     "NaturalAbundance": 100.0
   },
@@ -2265,7 +2265,7 @@
     "AtomicMass": 234.040950296,
     "IsStable": false,
     "HalfLifeSeconds": 7747231716000.0,
-    "DecayMode": "BetaMinus",
+    "DecayMode": "Alpha",
     "DecayEnergyMeV": null,
     "NaturalAbundance": 0.0054
   },
@@ -2295,7 +2295,7 @@
     "AtomicMass": 236.046568296,
     "IsStable": false,
     "HalfLifeSeconds": 4828213656000.0,
-    "DecayMode": "BetaMinus",
+    "DecayMode": "Alpha",
     "DecayEnergyMeV": null,
     "NaturalAbundance": null
   },
@@ -2305,7 +2305,7 @@
     "AtomicMass": 237.04817164,
     "IsStable": false,
     "HalfLifeSeconds": 67658105088000.01,
-    "DecayMode": "BetaMinus",
+    "DecayMode": "Alpha",
     "DecayEnergyMeV": null,
     "NaturalAbundance": null
   },
@@ -2325,7 +2325,7 @@
     "AtomicMass": 243.062002068,
     "IsStable": false,
     "HalfLifeSeconds": 17839.08,
-    "DecayMode": "BetaMinus",
+    "DecayMode": "Alpha",
     "DecayEnergyMeV": null,
     "NaturalAbundance": null
   },
@@ -2335,7 +2335,7 @@
     "AtomicMass": 244.064204401,
     "IsStable": false,
     "HalfLifeSeconds": 2565580197600000.0,
-    "DecayMode": "BetaMinus",
+    "DecayMode": "Alpha",
     "DecayEnergyMeV": null,
     "NaturalAbundance": null
   },
@@ -2345,7 +2345,7 @@
     "AtomicMass": 242.059547358,
     "IsStable": false,
     "HalfLifeSeconds": 57672.0,
-    "DecayMode": "BetaMinus",
+    "DecayMode": "Alpha",
     "DecayEnergyMeV": null,
     "NaturalAbundance": null
   },
@@ -2355,7 +2355,7 @@
     "AtomicMass": 243.061379889,
     "IsStable": false,
     "HalfLifeSeconds": 231943597200.0,
-    "DecayMode": "BetaMinus",
+    "DecayMode": "Alpha",
     "DecayEnergyMeV": null,
     "NaturalAbundance": null
   },
@@ -2365,7 +2365,7 @@
     "AtomicMass": 246.067222016,
     "IsStable": false,
     "HalfLifeSeconds": 148507016112.0,
-    "DecayMode": "BetaMinus",
+    "DecayMode": "Alpha",
     "DecayEnergyMeV": null,
     "NaturalAbundance": null
   },
@@ -2375,7 +2375,7 @@
     "AtomicMass": 247.070352678,
     "IsStable": false,
     "HalfLifeSeconds": 492288451200000.0,
-    "DecayMode": "BetaMinus",
+    "DecayMode": "Alpha",
     "DecayEnergyMeV": null,
     "NaturalAbundance": null
   },
@@ -2385,7 +2385,7 @@
     "AtomicMass": 246.0686713,
     "IsStable": false,
     "HalfLifeSeconds": 155520.0,
-    "DecayMode": "BetaMinus",
+    "DecayMode": "Alpha",
     "DecayEnergyMeV": null,
     "NaturalAbundance": null
   },
@@ -2395,7 +2395,7 @@
     "AtomicMass": 247.070305889,
     "IsStable": false,
     "HalfLifeSeconds": 43548593760.0,
-    "DecayMode": "BetaMinus",
+    "DecayMode": "Alpha",
     "DecayEnergyMeV": null,
     "NaturalAbundance": null
   },
@@ -2405,7 +2405,7 @@
     "AtomicMass": 250.076404494,
     "IsStable": false,
     "HalfLifeSeconds": 412764932.16,
-    "DecayMode": "BetaMinus",
+    "DecayMode": "Alpha",
     "DecayEnergyMeV": null,
     "NaturalAbundance": null
   },
@@ -2415,7 +2415,7 @@
     "AtomicMass": 251.079587171,
     "IsStable": false,
     "HalfLifeSeconds": 28338142896.0,
-    "DecayMode": "BetaMinus",
+    "DecayMode": "Alpha",
     "DecayEnergyMeV": null,
     "NaturalAbundance": null
   },
@@ -2425,7 +2425,7 @@
     "AtomicMass": 251.079991431,
     "IsStable": false,
     "HalfLifeSeconds": 118800.0,
-    "DecayMode": "BetaMinus",
+    "DecayMode": "Alpha",
     "DecayEnergyMeV": null,
     "NaturalAbundance": null
   },
@@ -2435,7 +2435,7 @@
     "AtomicMass": 252.082979173,
     "IsStable": false,
     "HalfLifeSeconds": 40754880.0,
-    "DecayMode": "BetaMinus",
+    "DecayMode": "Alpha",
     "DecayEnergyMeV": null,
     "NaturalAbundance": null
   },
@@ -2445,7 +2445,7 @@
     "AtomicMass": 256.091771699,
     "IsStable": false,
     "HalfLifeSeconds": 9426.0,
-    "DecayMode": "BetaMinus",
+    "DecayMode": "Alpha",
     "DecayEnergyMeV": null,
     "NaturalAbundance": null
   },
@@ -2455,7 +2455,7 @@
     "AtomicMass": 257.095105419,
     "IsStable": false,
     "HalfLifeSeconds": 8683200.0,
-    "DecayMode": "BetaMinus",
+    "DecayMode": "Alpha",
     "DecayEnergyMeV": null,
     "NaturalAbundance": null
   },
@@ -2465,7 +2465,7 @@
     "AtomicMass": 257.095537343,
     "IsStable": false,
     "HalfLifeSeconds": 19872.0,
-    "DecayMode": "BetaMinus",
+    "DecayMode": "Alpha",
     "DecayEnergyMeV": null,
     "NaturalAbundance": null
   },
@@ -2475,7 +2475,7 @@
     "AtomicMass": 258.098433634,
     "IsStable": false,
     "HalfLifeSeconds": 4457376.0,
-    "DecayMode": "BetaMinus",
+    "DecayMode": "Alpha",
     "DecayEnergyMeV": null,
     "NaturalAbundance": null
   },
@@ -2485,7 +2485,7 @@
     "AtomicMass": 258.098205,
     "IsStable": false,
     "HalfLifeSeconds": 0.00123,
-    "DecayMode": "BetaMinus",
+    "DecayMode": "Alpha",
     "DecayEnergyMeV": null,
     "NaturalAbundance": null
   },
@@ -2495,7 +2495,7 @@
     "AtomicMass": 259.100998364,
     "IsStable": false,
     "HalfLifeSeconds": 3480.0,
-    "DecayMode": "BetaMinus",
+    "DecayMode": "Alpha",
     "DecayEnergyMeV": null,
     "NaturalAbundance": null
   },
@@ -2505,7 +2505,7 @@
     "AtomicMass": 261.106879,
     "IsStable": false,
     "HalfLifeSeconds": 2340.0,
-    "DecayMode": "BetaMinus",
+    "DecayMode": "Alpha",
     "DecayEnergyMeV": null,
     "NaturalAbundance": null
   },
@@ -2515,7 +2515,7 @@
     "AtomicMass": 262.109615,
     "IsStable": false,
     "HalfLifeSeconds": null,
-    "DecayMode": "BetaMinus",
+    "DecayMode": "Alpha",
     "DecayEnergyMeV": null,
     "NaturalAbundance": null
   },
@@ -2525,7 +2525,7 @@
     "AtomicMass": 266.118236,
     "IsStable": false,
     "HalfLifeSeconds": null,
-    "DecayMode": "BetaMinus",
+    "DecayMode": "Alpha",
     "DecayEnergyMeV": null,
     "NaturalAbundance": null
   },
@@ -2535,7 +2535,7 @@
     "AtomicMass": 267.121787,
     "IsStable": false,
     "HalfLifeSeconds": 9000.0,
-    "DecayMode": "BetaMinus",
+    "DecayMode": "Alpha",
     "DecayEnergyMeV": null,
     "NaturalAbundance": null
   },
@@ -2545,7 +2545,7 @@
     "AtomicMass": 267.122399,
     "IsStable": false,
     "HalfLifeSeconds": 7200.0,
-    "DecayMode": "BetaMinus",
+    "DecayMode": "Alpha",
     "DecayEnergyMeV": null,
     "NaturalAbundance": null
   },
@@ -2555,7 +2555,7 @@
     "AtomicMass": 268.125669,
     "IsStable": false,
     "HalfLifeSeconds": 104400.0,
-    "DecayMode": "BetaMinus",
+    "DecayMode": "Alpha",
     "DecayEnergyMeV": null,
     "NaturalAbundance": null
   },
@@ -2565,7 +2565,7 @@
     "AtomicMass": 270.130362,
     "IsStable": false,
     "HalfLifeSeconds": null,
-    "DecayMode": "BetaMinus",
+    "DecayMode": "Alpha",
     "DecayEnergyMeV": null,
     "NaturalAbundance": null
   },
@@ -2575,7 +2575,7 @@
     "AtomicMass": 271.133782,
     "IsStable": false,
     "HalfLifeSeconds": 132.0,
-    "DecayMode": "BetaMinus",
+    "DecayMode": "Alpha",
     "DecayEnergyMeV": null,
     "NaturalAbundance": null
   },
@@ -2585,7 +2585,7 @@
     "AtomicMass": 273.140294,
     "IsStable": false,
     "HalfLifeSeconds": null,
-    "DecayMode": "BetaMinus",
+    "DecayMode": "Alpha",
     "DecayEnergyMeV": null,
     "NaturalAbundance": null
   },
@@ -2595,7 +2595,7 @@
     "AtomicMass": 274.143599,
     "IsStable": false,
     "HalfLifeSeconds": 57.0,
-    "DecayMode": "BetaMinus",
+    "DecayMode": "Alpha",
     "DecayEnergyMeV": null,
     "NaturalAbundance": null
   },
@@ -2605,7 +2605,7 @@
     "AtomicMass": 268.132011,
     "IsStable": false,
     "HalfLifeSeconds": 1.4,
-    "DecayMode": "BetaMinus",
+    "DecayMode": "Alpha",
     "DecayEnergyMeV": null,
     "NaturalAbundance": null
   },
@@ -2615,7 +2615,7 @@
     "AtomicMass": 269.133649,
     "IsStable": false,
     "HalfLifeSeconds": 15.0,
-    "DecayMode": "BetaMinus",
+    "DecayMode": "Alpha",
     "DecayEnergyMeV": null,
     "NaturalAbundance": null
   },
@@ -2625,7 +2625,7 @@
     "AtomicMass": 275.148972,
     "IsStable": false,
     "HalfLifeSeconds": 0.031,
-    "DecayMode": "BetaMinus",
+    "DecayMode": "Alpha",
     "DecayEnergyMeV": null,
     "NaturalAbundance": null
   },
@@ -2635,7 +2635,7 @@
     "AtomicMass": 276.151705,
     "IsStable": false,
     "HalfLifeSeconds": 0.7000000000000001,
-    "DecayMode": "BetaMinus",
+    "DecayMode": "Alpha",
     "DecayEnergyMeV": null,
     "NaturalAbundance": null
   },
@@ -2645,7 +2645,7 @@
     "AtomicMass": 280.161375,
     "IsStable": false,
     "HalfLifeSeconds": 0.025,
-    "DecayMode": "BetaMinus",
+    "DecayMode": "Alpha",
     "DecayEnergyMeV": null,
     "NaturalAbundance": null
   },
@@ -2655,7 +2655,7 @@
     "AtomicMass": 281.164545,
     "IsStable": false,
     "HalfLifeSeconds": 14.0,
-    "DecayMode": "BetaMinus",
+    "DecayMode": "Alpha",
     "DecayEnergyMeV": null,
     "NaturalAbundance": null
   },
@@ -2665,7 +2665,7 @@
     "AtomicMass": 280.165204,
     "IsStable": false,
     "HalfLifeSeconds": 4.3,
-    "DecayMode": "BetaMinus",
+    "DecayMode": "Alpha",
     "DecayEnergyMeV": null,
     "NaturalAbundance": null
   },
@@ -2675,7 +2675,7 @@
     "AtomicMass": 281.166757,
     "IsStable": false,
     "HalfLifeSeconds": 19.0,
-    "DecayMode": "BetaMinus",
+    "DecayMode": "Alpha",
     "DecayEnergyMeV": null,
     "NaturalAbundance": null
   },
@@ -2685,7 +2685,7 @@
     "AtomicMass": 284.17436,
     "IsStable": false,
     "HalfLifeSeconds": 0.10200000000000001,
-    "DecayMode": "BetaMinus",
+    "DecayMode": "Alpha",
     "DecayEnergyMeV": null,
     "NaturalAbundance": null
   },
@@ -2695,7 +2695,7 @@
     "AtomicMass": 285.177227,
     "IsStable": false,
     "HalfLifeSeconds": 30.0,
-    "DecayMode": "BetaMinus",
+    "DecayMode": "Alpha",
     "DecayEnergyMeV": null,
     "NaturalAbundance": null
   },
@@ -2705,7 +2705,7 @@
     "AtomicMass": 285.180106,
     "IsStable": false,
     "HalfLifeSeconds": 4.6,
-    "DecayMode": "BetaMinus",
+    "DecayMode": "Alpha",
     "DecayEnergyMeV": null,
     "NaturalAbundance": null
   },
@@ -2715,7 +2715,7 @@
     "AtomicMass": 286.182456,
     "IsStable": false,
     "HalfLifeSeconds": 12.0,
-    "DecayMode": "BetaMinus",
+    "DecayMode": "Alpha",
     "DecayEnergyMeV": null,
     "NaturalAbundance": null
   },
@@ -2725,7 +2725,7 @@
     "AtomicMass": 288.187781,
     "IsStable": false,
     "HalfLifeSeconds": 0.653,
-    "DecayMode": "BetaMinus",
+    "DecayMode": "Alpha",
     "DecayEnergyMeV": null,
     "NaturalAbundance": null
   },
@@ -2735,7 +2735,7 @@
     "AtomicMass": 289.190517,
     "IsStable": false,
     "HalfLifeSeconds": 2.1,
-    "DecayMode": "BetaMinus",
+    "DecayMode": "Alpha",
     "DecayEnergyMeV": null,
     "NaturalAbundance": null
   },
@@ -2745,7 +2745,7 @@
     "AtomicMass": 287.19082,
     "IsStable": false,
     "HalfLifeSeconds": 0.06,
-    "DecayMode": "BetaMinus",
+    "DecayMode": "Alpha",
     "DecayEnergyMeV": null,
     "NaturalAbundance": null
   },
@@ -2755,7 +2755,7 @@
     "AtomicMass": 288.192879,
     "IsStable": false,
     "HalfLifeSeconds": 0.177,
-    "DecayMode": "BetaMinus",
+    "DecayMode": "Alpha",
     "DecayEnergyMeV": null,
     "NaturalAbundance": null
   },
@@ -2765,7 +2765,7 @@
     "AtomicMass": 292.201969,
     "IsStable": false,
     "HalfLifeSeconds": 0.016,
-    "DecayMode": "BetaMinus",
+    "DecayMode": "Alpha",
     "DecayEnergyMeV": null,
     "NaturalAbundance": null
   },
@@ -2775,7 +2775,7 @@
     "AtomicMass": 293.204583,
     "IsStable": false,
     "HalfLifeSeconds": 0.07,
-    "DecayMode": "BetaMinus",
+    "DecayMode": "Alpha",
     "DecayEnergyMeV": null,
     "NaturalAbundance": null
   },
@@ -2785,7 +2785,7 @@
     "AtomicMass": 293.208727,
     "IsStable": false,
     "HalfLifeSeconds": 0.025,
-    "DecayMode": "BetaMinus",
+    "DecayMode": "Alpha",
     "DecayEnergyMeV": null,
     "NaturalAbundance": null
   },
@@ -2795,7 +2795,7 @@
     "AtomicMass": 294.21084,
     "IsStable": false,
     "HalfLifeSeconds": 0.07,
-    "DecayMode": "BetaMinus",
+    "DecayMode": "Alpha",
     "DecayEnergyMeV": null,
     "NaturalAbundance": null
   },
@@ -2805,7 +2805,7 @@
     "AtomicMass": 293.213423,
     "IsStable": false,
     "HalfLifeSeconds": null,
-    "DecayMode": "BetaMinus",
+    "DecayMode": "Alpha",
     "DecayEnergyMeV": null,
     "NaturalAbundance": null
   },
@@ -2815,7 +2815,7 @@
     "AtomicMass": 294.213979,
     "IsStable": false,
     "HalfLifeSeconds": 0.0007,
-    "DecayMode": "BetaMinus",
+    "DecayMode": "Alpha",
     "DecayEnergyMeV": null,
     "NaturalAbundance": null
   }

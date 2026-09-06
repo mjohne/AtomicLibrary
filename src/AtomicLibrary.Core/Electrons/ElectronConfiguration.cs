@@ -38,7 +38,7 @@ public sealed class ElectronConfiguration
 
     public int ElectronCount => Orbitals.Sum(o => o.ElectronCount);
 
-    public static ElectronConfiguration FromAtomicNumber(int electronCount)
+    public static ElectronConfiguration FromElectronCount(int electronCount)
     {
         if (electronCount < 0)
         {
@@ -62,6 +62,8 @@ public sealed class ElectronConfiguration
 
         return new ElectronConfiguration(orbitals);
     }
+
+    public static ElectronConfiguration FromAtomicNumber(int electronCount) => FromElectronCount(electronCount);
 
     public static ElectronConfiguration Parse(string configuration)
     {
@@ -96,11 +98,15 @@ public sealed class ElectronConfiguration
                 {
                     ePart.Append(ch);
                 }
+                else
+                {
+                    throw new FormatException($"Invalid orbital token '{token}'.");
+                }
             }
 
             if (nPart.Length == 0 || ePart.Length == 0)
             {
-                continue;
+                throw new FormatException($"Invalid orbital token '{token}'.");
             }
 
             var n = int.Parse(nPart.ToString(), CultureInfo.InvariantCulture);
@@ -113,8 +119,18 @@ public sealed class ElectronConfiguration
                 'f' => OrbitalType.F,
                 _ => throw new FormatException($"Unsupported orbital type '{typePart}'.")
             };
+            var orbital = new Orbital(n, type, electrons);
+            if (electrons < 1)
+            {
+                throw new FormatException($"Orbital '{token}' has invalid occupancy.");
+            }
 
-            orbitals.Add(new Orbital(n, type, electrons));
+            if (electrons > orbital.MaximumElectronCount)
+            {
+                throw new FormatException($"Orbital '{token}' exceeds maximum occupancy.");
+            }
+
+            orbitals.Add(orbital);
         }
 
         return new ElectronConfiguration(orbitals);

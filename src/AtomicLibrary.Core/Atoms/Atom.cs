@@ -15,7 +15,7 @@ public sealed class Atom
             throw new ArgumentOutOfRangeException(nameof(electronCount));
         }
 
-        ElectronConfiguration = ElectronConfiguration.FromAtomicNumber(ElectronCount);
+        ElectronConfiguration = ElectronConfiguration.FromElectronCount(ElectronCount);
     }
 
     public Isotope Isotope { get; }

@@ -63,7 +63,7 @@ public sealed class ElectronConfiguration
         return new ElectronConfiguration(orbitals);
     }
 
-    public static ElectronConfiguration FromAtomicNumber(int electronCount) => FromElectronCount(electronCount);
+    public static ElectronConfiguration FromAtomicNumber(int atomicNumber) => FromElectronCount(atomicNumber);
 
     public static ElectronConfiguration Parse(string configuration)
     {
@@ -111,6 +111,11 @@ public sealed class ElectronConfiguration
 
             var n = int.Parse(nPart.ToString(), CultureInfo.InvariantCulture);
             var electrons = int.Parse(ePart.ToString(), CultureInfo.InvariantCulture);
+            if (n < 1)
+            {
+                throw new FormatException($"Orbital '{token}' has invalid principal quantum number.");
+            }
+
             var type = typePart switch
             {
                 's' => OrbitalType.S,

@@ -132,7 +132,7 @@
   {
     "AtomicNumber": 6,
     "MassNumber": 14,
-    "AtomicMass": 14.0,
+    "AtomicMass": 14.0032419884,
     "IsStable": false,
     "HalfLifeSeconds": 180821334960.0,
     "DecayMode": "BetaMinus",
@@ -672,7 +672,7 @@
   {
     "AtomicNumber": 27,
     "MassNumber": 60,
-    "AtomicMass": 60.0,
+    "AtomicMass": 59.9338222,
     "IsStable": false,
     "HalfLifeSeconds": 166349316.7728,
     "DecayMode": "BetaMinus",

@@ -13,27 +13,40 @@ public static class ElementDataLoader
             PropertyNameCaseInsensitive = true
         }) ?? [];
 
-        return new PeriodicTable(records.Select(r => new Element
+        return new PeriodicTable(records.Select(r =>
         {
-            AtomicNumber = r.AtomicNumber,
-            Symbol = r.Symbol,
-            NameEnglish = r.NameEnglish,
-            NameGerman = r.NameGerman,
-            Period = r.Period,
-            Group = r.Group,
-            Block = Enum.Parse<ElementBlock>(r.Block, ignoreCase: true),
-            Category = Enum.Parse<ElementCategory>(r.Category, ignoreCase: true),
-            StandardAtomicWeight = r.StandardAtomicWeight,
-            Electronegativity = r.Electronegativity,
-            IonizationEnergy = r.IonizationEnergy,
-            ElectronAffinity = r.ElectronAffinity,
-            AtomicRadius = r.AtomicRadius,
-            CovalentRadius = r.CovalentRadius,
-            Density = r.Density,
-            MeltingPoint = r.MeltingPoint,
-            BoilingPoint = r.BoilingPoint,
-            OxidationStates = r.OxidationStates ?? [],
-            ElectronConfiguration = r.ElectronConfiguration
+            if (!Enum.TryParse<ElementBlock>(r.Block, ignoreCase: true, out var block))
+            {
+                throw new FormatException($"Invalid element block '{r.Block}' for element Z={r.AtomicNumber} ({r.Symbol}).");
+            }
+
+            if (!Enum.TryParse<ElementCategory>(r.Category, ignoreCase: true, out var category))
+            {
+                throw new FormatException($"Invalid element category '{r.Category}' for element Z={r.AtomicNumber} ({r.Symbol}).");
+            }
+
+            return new Element
+            {
+                AtomicNumber = r.AtomicNumber,
+                Symbol = r.Symbol,
+                NameEnglish = r.NameEnglish,
+                NameGerman = r.NameGerman,
+                Period = r.Period,
+                Group = r.Group,
+                Block = block,
+                Category = category,
+                StandardAtomicWeight = r.StandardAtomicWeight,
+                Electronegativity = r.Electronegativity,
+                IonizationEnergy = r.IonizationEnergy,
+                ElectronAffinity = r.ElectronAffinity,
+                AtomicRadius = r.AtomicRadius,
+                CovalentRadius = r.CovalentRadius,
+                Density = r.Density,
+                MeltingPoint = r.MeltingPoint,
+                BoilingPoint = r.BoilingPoint,
+                OxidationStates = r.OxidationStates ?? [],
+                ElectronConfiguration = r.ElectronConfiguration
+            };
         }));
     }
 

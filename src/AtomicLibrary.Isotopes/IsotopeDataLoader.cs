@@ -17,13 +17,18 @@ public static class IsotopeDataLoader
         var isotopes = records.Select(record =>
         {
             var element = periodicTable.GetByAtomicNumber(record.AtomicNumber);
+            if (!Enum.TryParse<DecayMode>(record.DecayMode, ignoreCase: true, out var decayMode))
+            {
+                throw new FormatException($"Invalid decay mode '{record.DecayMode}' for isotope Z={record.AtomicNumber}, A={record.MassNumber}.");
+            }
+
             return new Isotope(
                 element,
                 record.MassNumber,
                 record.AtomicMass,
                 record.IsStable,
                 record.HalfLifeSeconds,
-                Enum.Parse<DecayMode>(record.DecayMode, ignoreCase: true),
+                decayMode,
                 record.DecayEnergyMeV,
                 record.NaturalAbundance);
         });

@@ -87,6 +87,27 @@ public class AtomicLibraryTests
         Assert.Throws<FormatException>(() => ElectronConfiguration.Parse("1s2x"));
         Assert.Throws<FormatException>(() => ElectronConfiguration.Parse("1sp2"));
         Assert.Throws<FormatException>(() => ElectronConfiguration.Parse("1s0"));
+        Assert.Throws<FormatException>(() => ElectronConfiguration.Parse("0s2"));
+    }
+
+    [Fact]
+    public void IsotopeDataLoader_InvalidDecayMode_IncludesIsotopeContext()
+    {
+        var path = Path.GetTempFileName();
+        File.WriteAllText(path, """[{ "AtomicNumber": 6, "MassNumber": 14, "AtomicMass": 14.0032419884, "IsStable": false, "HalfLifeSeconds": 1.0, "DecayMode": "InvalidMode" }]""");
+
+        var exception = Assert.Throws<FormatException>(() => IsotopeDataLoader.LoadFromJson(path, PeriodicTable));
+        Assert.Contains("Z=6, A=14", exception.Message);
+    }
+
+    [Fact]
+    public void ElementDataLoader_InvalidEnums_IncludeElementContext()
+    {
+        var path = Path.GetTempFileName();
+        File.WriteAllText(path, """[{ "AtomicNumber": 999, "Symbol": "Xx", "NameEnglish": "Test", "NameGerman": "Test", "Period": 1, "Group": 1, "Block": "invalid", "Category": "invalid", "ElectronConfiguration": "1s1" }]""");
+
+        var exception = Assert.Throws<FormatException>(() => ElementDataLoader.LoadFromJson(path));
+        Assert.Contains("Z=999 (Xx)", exception.Message);
     }
 
     [Fact]

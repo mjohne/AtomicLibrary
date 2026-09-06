@@ -31,7 +31,7 @@ Element
 
 ## Project Structure
 
-- `src/AtomicLibrary.Core` — Domain model (`Element`, `Isotope`, `Atom`, electron configuration)
+- `src/AtomicLibrary.Core` — Domain model (`Element`, `Isotope`, `Atom`, `ElectronConfiguration`)
 - `src/AtomicLibrary.PeriodicTable` — Periodic table repository and JSON loader
 - `src/AtomicLibrary.Isotopes` — Isotope repository, JSON loader, decay chain structure
 - `src/AtomicLibrary.Physics` — Constants and physical calculations

@@ -95,30 +95,51 @@ public class AtomicLibraryTests
     public void IsotopeDataLoader_InvalidDecayMode_IncludesIsotopeContext()
     {
         var path = Path.GetTempFileName();
-        File.WriteAllText(path, """[{ "AtomicNumber": 6, "MassNumber": 14, "AtomicMass": 14.0032419884, "IsStable": false, "HalfLifeSeconds": 1.0, "DecayMode": "InvalidMode" }]""");
+        try
+        {
+            File.WriteAllText(path, """[{ "AtomicNumber": 6, "MassNumber": 14, "AtomicMass": 14.0032419884, "IsStable": false, "HalfLifeSeconds": 1.0, "DecayMode": "InvalidMode" }]""");
 
-        var exception = Assert.Throws<FormatException>(() => IsotopeDataLoader.LoadFromJson(path, PeriodicTable));
-        Assert.Contains("Z=6, A=14", exception.Message);
+            var exception = Assert.Throws<FormatException>(() => IsotopeDataLoader.LoadFromJson(path, PeriodicTable));
+            Assert.Contains("Z=6, A=14", exception.Message);
+        }
+        finally
+        {
+            File.Delete(path);
+        }
     }
 
     [Fact]
     public void ElementDataLoader_InvalidEnums_IncludeElementContext()
     {
         var path = Path.GetTempFileName();
-        File.WriteAllText(path, """[{ "AtomicNumber": 999, "Symbol": "Xx", "NameEnglish": "Test", "NameGerman": "Test", "Period": 1, "Group": 1, "Block": "invalid", "Category": "invalid", "ElectronConfiguration": "1s1" }]""");
+        try
+        {
+            File.WriteAllText(path, """[{ "AtomicNumber": 999, "Symbol": "Xx", "NameEnglish": "Test", "NameGerman": "Test", "Period": 1, "Group": 1, "Block": "invalid", "Category": "invalid", "ElectronConfiguration": "1s1" }]""");
 
-        var exception = Assert.Throws<FormatException>(() => ElementDataLoader.LoadFromJson(path));
-        Assert.Contains("Z=999 (Xx)", exception.Message);
+            var exception = Assert.Throws<FormatException>(() => ElementDataLoader.LoadFromJson(path));
+            Assert.Contains("Z=999 (Xx)", exception.Message);
+        }
+        finally
+        {
+            File.Delete(path);
+        }
     }
 
     [Fact]
     public void IsotopeDataLoader_LoadDecayChains_InvalidDecayMode_IncludesContext()
     {
         var path = Path.GetTempFileName();
-        File.WriteAllText(path, """[{ "ParentAtomicNumber": 92, "ParentMassNumber": 238, "Steps": [{ "AtomicNumber": 90, "MassNumber": 234, "DecayMode": "InvalidMode" }] }]""");
+        try
+        {
+            File.WriteAllText(path, """[{ "ParentAtomicNumber": 92, "ParentMassNumber": 238, "Steps": [{ "AtomicNumber": 90, "MassNumber": 234, "DecayMode": "InvalidMode" }] }]""");
 
-        var exception = Assert.Throws<FormatException>(() => IsotopeDataLoader.LoadDecayChains(path));
-        Assert.Contains("parent Z=92, A=238, step Z=90, A=234", exception.Message);
+            var exception = Assert.Throws<FormatException>(() => IsotopeDataLoader.LoadDecayChains(path));
+            Assert.Contains("parent Z=92, A=238, step Z=90, A=234", exception.Message);
+        }
+        finally
+        {
+            File.Delete(path);
+        }
     }
 
     [Fact]

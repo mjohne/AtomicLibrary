@@ -1,8 +1,6 @@
 # AtomicLibrary
 
-[🇬🇧 English version](README.en.md)
-
-Umfangreiche, wissenschaftlich orientierte C#/.NET-8-Klassenbibliothek für Atom-, Isotop- und Periodensystem-Eigenschaften inkl. WinForms-Demo. Das Domänenmodell ist klar von der Datenspeicherung getrennt:
+Comprehensive, science-oriented C#/.NET 8 class library for atom, isotope, and periodic table properties, including a WinForms demo. The domain model is clearly separated from data storage:
 
 ```text
 Element
@@ -10,41 +8,41 @@ Element
           └── Atom
 ```
 
-## Inhaltsverzeichnis
+## Table of Contents
 
 - [Features](#features)
-- [Projektstruktur](#projektstruktur)
-- [Voraussetzungen](#voraussetzungen)
+- [Project Structure](#project-structure)
+- [Prerequisites](#prerequisites)
 - [Installation](#installation)
-- [Bauen und Testen](#bauen-und-testen)
-- [WinForms-Demo starten](#winforms-demo-starten)
-- [Datenquellen-Konventionen](#datenquellen-konventionen)
-- [Mitwirken](#mitwirken)
-- [Lizenz](#lizenz)
+- [Build and Test](#build-and-test)
+- [Running the WinForms Demo](#running-the-winforms-demo)
+- [Data Source Conventions](#data-source-conventions)
+- [Contributing](#contributing)
+- [License](#license)
 
 ## Features
 
-- Vollständiges Periodensystem mit 118 Elementen (Ordnungszahl, Symbol, Name, Atomgewicht, physikalische Eigenschaften)
-- Isotopendaten inkl. Halbwertszeiten, natürlicher Häufigkeiten und Zerfallsketten
-- Klare Trennung von Domänenmodell (`Element`, `Isotope`, `Atom`) und Datenzugriff über JSON-Loader
-- Physikalische Konstanten und Berechnungsfunktionen (`AtomicLibrary.Physics`)
-- WinForms-Demo-Anwendung zur interaktiven Anzeige, Filterung und Detailansicht von Elementen und Isotopen
-- Getestet mit xUnit
+- Complete periodic table with 118 elements (atomic number, symbol, name, atomic weight, physical properties)
+- Isotope data including half-lives, natural abundances, and decay chains
+- Clear separation of domain model (`Element`, `Isotope`, `Atom`) and data access via JSON loaders
+- Physical constants and calculation functions (`AtomicLibrary.Physics`)
+- WinForms demo application for interactive display, filtering, and detail views of elements and isotopes
+- Tested with xUnit
 
-## Projektstruktur
+## Project Structure
 
-- `src/AtomicLibrary.Core` — Domänenmodell (`Element`, `Isotope`, `Atom`, Elektronenkonfiguration)
-- `src/AtomicLibrary.PeriodicTable` — Periodensystem-Repository und JSON-Loader
-- `src/AtomicLibrary.Isotopes` — Isotopen-Repository, JSON-Loader, Zerfallskettenstruktur
-- `src/AtomicLibrary.Physics` — Konstanten und physikalische Berechnungen
-- `src/AtomicLibrary.WinFormsDemo` — WinForms-Demo (Anzeige + Filter + Details)
+- `src/AtomicLibrary.Core` — Domain model (`Element`, `Isotope`, `Atom`, electron configuration)
+- `src/AtomicLibrary.PeriodicTable` — Periodic table repository and JSON loader
+- `src/AtomicLibrary.Isotopes` — Isotope repository, JSON loader, decay chain structure
+- `src/AtomicLibrary.Physics` — Constants and physical calculations
+- `src/AtomicLibrary.WinFormsDemo` — WinForms demo (display + filter + details)
 - `data/` — `elements.json`, `isotopes.json`, `decay-chains.json`
-- `tests/AtomicLibrary.Tests` — xUnit-Tests
+- `tests/AtomicLibrary.Tests` — xUnit tests
 
-## Voraussetzungen
+## Prerequisites
 
 - [.NET 8 SDK](https://dotnet.microsoft.com/download/dotnet/8.0)
-- Windows für die Ausführung der WinForms-Demo (WinForms ist plattformspezifisch für Windows)
+- Windows to run the WinForms demo (WinForms is Windows-specific)
 
 ## Installation
 
@@ -54,37 +52,37 @@ cd AtomicLibrary
 dotnet restore AtomicLibrary.sln
 ```
 
-## Bauen und Testen
+## Build and Test
 
 ```bash
 dotnet build AtomicLibrary.sln
 dotnet test tests/AtomicLibrary.Tests/AtomicLibrary.Tests.csproj
 ```
 
-## WinForms-Demo starten
+## Running the WinForms Demo
 
 ```bash
 dotnet run --project src/AtomicLibrary.WinFormsDemo
 ```
 
-Die Demo lädt `data/elements.json` und `data/isotopes.json` beim Start, zeigt alle 118 Elemente in einer filterbaren Tabelle und stellt für das ausgewählte Element Detaildaten und bekannte Isotope inklusive Zerfallsketten dar.
+The demo loads `data/elements.json` and `data/isotopes.json` at startup, displays all 118 elements in a filterable table, and shows detailed data and known isotopes (including decay chains) for the selected element.
 
-## Datenquellen-Konventionen
+## Data Source Conventions
 
-- Elementdaten orientieren sich an etablierten Referenzwerten (u. a. IUPAC-Atomgewichte, typische Literaturwerte für physikalische Eigenschaften).
-- Isotopendaten orientieren sich an Nukliddatenbanken-Konventionen (z. B. NUBASE/NNDC NuDat, inkl. Halbwertszeiten und natürlicher Häufigkeiten soweit verfügbar).
-- Für experimentell unsichere/extrem kurzlebige superschwere Nuklide/Elemente können Felder als `0` oder `null` vorliegen.
+- Element data follows established reference values (e.g., IUPAC atomic weights, typical literature values for physical properties).
+- Isotope data follows nuclide database conventions (e.g., NUBASE/NNDC NuDat), including half-lives and natural abundances where available.
+- For experimentally uncertain/extremely short-lived superheavy nuclides/elements, fields may be `0` or `null`.
 
-## Mitwirken
+## Contributing
 
-Beiträge sind willkommen! Bitte erstelle für größere Änderungen zunächst ein Issue, um dein Vorhaben zu besprechen. Für kleinere Fixes oder Verbesserungen kannst du direkt einen Pull Request öffnen.
+Contributions are welcome! For larger changes, please open an issue first to discuss what you would like to change. For smaller fixes or improvements, feel free to open a pull request directly.
 
-1. Repository forken
-2. Feature-Branch erstellen (`git checkout -b feature/mein-feature`)
-3. Änderungen committen (`git commit -m 'Beschreibung der Änderung'`)
-4. Branch pushen (`git push origin feature/mein-feature`)
-5. Pull Request öffnen
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/my-feature`)
+3. Commit your changes (`git commit -m 'Description of change'`)
+4. Push the branch (`git push origin feature/my-feature`)
+5. Open a pull request
 
-## Lizenz
+## License
 
-Für dieses Projekt wurde bisher keine Lizenz hinterlegt. Bitte kontaktiere den Repository-Inhaber, bevor du den Code außerhalb dieses Repositorys verwendest.
+No license has been added to this project yet. Please contact the repository owner before using the code outside this repository.

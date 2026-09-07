@@ -7,6 +7,12 @@ namespace AtomicLibrary.PeriodicTable;
 /// <summary>Provides functionality to load element data from JSON files into a <see cref="PeriodicTable"/> instance.</summary>
 public static class ElementDataLoader
 {
+	/// <summary>Gets the JSON serializer options used for deserializing element data, with case-insensitive property name matching.</summary>
+	private static readonly JsonSerializerOptions _jsonOptions = new()
+	{
+		PropertyNameCaseInsensitive = true
+	};
+
 	/// <summary>Loads element data from a JSON file and returns a <see cref="PeriodicTable"/> instance containing the elements.</summary>
 	/// <param name="filePath">The path to the JSON file containing element data.</param>
 	/// <returns>A <see cref="PeriodicTable"/> instance containing the elements.</returns>
@@ -14,10 +20,7 @@ public static class ElementDataLoader
 	public static PeriodicTable LoadFromJson(string filePath)
 	{
 		string json = File.ReadAllText(filePath);
-		List<ElementRecord> records = JsonSerializer.Deserialize<List<ElementRecord>>(json: json, options: new JsonSerializerOptions
-		{
-			PropertyNameCaseInsensitive = true
-		}) ?? [];
+		List<ElementRecord> records = JsonSerializer.Deserialize<List<ElementRecord>>(json: json, options: _jsonOptions) ?? [];
 
 		return new PeriodicTable(records.Select(selector: static r =>
 		{

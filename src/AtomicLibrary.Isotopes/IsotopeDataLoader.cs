@@ -9,6 +9,11 @@ namespace AtomicLibrary.Isotopes;
 /// <summary>Provides methods to load isotope data and decay chains from JSON files into an <see cref="IsotopeRepository"/> and a list of <see cref="DecayChain"/> objects.</summary>
 public static class IsotopeDataLoader
 {
+	private static readonly JsonSerializerOptions _jsonOptions = new()
+	{
+		PropertyNameCaseInsensitive = true
+	};
+
 	/// <summary>Loads isotope data from a JSON file and returns an <see cref="IsotopeRepository"/> containing the isotopes.</summary>
 	/// <param name="filePath">The path to the JSON file containing isotope data.</param>
 	/// <param name="periodicTable">The <see cref="PeriodicTable.PeriodicTable"/> instance to use for element lookup.</param>
@@ -17,10 +22,7 @@ public static class IsotopeDataLoader
 	public static IsotopeRepository LoadFromJson(string filePath, PeriodicTable.PeriodicTable periodicTable)
 	{
 		string json = File.ReadAllText(filePath);
-		List<IsotopeRecord> records = JsonSerializer.Deserialize<List<IsotopeRecord>>(json: json, options: new JsonSerializerOptions
-		{
-			PropertyNameCaseInsensitive = true
-		}) ?? [];
+		List<IsotopeRecord> records = JsonSerializer.Deserialize<List<IsotopeRecord>>(json: json, options: _jsonOptions) ?? [];
 		IEnumerable<Isotope> isotopes = records.Select(selector: record =>
 		{
 			ArgumentNullException.ThrowIfNull(argument: record);
@@ -47,10 +49,7 @@ public static class IsotopeDataLoader
 	public static IReadOnlyList<DecayChain> LoadDecayChains(string filePath)
 	{
 		string json = File.ReadAllText(path: filePath);
-		List<DecayChainRecord> records = JsonSerializer.Deserialize<List<DecayChainRecord>>(json: json, options: new JsonSerializerOptions
-		{
-			PropertyNameCaseInsensitive = true
-		}) ?? [];
+		List<DecayChainRecord> records = JsonSerializer.Deserialize<List<DecayChainRecord>>(json: json, options: _jsonOptions) ?? [];
 		return [.. records.Select(selector: r =>
 		{
 			ArgumentNullException.ThrowIfNull(argument: r);
@@ -114,7 +113,7 @@ public static class IsotopeDataLoader
 		/// <returns>A string representation of the decay chain step record.</returns>
 		private string GetDebuggerDisplay()
 		{
-			return ToString();
+			return ToString() ?? string.Empty;
 		}
 
 	}
@@ -130,13 +129,13 @@ public static class IsotopeDataLoader
 		public int ParentMassNumber { get; set; }
 
 		/// <summary>Gets or sets the list of decay chain steps for the parent isotope.</summary>
-		public List<DecayChainStepRecord> Steps { get; set; } = new List<DecayChainStepRecord>();
+		public List<DecayChainStepRecord> Steps { get; set; } = [];
 
 		/// <summary>Returns a string representation of the decay chain step record for debugging purposes.</summary>
 		/// <returns>A string representation of the decay chain step record.</returns>
 		private string GetDebuggerDisplay()
 		{
-			return ToString();
+			return ToString() ?? string.Empty;
 		}
 	}
 
@@ -157,7 +156,7 @@ public static class IsotopeDataLoader
 		/// <returns>A string representation of the decay chain step record.</returns>
 		private string GetDebuggerDisplay()
 		{
-			return ToString();
+			return ToString() ?? string.Empty;
 		}
 	}
 }

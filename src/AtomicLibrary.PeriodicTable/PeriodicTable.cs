@@ -9,10 +9,10 @@ namespace AtomicLibrary.PeriodicTable;
 public sealed class PeriodicTable
 {
 	/// <summary>A dictionary mapping atomic numbers to their corresponding elements for quick lookup.</summary>
-	private readonly IReadOnlyDictionary<int, Element> _byAtomicNumber;
+	private readonly Dictionary<int, Element> _byAtomicNumber;
 
 	/// <summary>A dictionary mapping element symbols to their corresponding elements for quick lookup.</summary>
-	private readonly IReadOnlyDictionary<string, Element> _bySymbol;
+	private readonly Dictionary<string, Element> _bySymbol;
 
 	/// <summary>Initializes a new instance of the <see cref="PeriodicTable"/> class with the specified elements.</summary>
 	/// <param name="elements">The elements to include in the periodic table.</param>
@@ -77,6 +77,6 @@ public sealed class PeriodicTable
 	/// <returns>A string representation of the current instance.</returns>
 	private string GetDebuggerDisplay()
 	{
-		return ToString();
+		return ToString() ?? string.Empty;
 	}
 }

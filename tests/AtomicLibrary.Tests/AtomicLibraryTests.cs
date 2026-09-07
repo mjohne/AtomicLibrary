@@ -104,7 +104,7 @@ public class AtomicLibraryTests
 		{
 			File.WriteAllText(path: path, contents: """[{ "AtomicNumber": 6, "MassNumber": 14, "AtomicMass": 14.0032419884, "IsStable": false, "HalfLifeSeconds": 1.0, "DecayMode": "InvalidMode" }]""");
 			FormatException exception = Assert.Throws<FormatException>(() => IsotopeDataLoader.LoadFromJson(filePath: path, periodicTable: PeriodicTable));
-			Assert.Contains(expectedSubstring: "Z=6, A=14", actualString: exception.Message);
+			Assert.Contains(expectedSubstring: "Z=6, A=14", actualString: exception.Message, comparisonType: StringComparison.Ordinal);
 
 		}
 		finally
@@ -122,7 +122,7 @@ public class AtomicLibraryTests
 		{
 			File.WriteAllText(path: path, contents: """[{ "AtomicNumber": 999, "Symbol": "Xx", "NameEnglish": "Test", "NameGerman": "Test", "Period": 1, "Group": 1, "Block": "invalid", "Category": "invalid", "ElectronConfiguration": "1s1" }]""");
 			FormatException exception = Assert.Throws<FormatException>(() => ElementDataLoader.LoadFromJson(filePath: path));
-			Assert.Contains(expectedSubstring: "Z=999 (Xx)", actualString: exception.Message);
+			Assert.Contains(expectedSubstring: "Z=999 (Xx)", actualString: exception.Message, comparisonType: StringComparison.Ordinal);
 		}
 		finally
 		{
@@ -140,7 +140,7 @@ public class AtomicLibraryTests
 			File.WriteAllText(path: path, contents: """[{ "ParentAtomicNumber": 92, "ParentMassNumber": 238, "Steps": [{ "AtomicNumber": 90, "MassNumber": 234, "DecayMode": "InvalidMode" }] }]""");
 
 			FormatException exception = Assert.Throws<FormatException>(() => IsotopeDataLoader.LoadDecayChains(filePath: path));
-			Assert.Contains(expectedSubstring: "parent Z=92, A=238, step Z=90, A=234", actualString: exception.Message);
+			Assert.Contains(expectedSubstring: "parent Z=92, A=238, step Z=90, A=234", actualString: exception.Message, comparisonType: StringComparison.Ordinal);
 		}
 		finally
 		{
@@ -185,6 +185,6 @@ public class AtomicLibraryTests
 	/// <returns>A string representation of the current instance.</returns>
 	private string GetDebuggerDisplay()
 	{
-		return ToString();
+		return ToString() ?? string.Empty;
 	}
 }

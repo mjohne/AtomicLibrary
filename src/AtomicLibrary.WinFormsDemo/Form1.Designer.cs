@@ -1,5 +1,6 @@
 namespace AtomicLibrary.WinFormsDemo;
 
+/// <summary>Required designer variable.</summary>
 partial class Form1
 {
     private System.ComponentModel.IContainer components = null!;
@@ -14,16 +15,18 @@ partial class Form1
     private Label lblElectronConfiguration = null!;
     private ListView lvIsotopes = null!;
 
-    protected override void Dispose(bool disposing)
+	/// <summary>Clean up any resources being used.</summary>
+	/// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+	protected override void Dispose(bool disposing)
     {
         if (disposing && (components != null))
         {
             components.Dispose();
         }
-
         base.Dispose(disposing);
     }
 
+    /// <summary>Required method for Designer support - do not modify the contents of this method with the code editor.</summary>
     private void InitializeComponent()
     {
         components = new System.ComponentModel.Container();
@@ -37,31 +40,25 @@ partial class Form1
         txtElementDetails = new TextBox();
         lblElectronConfiguration = new Label();
         lvIsotopes = new ListView();
-
         ((System.ComponentModel.ISupportInitialize)dgvElements).BeginInit();
         tabControl.SuspendLayout();
         tabOverview.SuspendLayout();
         tabDetails.SuspendLayout();
         detailsLayout.SuspendLayout();
         SuspendLayout();
-
         lblSearch.AutoSize = true;
         lblSearch.Location = new Point(12, 15);
         lblSearch.Text = "Suche:";
-
         txtSearch.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
         txtSearch.Location = new Point(70, 12);
         txtSearch.Size = new Size(900, 23);
-
         tabControl.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
         tabControl.Location = new Point(12, 45);
         tabControl.Size = new Size(960, 600);
         tabControl.Controls.Add(tabOverview);
         tabControl.Controls.Add(tabDetails);
-
         tabOverview.Text = "Elemente";
         tabOverview.Controls.Add(dgvElements);
-
         dgvElements.Dock = DockStyle.Fill;
         dgvElements.ReadOnly = true;
         dgvElements.AllowUserToAddRows = false;
@@ -70,17 +67,14 @@ partial class Form1
         dgvElements.MultiSelect = false;
         dgvElements.AutoGenerateColumns = false;
         dgvElements.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-
         tabDetails.Text = "Details";
         tabDetails.Controls.Add(detailsLayout);
-
         detailsLayout.Dock = DockStyle.Fill;
         detailsLayout.RowCount = 3;
         detailsLayout.ColumnCount = 1;
         detailsLayout.RowStyles.Add(new RowStyle(SizeType.Absolute, 140));
         detailsLayout.RowStyles.Add(new RowStyle(SizeType.Absolute, 40));
         detailsLayout.RowStyles.Add(new RowStyle(SizeType.Percent, 100));
-
         txtElementDetails.Dock = DockStyle.Fill;
         txtElementDetails.Multiline = true;
         txtElementDetails.ReadOnly = true;
@@ -88,12 +82,10 @@ partial class Form1
         txtElementDetails.BorderStyle = BorderStyle.None;
         txtElementDetails.BackColor = SystemColors.Control;
         txtElementDetails.Text = "Element wählen...";
-
         lblElectronConfiguration.Dock = DockStyle.Fill;
         lblElectronConfiguration.AutoSize = false;
         lblElectronConfiguration.AutoEllipsis = true;
         lblElectronConfiguration.TextAlign = ContentAlignment.MiddleLeft;
-
         lvIsotopes.Dock = DockStyle.Fill;
         lvIsotopes.View = View.Details;
         lvIsotopes.FullRowSelect = true;
@@ -102,18 +94,15 @@ partial class Form1
         lvIsotopes.Columns.Add("Halbwertszeit (s)", 180);
         lvIsotopes.Columns.Add("Zerfall", 120);
         lvIsotopes.Columns.Add("Häufigkeit (%)", 120);
-
         detailsLayout.Controls.Add(txtElementDetails, 0, 0);
         detailsLayout.Controls.Add(lblElectronConfiguration, 0, 1);
         detailsLayout.Controls.Add(lvIsotopes, 0, 2);
-
         AutoScaleMode = AutoScaleMode.Font;
         ClientSize = new Size(984, 661);
         Controls.Add(tabControl);
         Controls.Add(txtSearch);
         Controls.Add(lblSearch);
         Text = "AtomicLibrary Demo";
-
         ((System.ComponentModel.ISupportInitialize)dgvElements).EndInit();
         tabControl.ResumeLayout(false);
         tabOverview.ResumeLayout(false);

@@ -61,12 +61,15 @@ Small changes such as typo fixes, naming corrections, or comments are also appre
 
 ## Project Structure
 
-Please familiarize yourself with the existing solution (`.sln`) structure. Typical conventions include:
+Please familiarize yourself with the existing solution (`.sln`) structure:
 
-- `src/` – production code
-- `tests/` – xUnit test project
-- `docs/` – additional documentation
-- `build/` or `.github/` – build and CI configuration
+- `src/AtomicLibrary.Core` – domain model
+- `src/AtomicLibrary.PeriodicTable` – periodic table repository and JSON loader
+- `src/AtomicLibrary.Isotopes` – isotope repository, JSON loader, decay chain structure
+- `src/AtomicLibrary.Physics` – constants and physical calculations
+- `src/AtomicLibrary.WinFormsDemo` – WinForms demo application
+- `data/` – JSON data files
+- `tests/AtomicLibrary.Tests` – xUnit test project
 
 General principles:
 
@@ -113,7 +116,7 @@ Recommended workflow:
 1. Fork the repository
 2. Create a new branch from the current main branch
 3. Implement changes in small, logical commits
-4. Run tests locally (`dotnet test`)
+4. Run tests locally (`dotnet test tests/AtomicLibrary.Tests/AtomicLibrary.Tests.csproj`)
 5. Open a pull request against the main branch
 
 Recommended branch naming:
@@ -184,7 +187,7 @@ New functionality should be covered by appropriate tests.
 
 Please ensure:
 
-- `dotnet test` runs successfully locally
+- `dotnet test tests/AtomicLibrary.Tests/AtomicLibrary.Tests.csproj` runs successfully locally
 - New tests are clearly named and understandable
 - Existing tests are not removed without good reason
 
@@ -213,7 +216,7 @@ Public APIs and relevant behavior changes must be documented:
 
 ## License
 
-By submitting a contribution, you agree that your code will be published under the license specified in the repository.
+By submitting a contribution, you agree that your code will be published under the GNU General Public License v3.0 (GPL-3.0) used by this repository.
 
 ---
 

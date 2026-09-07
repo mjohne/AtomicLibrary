@@ -20,32 +20,7 @@ referenced at runtime.
 - Homepage: <https://github.com/dotnet/runtime>, <https://github.com/dotnet/winforms>
 - Copyright: © .NET Foundation and Contributors
 - License: MIT License — <https://github.com/dotnet/runtime/blob/main/LICENSE.TXT>
-
-```text
-The MIT License (MIT)
-
-Copyright (c) .NET Foundation and Contributors
-
-All rights reserved.
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
-```
+- Upstream third-party notices: <https://github.com/dotnet/runtime/blob/main/THIRD-PARTY-NOTICES.TXT>
 
 ## Test dependencies
 
@@ -56,6 +31,7 @@ distributed with the AtomicLibrary runtime libraries.
 ### xUnit.net
 
 - Package: `xunit`
+- Version: `2.9.3`
 - Homepage: <https://github.com/xunit/xunit>
 - Copyright: © .NET Foundation and Contributors
 - License: Apache License 2.0 — <https://github.com/xunit/xunit/blob/main/LICENSE>
@@ -63,6 +39,7 @@ distributed with the AtomicLibrary runtime libraries.
 ### xunit.runner.visualstudio
 
 - Package: `xunit.runner.visualstudio`
+- Version: `4.0.0`
 - Homepage: <https://github.com/xunit/visualstudio.xunit>
 - Copyright: © .NET Foundation and Contributors
 - License: MIT License — <https://github.com/xunit/visualstudio.xunit/blob/main/License.txt>
@@ -70,6 +47,7 @@ distributed with the AtomicLibrary runtime libraries.
 ### Microsoft.NET.Test.Sdk
 
 - Package: `Microsoft.NET.Test.Sdk`
+- Version: `18.9.0`
 - Homepage: <https://github.com/microsoft/vstest>
 - Copyright: © Microsoft Corporation
 - License: MIT License — <https://github.com/microsoft/vstest/blob/main/LICENSE>
@@ -77,6 +55,7 @@ distributed with the AtomicLibrary runtime libraries.
 ### coverlet.collector
 
 - Package: `coverlet.collector`
+- Version: `10.0.1`
 - Homepage: <https://github.com/coverlet-coverage/coverlet>
 - Copyright: © Toni Solarin-Sodara and Coverlet contributors
 - License: MIT License — <https://github.com/coverlet-coverage/coverlet/blob/master/LICENSE>

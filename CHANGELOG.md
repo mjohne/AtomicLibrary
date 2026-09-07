@@ -1,19 +1,19 @@
 ## Atomic Library 0.1.2.3
 
-* Added `.gitattributes` for line ending and diff settings by @mjohne in https://github.com/mjohne/AtomicLibrary/pull/14
+* Added `.gitattributes` for line endings and diff settings by @mjohne in https://github.com/mjohne/AtomicLibrary/pull/14
 * Restored `README.md` content after removal by @mjohne in https://github.com/mjohne/AtomicLibrary/pull/15
 * Created `SECURITY.md` for project security policy by @mjohne in https://github.com/mjohne/AtomicLibrary/pull/16
 * Added Contributor Covenant Code of Conduct by @mjohne in https://github.com/mjohne/AtomicLibrary/pull/17
 * Created `AGENTS.md` based on repository content by @mjohne with @Claude in https://github.com/mjohne/AtomicLibrary/pull/19
 * Created `CONTRIBUTING.md` with contribution guidelines by @mjohne in https://github.com/mjohne/AtomicLibrary/pull/20
 * Added `THIRD_PARTY_NOTICES.md` for repository by @mjohne with @Claude in https://github.com/mjohne/AtomicLibrary/pull/22
-* Updated CHANGELOG for version 0.1.1.2  by @mjohne in https://github.com/mjohne/AtomicLibrary/pull/23
-* Updated german names of the elements by @mjohne in https://github.com/mjohne/AtomicLibrary/pull/24
+* Updated CHANGELOG for version 0.1.1.2 by @mjohne in https://github.com/mjohne/AtomicLibrary/pull/23
+* Updated German names of the elements by @mjohne in https://github.com/mjohne/AtomicLibrary/pull/24
 * Refactored source code by @mjohne in https://github.com/mjohne/AtomicLibrary/pull/25
 * Updated to version 0.1.2.3 by @mjohne in https://github.com/mjohne/AtomicLibrary/pull/26
 
-New Contributors
-* @mjohne with @Claude made their first contribution in https://github.com/mjohne/AtomicLibrary/pull/19
+Contributors:
+* @mjohne with @Claude contributed in https://github.com/mjohne/AtomicLibrary/pull/19
 
 **Full Changelog**: https://github.com/mjohne/AtomicLibrary/compare/0.1.1.2...0.1.2.3
 

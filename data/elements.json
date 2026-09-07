@@ -490,7 +490,7 @@
   {
     "AtomicNumber": 21,
     "Symbol": "Sc",
-    "Namelatin": "Scandium",
+    "NameLatin": "Scandium",
     "NameEnglish": "Scandium",
     "NameGerman": "Scandium",
     "Period": 4,
@@ -1009,7 +1009,7 @@
   {
     "AtomicNumber": 42,
     "Symbol": "Mo",
-    "Namelatin": "Molybdenum",
+    "NameLatin": "Molybdenum",
     "NameEnglish": "Molybdenum",
     "NameGerman": "Molybdän",
     "Period": 5,
@@ -2591,7 +2591,7 @@
   {
     "AtomicNumber": 107,
     "Symbol": "Bh",
-    "Namelatin": "Bohrium",
+    "NameLatin": "Bohrium",
     "NameEnglish": "Bohrium",
     "NameGerman": "Bohrium",
     "Period": 7,

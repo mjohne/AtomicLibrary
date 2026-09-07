@@ -1,8 +1,11 @@
 using AtomicLibrary.Core.Elements;
 
+using System.Diagnostics;
+
 namespace AtomicLibrary.PeriodicTable;
 
 /// <summary>Represents the periodic table of elements, providing access to elements by atomic number and symbol.</summary>
+[DebuggerDisplay($"{{{nameof(GetDebuggerDisplay)}(),nq}}")]
 public sealed class PeriodicTable
 {
 	/// <summary>A dictionary mapping atomic numbers to their corresponding elements for quick lookup.</summary>
@@ -68,5 +71,12 @@ public sealed class PeriodicTable
 	public bool TryGetBySymbol(string symbol, out Element? element)
 	{
 		return _bySymbol.TryGetValue(key: symbol, value: out element);
+	}
+
+	/// <summary>Gets a string representation of the current instance for debugging purposes.</summary>
+	/// <returns>A string representation of the current instance.</returns>
+	private string GetDebuggerDisplay()
+	{
+		return ToString();
 	}
 }

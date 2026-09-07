@@ -1,9 +1,12 @@
 using AtomicLibrary.Core.Isotopes;
 
+using System.Diagnostics;
+
 namespace AtomicLibrary.Isotopes;
 
 /// <summary>Represents a repository of isotopes, providing methods to retrieve isotopes by their atomic and mass numbers.</summary>
 
+[DebuggerDisplay($"{{{nameof(GetDebuggerDisplay)}(),nq}}")]
 public sealed class IsotopeRepository
 {
 	/// <summary>A dictionary that maps a tuple of atomic number and mass number to the corresponding isotope.</summary>
@@ -57,5 +60,12 @@ public sealed class IsotopeRepository
 	{
 		ArgumentOutOfRangeException.ThrowIfNegativeOrZero(value: massNumber);
 		return _byKey.TryGetValue((AtomicNumber: atomicNumber, MassNumber: massNumber), out isotope);
+	}
+
+	/// <summary>Gets a string representation of the current instance for debugging purposes.</summary>
+	/// <returns>A string representation of the current instance.</returns>
+	private string GetDebuggerDisplay()
+	{
+		return ToString();
 	}
 }

@@ -3,11 +3,13 @@ using AtomicLibrary.Core.Isotopes;
 using AtomicLibrary.Isotopes;
 using AtomicLibrary.PeriodicTable;
 
+using System.Diagnostics;
 using System.Globalization;
 
 namespace AtomicLibrary.WinFormsDemo;
 
 /// <summary>Represents the main form of the AtomicLibrary WinForms demo application, which displays a periodic table of elements and their isotopes.</summary>
+[DebuggerDisplay($"{{{nameof(GetDebuggerDisplay)}(),nq}}")]
 public partial class Form1 : Form
 {
 	/// <summary>The periodic table instance containing all elements and their properties.</summary>
@@ -18,6 +20,14 @@ public partial class Form1 : Form
 
 	/// <summary>The binding source for the DataGridView.</summary>
 	private readonly BindingSource _bindingSource = [];
+
+	/// <summary>Gets a string representation of the current instance for debugging purposes.</summary>
+	/// <returns>A string representation of the current instance.</returns>
+	private string GetDebuggerDisplay()
+	{
+		return ToString();
+	}
+
 
 	/// <summary>Initializes a new instance of the <see cref="Form1"/> class.</summary>
 	public Form1()

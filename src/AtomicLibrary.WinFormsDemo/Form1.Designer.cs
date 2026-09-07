@@ -23,7 +23,11 @@ partial class Form1
 		{
 			components.Dispose();
 			_bindingSource.Dispose();
-		}		
+		}
+		if (disposing)
+		{
+			_bindingSource.Dispose();
+		}
 		base.Dispose(disposing);
 	}
 

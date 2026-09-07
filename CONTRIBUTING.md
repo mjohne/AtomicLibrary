@@ -139,7 +139,7 @@ Please follow established .NET and C# conventions:
 
 Additionally:
 
-- XML documentation comments for public APIs
+- XML documentation comments for public APIs where the codebase already uses them
 - No build warnings (especially if `TreatWarningsAsErrors` is enabled)
 - Compliance with existing `.editorconfig` and analyzer rules
 

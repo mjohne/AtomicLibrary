@@ -1,4 +1,5 @@
 using AtomicLibrary.Core.Elements;
+using AtomicLibrary.Core.Isotopes;
 using AtomicLibrary.Isotopes;
 using AtomicLibrary.PeriodicTable;
 
@@ -6,144 +7,159 @@ namespace AtomicLibrary.WinFormsDemo;
 
 public partial class Form1 : Form
 {
-    private readonly global::AtomicLibrary.PeriodicTable.PeriodicTable _periodicTable;
-    private readonly IsotopeRepository _isotopes;
-    private readonly BindingSource _bindingSource = new();
+	private readonly PeriodicTable.PeriodicTable _periodicTable;
+	private readonly IsotopeRepository _isotopes;
+	private readonly BindingSource _bindingSource = new();
 
-    public Form1()
-    {
-        InitializeComponent();
+	/// <summary>Initializes a new instance of the <see cref="Form1"/> class.</summary>
+	public Form1()
+	{
+		InitializeComponent();
 
-        var elementPath = Path.Combine(AppContext.BaseDirectory, "data", "elements.json");
-        var isotopePath = Path.Combine(AppContext.BaseDirectory, "data", "isotopes.json");
+		string elementPath = Path.Combine(path1: AppContext.BaseDirectory, path2: "data", path3: "elements.json");
+		string isotopePath = Path.Combine(path1: AppContext.BaseDirectory, path2: "data", path3: "isotopes.json");
 
-        _periodicTable = ElementDataLoader.LoadFromJson(elementPath);
-        _isotopes = IsotopeDataLoader.LoadFromJson(isotopePath, _periodicTable);
+		_periodicTable = ElementDataLoader.LoadFromJson(filePath: elementPath);
+		_isotopes = IsotopeDataLoader.LoadFromJson(filePath: isotopePath, periodicTable: _periodicTable);
 
-        ConfigureGrid();
-        BindElements(_periodicTable.All);
+		ConfigureGrid();
+		BindElements(elements: _periodicTable.All);
 
-        txtSearch.TextChanged += (_, _) => ApplyFilter();
-        dgvElements.SelectionChanged += (_, _) => ShowSelectedElementDetails();
-        dgvElements.RowPrePaint += DgvElementsOnRowPrePaint;
-    }
+		txtSearch.TextChanged += (_, _) => ApplyFilter();
+		dgvElements.SelectionChanged += (_, _) => ShowSelectedElementDetails();
+		dgvElements.RowPrePaint += DgvElementsOnRowPrePaint;
+	}
 
-    private void ConfigureGrid()
-    {
-        dgvElements.Columns.Clear();
-        dgvElements.Columns.Add(new DataGridViewTextBoxColumn { DataPropertyName = nameof(ElementRow.AtomicNumber), HeaderText = "Z" });
-        dgvElements.Columns.Add(new DataGridViewTextBoxColumn { DataPropertyName = nameof(ElementRow.Symbol), HeaderText = "Symbol" });
-        dgvElements.Columns.Add(new DataGridViewTextBoxColumn { DataPropertyName = nameof(ElementRow.NameEnglish), HeaderText = "Name" });
-        dgvElements.Columns.Add(new DataGridViewTextBoxColumn { DataPropertyName = nameof(ElementRow.Group), HeaderText = "Gruppe" });
-        dgvElements.Columns.Add(new DataGridViewTextBoxColumn { DataPropertyName = nameof(ElementRow.Period), HeaderText = "Periode" });
-        dgvElements.Columns.Add(new DataGridViewTextBoxColumn { DataPropertyName = nameof(ElementRow.Category), HeaderText = "Kategorie" });
-        dgvElements.Columns.Add(new DataGridViewTextBoxColumn { DataPropertyName = nameof(ElementRow.StandardAtomicWeight), HeaderText = "Atomgewicht" });
+	/// <summary>Configures the DataGridView to display the elements with appropriate columns and data bindings.</summary>
+	private void ConfigureGrid()
+	{
+		dgvElements.Columns.Clear();
+		_ = dgvElements.Columns.Add(dataGridViewColumn: new DataGridViewTextBoxColumn { DataPropertyName = nameof(ElementRow.AtomicNumber), HeaderText = "Z" });
+		_ = dgvElements.Columns.Add(dataGridViewColumn: new DataGridViewTextBoxColumn { DataPropertyName = nameof(ElementRow.Symbol), HeaderText = "Symbol" });
+		_ = dgvElements.Columns.Add(dataGridViewColumn: new DataGridViewTextBoxColumn { DataPropertyName = nameof(ElementRow.NameEnglish), HeaderText = "Name" });
+		_ = dgvElements.Columns.Add(dataGridViewColumn: new DataGridViewTextBoxColumn { DataPropertyName = nameof(ElementRow.Group), HeaderText = "Gruppe" });
+		_ = dgvElements.Columns.Add(dataGridViewColumn: new DataGridViewTextBoxColumn { DataPropertyName = nameof(ElementRow.Period), HeaderText = "Periode" });
+		_ = dgvElements.Columns.Add(dataGridViewColumn: new DataGridViewTextBoxColumn { DataPropertyName = nameof(ElementRow.Category), HeaderText = "Kategorie" });
+		_ = dgvElements.Columns.Add(dataGridViewColumn: new DataGridViewTextBoxColumn { DataPropertyName = nameof(ElementRow.StandardAtomicWeight), HeaderText = "Atomgewicht" });
+		dgvElements.DataSource = _bindingSource;
+	}
 
-        dgvElements.DataSource = _bindingSource;
-    }
+	/// <summary>Binds the given elements to the DataGridView.</summary>
+	/// <param name="elements">The elements to bind.</param>
+	private void BindElements(IEnumerable<Element> elements)
+	{
+		List<ElementRow> rows = [.. elements.OrderBy(keySelector: static e =>
+		{
+			ArgumentNullException.ThrowIfNull(argument: e);
+			return e.AtomicNumber;
+		})
+			.Select(static e => new ElementRow(AtomicNumber: e.AtomicNumber, Symbol: e.Symbol, NameEnglish: e.NameEnglish, Group: e.Group, Period: e.Period, Category: e.Category.ToString(), StandardAtomicWeight: e.StandardAtomicWeight))];
+		_bindingSource.DataSource = rows;
+		if (dgvElements.Rows.Count > 0)
+		{
+			dgvElements.Rows[index: 0].Selected = true;
+			ShowSelectedElementDetails();
+		}
+	}
 
-    private void BindElements(IEnumerable<Element> elements)
-    {
-        var rows = elements.OrderBy(e => e.AtomicNumber)
-            .Select(e => new ElementRow(e.AtomicNumber, e.Symbol, e.NameEnglish, e.Group, e.Period, e.Category.ToString(), e.StandardAtomicWeight))
-            .ToList();
+	/// <summary>Applies the filter based on the search text and updates the DataGridView with the filtered elements.</summary>
+	private void ApplyFilter()
+	{
+		string text = txtSearch.Text.Trim();
+		IEnumerable<Element> filtered = string.IsNullOrWhiteSpace(value: text)
+			? _periodicTable.All
+			: _periodicTable.All.Where(predicate: e =>
+			{
+				ArgumentNullException.ThrowIfNull(argument: e);
+				return e.Symbol.Contains(value: text, comparisonType: StringComparison.OrdinalIgnoreCase)
+											|| e.NameEnglish.Contains(value: text, comparisonType: StringComparison.OrdinalIgnoreCase)
+											|| e.NameGerman.Contains(value: text, comparisonType: StringComparison.OrdinalIgnoreCase);
+			});
+		BindElements(elements: filtered);
+	}
 
-        _bindingSource.DataSource = rows;
+	/// <summary>Displays the details of the selected element in the UI.</summary>
+	private void ShowSelectedElementDetails()
+	{
+		if (dgvElements.SelectedRows.Count == 0)
+		{
+			return;
+		}
+		ElementRow row = (ElementRow)dgvElements.SelectedRows[0].DataBoundItem;
+		Element element = _periodicTable.GetByAtomicNumber(row.AtomicNumber);
+		List<Isotope> isotopes = [.. _isotopes.GetByAtomicNumber(atomicNumber: element.AtomicNumber).OrderBy(keySelector: static i => i.MassNumber)];
+		txtElementDetails.Text =
+			$"{element.NameEnglish} / {element.NameGerman} ({element.Symbol})\n" +
+			$"Ordnungszahl: {element.AtomicNumber}, Gruppe: {element.Group}, Periode: {element.Period}, Block: {element.Block}\n" +
+			$"Kategorie: {element.Category}\n" +
+			$"Atomgewicht: {element.StandardAtomicWeight}, Elektronegativität: {element.Electronegativity}, Ionisierungsenergie: {element.IonizationEnergy} eV\n" +
+			$"Elektronenaffinität: {element.ElectronAffinity} eV, Radius: {element.AtomicRadius} pm, Kovalenzradius: {element.CovalentRadius} pm\n" +
+			$"Dichte: {element.Density} g/cm³, Schmelzpunkt: {element.MeltingPoint} K, Siedepunkt: {element.BoilingPoint} K\n" +
+			$"Oxidationsstufen: {string.Join(separator: ", ", values: element.OxidationStates)}";
+		lblElectronConfiguration.Text = $"Elektronenkonfiguration: {element.ElectronConfiguration}";
+		lvIsotopes.BeginUpdate();
+		try
+		{
+			lvIsotopes.Items.Clear();
+			foreach (Isotope isotope in isotopes)
+			{
+				_ = lvIsotopes.Items.Add(value: new ListViewItem(
+				[
+					isotope.ToString(),
+					isotope.IsStable ? "Ja" : "Nein",
+					isotope.HalfLifeSeconds?.ToString(format: "G6") ?? "-",
+					isotope.DecayMode.ToString(),
+					isotope.NaturalAbundance?.ToString(format: "G6") ?? "-"
+				]));
+			}
+		}
+		finally
+		{
+			lvIsotopes.EndUpdate();
+		}
+	}
 
-        if (dgvElements.Rows.Count > 0)
-        {
-            dgvElements.Rows[0].Selected = true;
-            ShowSelectedElementDetails();
-        }
-    }
+	/// <summary>Handles the RowPrePaint event of the DataGridView to set the background color of each row based on the element's category.</summary>
+	/// <param name="e">The <see cref="DataGridViewRowPrePaintEventArgs"/> instance containing the event data.</param>
+	/// <param name="sender">The source of the event.</param>
+	private void DgvElementsOnRowPrePaint(object? sender, DataGridViewRowPrePaintEventArgs e)
+	{
+		DataGridViewRow row = dgvElements.Rows[index: e.RowIndex];
+		if (row.DataBoundItem is not ElementRow elementRow)
+		{
+			return;
+		}
+		Element element = _periodicTable.GetByAtomicNumber(atomicNumber: elementRow.AtomicNumber);
+		row.DefaultCellStyle.BackColor = element.Category switch
+		{
+			ElementCategory.AlkaliMetal => Color.LightSalmon,
+			ElementCategory.AlkalineEarthMetal => Color.LightGoldenrodYellow,
+			ElementCategory.TransitionMetal => Color.LightSteelBlue,
+			ElementCategory.PostTransitionMetal => Color.Moccasin,
+			ElementCategory.Metalloid => Color.PaleTurquoise,
+			ElementCategory.Nonmetal => Color.Honeydew,
+			ElementCategory.Halogen => Color.LavenderBlush,
+			ElementCategory.NobleGas => Color.Lavender,
+			ElementCategory.Lanthanide => Color.LightCyan,
+			ElementCategory.Actinide => Color.LightPink,
+			_ => Color.White
+		};
+	}
 
-    private void ApplyFilter()
-    {
-        var text = txtSearch.Text.Trim();
-        var filtered = string.IsNullOrWhiteSpace(text)
-            ? _periodicTable.All
-            : _periodicTable.All.Where(e => e.Symbol.Contains(text, StringComparison.OrdinalIgnoreCase)
-                                            || e.NameEnglish.Contains(text, StringComparison.OrdinalIgnoreCase)
-                                            || e.NameGerman.Contains(text, StringComparison.OrdinalIgnoreCase));
-
-        BindElements(filtered);
-    }
-
-    private void ShowSelectedElementDetails()
-    {
-        if (dgvElements.SelectedRows.Count == 0)
-        {
-            return;
-        }
-
-        var row = (ElementRow)dgvElements.SelectedRows[0].DataBoundItem!;
-        var element = _periodicTable.GetByAtomicNumber(row.AtomicNumber);
-        var isotopes = _isotopes.GetByAtomicNumber(element.AtomicNumber).OrderBy(i => i.MassNumber).ToList();
-
-        txtElementDetails.Text =
-            $"{element.NameEnglish} / {element.NameGerman} ({element.Symbol})\n" +
-            $"Ordnungszahl: {element.AtomicNumber}, Gruppe: {element.Group}, Periode: {element.Period}, Block: {element.Block}\n" +
-            $"Kategorie: {element.Category}\n" +
-            $"Atomgewicht: {element.StandardAtomicWeight}, Elektronegativität: {element.Electronegativity}, Ionisierungsenergie: {element.IonizationEnergy} eV\n" +
-            $"Elektronenaffinität: {element.ElectronAffinity} eV, Radius: {element.AtomicRadius} pm, Kovalenzradius: {element.CovalentRadius} pm\n" +
-            $"Dichte: {element.Density} g/cm³, Schmelzpunkt: {element.MeltingPoint} K, Siedepunkt: {element.BoilingPoint} K\n" +
-            $"Oxidationsstufen: {string.Join(", ", element.OxidationStates)}";
-
-        lblElectronConfiguration.Text = $"Elektronenkonfiguration: {element.ElectronConfiguration}";
-
-        lvIsotopes.BeginUpdate();
-        try
-        {
-            lvIsotopes.Items.Clear();
-            foreach (var isotope in isotopes)
-            {
-                lvIsotopes.Items.Add(new ListViewItem(
-                [
-                    isotope.ToString(),
-                    isotope.IsStable ? "Ja" : "Nein",
-                    isotope.HalfLifeSeconds?.ToString("G6") ?? "-",
-                    isotope.DecayMode.ToString(),
-                    isotope.NaturalAbundance?.ToString("G6") ?? "-"
-                ]));
-            }
-        }
-        finally
-        {
-            lvIsotopes.EndUpdate();
-        }
-    }
-
-    private void DgvElementsOnRowPrePaint(object? sender, DataGridViewRowPrePaintEventArgs e)
-    {
-        var row = dgvElements.Rows[e.RowIndex];
-        if (row.DataBoundItem is not ElementRow elementRow)
-        {
-            return;
-        }
-
-        var element = _periodicTable.GetByAtomicNumber(elementRow.AtomicNumber);
-        row.DefaultCellStyle.BackColor = element.Category switch
-        {
-            ElementCategory.AlkaliMetal => Color.LightSalmon,
-            ElementCategory.AlkalineEarthMetal => Color.LightGoldenrodYellow,
-            ElementCategory.TransitionMetal => Color.LightSteelBlue,
-            ElementCategory.PostTransitionMetal => Color.Moccasin,
-            ElementCategory.Metalloid => Color.PaleTurquoise,
-            ElementCategory.Nonmetal => Color.Honeydew,
-            ElementCategory.Halogen => Color.LavenderBlush,
-            ElementCategory.NobleGas => Color.Lavender,
-            ElementCategory.Lanthanide => Color.LightCyan,
-            ElementCategory.Actinide => Color.LightPink,
-            _ => Color.White
-        };
-    }
-
-    private sealed record ElementRow(
-        int AtomicNumber,
-        string Symbol,
-        string NameEnglish,
-        int Group,
-        int Period,
-        string Category,
-        double StandardAtomicWeight);
+	/// <summary>Represents a row in the DataGridView for displaying element information.</summary>
+	/// <param name="AtomicNumber">The atomic number of the element.</param>
+	/// <param name="Symbol">The symbol of the element.</param>
+	/// <param name="NameEnglish">The English name of the element.</param>
+	/// <param name="Group">The group of the element.</param>
+	/// <param name="Period">The period of the element.</param>
+	/// <param name="Category">The category of the element.</param>
+	/// <param name="StandardAtomicWeight">The standard atomic weight of the element.</param>
+	private sealed record ElementRow(
+		int AtomicNumber,
+		string Symbol,
+		string NameEnglish,
+		int Group,
+		int Period,
+		string Category,
+		double StandardAtomicWeight);
 }

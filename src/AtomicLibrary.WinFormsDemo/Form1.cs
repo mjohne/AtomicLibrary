@@ -3,28 +3,36 @@ using AtomicLibrary.Core.Isotopes;
 using AtomicLibrary.Isotopes;
 using AtomicLibrary.PeriodicTable;
 
+using System.Globalization;
+
 namespace AtomicLibrary.WinFormsDemo;
 
+/// <summary>Represents the main form of the AtomicLibrary WinForms demo application, which displays a periodic table of elements and their isotopes.</summary>
 public partial class Form1 : Form
 {
+	/// <summary>The periodic table instance containing all elements and their properties.</summary>
 	private readonly PeriodicTable.PeriodicTable _periodicTable;
+
+	/// <summary>The isotope repository instance containing all isotopes and their properties.</summary>
 	private readonly IsotopeRepository _isotopes;
+
+	/// <summary>The binding source for the DataGridView.</summary>
 	private readonly BindingSource _bindingSource = [];
 
 	/// <summary>Initializes a new instance of the <see cref="Form1"/> class.</summary>
 	public Form1()
 	{
 		InitializeComponent();
-
+		// Load element and isotope data from JSON files located in the "data" directory relative to the application's base directory.
 		string elementPath = Path.Combine(path1: AppContext.BaseDirectory, path2: "data", path3: "elements.json");
 		string isotopePath = Path.Combine(path1: AppContext.BaseDirectory, path2: "data", path3: "isotopes.json");
-
+		// Load the periodic table and isotopes from the specified JSON files.
 		_periodicTable = ElementDataLoader.LoadFromJson(filePath: elementPath);
 		_isotopes = IsotopeDataLoader.LoadFromJson(filePath: isotopePath, periodicTable: _periodicTable);
-
+		// Configure the DataGridView to display the elements and bind the elements to the grid.
 		ConfigureGrid();
 		BindElements(elements: _periodicTable.All);
-
+		// Attach event handlers for search text changes, selection changes in the DataGridView, and row pre-painting to customize row appearance.
 		txtSearch.TextChanged += (_, _) => ApplyFilter();
 		dgvElements.SelectionChanged += (_, _) => ShowSelectedElementDetails();
 		dgvElements.RowPrePaint += DgvElementsOnRowPrePaint;
@@ -52,8 +60,7 @@ public partial class Form1 : Form
 		{
 			ArgumentNullException.ThrowIfNull(argument: e);
 			return e.AtomicNumber;
-		})
-			.Select(static e => new ElementRow(AtomicNumber: e.AtomicNumber, Symbol: e.Symbol, NameEnglish: e.NameEnglish, Group: e.Group, Period: e.Period, Category: e.Category.ToString(), StandardAtomicWeight: e.StandardAtomicWeight))];
+		}).Select(static e => new ElementRow(AtomicNumber: e.AtomicNumber, Symbol: e.Symbol, NameEnglish: e.NameEnglish, Group: e.Group, Period: e.Period, Category: e.Category.ToString(), StandardAtomicWeight: e.StandardAtomicWeight))];
 		_bindingSource.DataSource = rows;
 		if (dgvElements.Rows.Count > 0)
 		{
@@ -107,9 +114,9 @@ public partial class Form1 : Form
 				[
 					isotope.ToString(),
 					isotope.IsStable ? "Ja" : "Nein",
-					isotope.HalfLifeSeconds?.ToString(format: "G6") ?? "-",
+					isotope.HalfLifeSeconds?.ToString(format: "G6", provider: CultureInfo.InvariantCulture) ?? "-",
 					isotope.DecayMode.ToString(),
-					isotope.NaturalAbundance?.ToString(format: "G6") ?? "-"
+					isotope.NaturalAbundance?.ToString(format: "G6", provider: CultureInfo.InvariantCulture) ?? "-"
 				]));
 			}
 		}

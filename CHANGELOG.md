@@ -1,3 +1,16 @@
+## Atomic Library 0.1.3.4
+
+* Updated CHANGELOG for version 0.1.2.3 by @mjohne in https://github.com/mjohne/AtomicLibrary/pull/28
+* Added missed `GetDebuggerDisplay` by @mjohne in https://github.com/mjohne/AtomicLibrary/pull/29
+* Refactored `Form1.Designer.cs` for improved clarity by @mjohne in https://github.com/mjohne/AtomicLibrary/pull/30
+* Added latin names of the elements by @mjohne in https://github.com/mjohne/AtomicLibrary/pull/31
+* Fixed source code by @mjohne in https://github.com/mjohne/AtomicLibrary/pull/32
+* Added `.editorconfig` to suppress formatting warnings by @mjohne in https://github.com/mjohne/AtomicLibrary/pull/33
+* Updated to version 0.1.3.4 by @mjohne in https://github.com/mjohne/AtomicLibrary/pull/34
+
+**Full Changelog**: https://github.com/mjohne/AtomicLibrary/compare/0.1.2.3...0.1.3.4
+
+
 ## Atomic Library 0.1.2.3
 
 * Added `.gitattributes` for line endings and diff settings by @mjohne in https://github.com/mjohne/AtomicLibrary/pull/14

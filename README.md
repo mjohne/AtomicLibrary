@@ -85,4 +85,4 @@ Contributions are welcome! For larger changes, please open an issue first to dis
 
 ## License
 
-No license has been added to this project yet. Please contact the repository owner before using the code outside this repository.
+This project is licensed under the GNU General Public License v3.0 (GPL-3.0). See LICENSE for details.

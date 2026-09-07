@@ -6,3 +6,4 @@
 using System.Diagnostics.CodeAnalysis;
 
 [assembly: SuppressMessage("Style", "IDE0160:In namespace eines Blockbereichs konvertieren", Justification = "Project uses file-scoped namespaces; do not convert.", Scope = "namespace", Target = "~N:AtomicLibrary.WinFormsDemo")]
+[assembly: SuppressMessage("Globalization", "CA1303:Literale nicht als lokalisierte Parameter übergeben", Justification = "<Ausstehend>", Scope = "member", Target = "~M:AtomicLibrary.WinFormsDemo.Form1.ConfigureGrid")]

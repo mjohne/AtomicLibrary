@@ -6,4 +6,4 @@
 using System.Diagnostics.CodeAnalysis;
 
 [assembly: SuppressMessage("Style", "IDE0160:In namespace eines Blockbereichs konvertieren", Justification = "Project uses file-scoped namespaces; do not convert.", Scope = "namespace", Target = "~N:AtomicLibrary.WinFormsDemo")]
-[assembly: SuppressMessage("Globalization", "CA1303:Literale nicht als lokalisierte Parameter übergeben", Justification = "Demo-only fixed UI column labels are intentionally not localized.", Scope = "member", Target = "~M:AtomicLibrary.WinFormsDemo.Form1.ConfigureGrid")]
+[assembly: SuppressMessage("Globalization", "CA1303:Literale nicht als lokalisierte Parameter übergeben", Justification = "WinForms demo currently uses German UI literals and is not localized; suppress CA1303 for this UI setup method.", Scope = "member", Target = "~M:AtomicLibrary.WinFormsDemo.Form1.ConfigureGrid")]

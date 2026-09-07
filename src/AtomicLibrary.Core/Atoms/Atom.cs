@@ -1,11 +1,13 @@
 using AtomicLibrary.Core.Electrons;
 using AtomicLibrary.Core.Isotopes;
 
+using System.Diagnostics;
 using System.Globalization;
 
 namespace AtomicLibrary.Core.Atoms;
 
 /// <summary>Represents an atom, which consists of a specific isotope and a number of electrons.</summary>
+[DebuggerDisplay($"{{{nameof(GetDebuggerDisplay)}(),nq}}")]
 public sealed class Atom
 {
 	/// <summary>Initializes a new instance of the <see cref="Atom"/> class with the specified isotope and electron count.</summary>
@@ -55,5 +57,12 @@ public sealed class Atom
 	{
 		string chargeText = Charge > 0 ? $"+{Charge}" : Charge.ToString(provider: CultureInfo.InvariantCulture);
 		return $"{Isotope.Element.Symbol}-{Isotope.MassNumber} ({chargeText})";
+	}
+
+	/// <summary>Gets a string representation of the current instance for debugging purposes.</summary>
+	/// <returns>A string representation of the current instance.</returns>
+	private string GetDebuggerDisplay()
+	{
+		return ToString();
 	}
 }

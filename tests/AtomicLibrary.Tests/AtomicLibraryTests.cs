@@ -6,9 +6,12 @@ using AtomicLibrary.Isotopes;
 using AtomicLibrary.PeriodicTable;
 using AtomicLibrary.Physics;
 
+using System.Diagnostics;
+
 namespace AtomicLibrary.Tests;
 
 /// <summary>Contains unit tests for the AtomicLibrary, including tests for periodic table lookups, isotope validation, electron configuration parsing, radioactive decay calculations, and nuclear binding energy calculations.</summary>
+[DebuggerDisplay($"{{{nameof(GetDebuggerDisplay)}(),nq}}")]
 public class AtomicLibraryTests
 {
 	/// <summary>The periodic table loaded with default data for testing purposes.</summary>
@@ -176,5 +179,12 @@ public class AtomicLibraryTests
 		Isotope fe56 = Isotopes.GetByAtomicAndMassNumber(atomicNumber: 26, massNumber: 56);
 		double bindingPerNucleon = NuclearBindingEnergyCalculator.BindingEnergyPerNucleonMeV(isotope: fe56);
 		Assert.InRange(actual: bindingPerNucleon, low: 8.0, high: 9.5);
+	}
+
+	/// <summary>Gets a string representation of the current instance for debugging purposes.</summary>
+	/// <returns>A string representation of the current instance.</returns>
+	private string GetDebuggerDisplay()
+	{
+		return ToString();
 	}
 }

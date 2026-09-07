@@ -58,7 +58,7 @@ public sealed class Element
 	public required double BoilingPoint { get; init; }
 
 	/// <summary>Gets or sets the oxidation states of the element.</summary>
-	public required int[] OxidationStates { get; init; }
+	public required IReadOnlyList<int> OxidationStates { get; init; }
 
 	/// <summary>Gets or sets the electron configuration of the element.</summary>
 	public required string ElectronConfiguration { get; init; }

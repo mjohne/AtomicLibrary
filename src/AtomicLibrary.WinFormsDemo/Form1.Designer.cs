@@ -6,6 +6,7 @@ partial class Form1
 	private System.ComponentModel.IContainer components = null!;
 	private TextBox txtSearch = null!;
 	private Label lblSearch = null!;
+	private Button btnPeriodicTable = null!;
 	private DataGridView dgvElements = null!;
 	private TabControl tabControl = null!;
 	private TabPage tabOverview = null!;
@@ -26,6 +27,7 @@ partial class Form1
 		if (disposing)
 		{
 			_bindingSource.Dispose();
+			_periodicTableForm?.Dispose();
 		}
 		base.Dispose(disposing);
 	}
@@ -36,6 +38,7 @@ partial class Form1
 		components = new System.ComponentModel.Container();
 		txtSearch = new TextBox();
 		lblSearch = new Label();
+		btnPeriodicTable = new Button();
 		dgvElements = new DataGridView();
 		tabControl = new TabControl();
 		tabOverview = new TabPage();
@@ -55,7 +58,11 @@ partial class Form1
 		lblSearch.Text = "Suche:";
 		txtSearch.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
 		txtSearch.Location = new Point(70, 12);
-		txtSearch.Size = new Size(900, 23);
+		txtSearch.Size = new Size(696, 23);
+		btnPeriodicTable.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+		btnPeriodicTable.Location = new Point(772, 10);
+		btnPeriodicTable.Size = new Size(200, 27);
+		btnPeriodicTable.Text = "Periodensystem anzeigen";
 		tabControl.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
 		tabControl.Location = new Point(12, 45);
 		tabControl.Size = new Size(960, 600);
@@ -104,6 +111,7 @@ partial class Form1
 		AutoScaleMode = AutoScaleMode.Font;
 		ClientSize = new Size(984, 661);
 		Controls.Add(tabControl);
+		Controls.Add(btnPeriodicTable);
 		Controls.Add(txtSearch);
 		Controls.Add(lblSearch);
 		Text = "AtomicLibrary Demo";

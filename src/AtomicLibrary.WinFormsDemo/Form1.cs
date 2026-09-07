@@ -21,6 +21,9 @@ public partial class Form1 : Form
 	/// <summary>The binding source for the DataGridView.</summary>
 	private readonly BindingSource _bindingSource = [];
 
+	/// <summary>The optional modeless periodic-table form instance.</summary>
+	private PeriodicTableForm? _periodicTableForm;
+
 	/// <summary>Gets a string representation of the current instance for debugging purposes.</summary>
 	/// <returns>A string representation of the current instance.</returns>
 	private string GetDebuggerDisplay()
@@ -46,6 +49,7 @@ public partial class Form1 : Form
 		txtSearch.TextChanged += (_, _) => ApplyFilter();
 		dgvElements.SelectionChanged += (_, _) => ShowSelectedElementDetails();
 		dgvElements.RowPrePaint += DgvElementsOnRowPrePaint;
+		btnPeriodicTable.Click += (_, _) => ShowPeriodicTable();
 	}
 
 	/// <summary>Configures the DataGridView to display the elements with appropriate columns and data bindings.</summary>
@@ -147,20 +151,20 @@ public partial class Form1 : Form
 			return;
 		}
 		Element element = _periodicTable.GetByAtomicNumber(atomicNumber: elementRow.AtomicNumber);
-		row.DefaultCellStyle.BackColor = element.Category switch
+		row.DefaultCellStyle.BackColor = ElementCategoryColorMapper.GetBackColor(category: element.Category);
+		row.DefaultCellStyle.ForeColor = ElementCategoryColorMapper.GetForeColor(category: element.Category);
+	}
+
+	/// <summary>Shows the modeless periodic-table window.</summary>
+	private void ShowPeriodicTable()
+	{
+		if (_periodicTableForm is null || _periodicTableForm.IsDisposed)
 		{
-			ElementCategory.AlkaliMetal => Color.LightSalmon,
-			ElementCategory.AlkalineEarthMetal => Color.LightGoldenrodYellow,
-			ElementCategory.TransitionMetal => Color.LightSteelBlue,
-			ElementCategory.PostTransitionMetal => Color.Moccasin,
-			ElementCategory.Metalloid => Color.PaleTurquoise,
-			ElementCategory.Nonmetal => Color.Honeydew,
-			ElementCategory.Halogen => Color.LavenderBlush,
-			ElementCategory.NobleGas => Color.Lavender,
-			ElementCategory.Lanthanide => Color.LightCyan,
-			ElementCategory.Actinide => Color.LightPink,
-			_ => Color.White
-		};
+			_periodicTableForm = new PeriodicTableForm(periodicTable: _periodicTable);
+			_periodicTableForm.Show(owner: this);
+			return;
+		}
+		_ = _periodicTableForm.Focus();
 	}
 
 	/// <summary>Represents a row in the DataGridView for displaying element information.</summary>

@@ -1,6 +1,17 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <ItemGroup>
+    <None Include="..\..\LICENSE">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Include="..\..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\AtomicLibrary.Core\AtomicLibrary.Core.csproj" />
     <ProjectReference Include="..\AtomicLibrary.PeriodicTable\AtomicLibrary.PeriodicTable.csproj" />
   </ItemGroup>
@@ -9,6 +20,28 @@
     <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <GenerateDocumentationFile>True</GenerateDocumentationFile>
+    <Version>0.1.1.2</Version>
+    <PackageProjectUrl>https://github.com/mjohne/AtomicLibrary</PackageProjectUrl>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <RepositoryUrl>https://github.com/mjohne/AtomicLibrary</RepositoryUrl>
+    <EnforceCodeStyleInBuild>True</EnforceCodeStyleInBuild>
+    <AnalysisLevel>preview-all</AnalysisLevel>
+    <Description>Comprehensive, science-oriented C#/.NET 8 class library for atom, isotope, and periodic table properties, including a WinForms demo</Description>
+    <Title>Atomic Library</Title>
+    <Authors>Michael Johne</Authors>
+    <Company>Mijo Software</Company>
+    <Copyright>© 2026 Michael Johne (Mijo Software)</Copyright>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
+    <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
   </PropertyGroup>
 
 </Project>

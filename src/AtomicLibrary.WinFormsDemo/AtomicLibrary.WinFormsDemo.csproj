@@ -20,8 +20,15 @@
     <PackageProjectUrl>https://github.com/mjohne/AtomicLibrary</PackageProjectUrl>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <RepositoryUrl>https://github.com/mjohne/AtomicLibrary</RepositoryUrl>
-    <Version>0.1.0.1</Version>
+    <Version>0.1.1.2</Version>
     <EnforceCodeStyleInBuild>True</EnforceCodeStyleInBuild>
+    <AnalysisLevel>preview-all</AnalysisLevel>
+    <Description>Comprehensive, science-oriented C#/.NET 8 class library for atom, isotope, and periodic table properties, including a WinForms demo</Description>
+    <Authors>Michael Johne</Authors>
+    <Company>Mijo Software</Company>
+    <Copyright>© 2026 Michael Johne (Mijo Software)</Copyright>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
+    <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
@@ -40,6 +47,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Include="..\..\LICENSE">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
     <None Include="..\..\README.md">
       <Pack>True</Pack>
       <PackagePath>\</PackagePath>

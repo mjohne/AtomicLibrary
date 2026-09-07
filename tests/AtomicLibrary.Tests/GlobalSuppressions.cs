@@ -5,4 +5,4 @@
 
 using System.Diagnostics.CodeAnalysis;
 
-[assembly: SuppressMessage("Style", "IDE0160:In namespace eines Blockbereichs konvertieren", Justification = "The project standard uses file-scoped namespaces across source and test files.", Scope = "namespace", Target = "~N:AtomicLibrary.Tests")]
+[assembly: SuppressMessage("Style", "IDE0160:In namespace eines Blockbereichs konvertieren", Justification = "Project uses file-scoped namespaces; do not convert.", Scope = "namespace", Target = "~N:AtomicLibrary.Tests")]

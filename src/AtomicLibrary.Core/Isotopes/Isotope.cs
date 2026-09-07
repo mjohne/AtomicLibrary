@@ -66,7 +66,7 @@ public sealed class Isotope
 	/// <summary>Gets the half-life of the isotope in seconds, if it is radioactive. If the isotope is stable, this property will be null.</summary>
 	public double? HalfLifeSeconds { get; }
 
-	/// <summary>Gets the decay mode of the isotope. Stable isotopes use <see cref="DecayMode.None"/>.</summary>
+	/// <summary>Gets the decay mode of the isotope. Stable isotopes typically use <see cref="DecayMode.None"/>.</summary>
 	public DecayMode DecayMode { get; }
 
 	/// <summary>Gets the decay energy of the isotope in MeV, if it is radioactive. If the isotope is stable, this property will be null.</summary>

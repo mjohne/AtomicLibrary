@@ -3,8 +3,6 @@
 // Project-level suppressions either have no target or are given
 // a specific target and scoped to a namespace, type, member, etc.
 
-/// <summary>Global suppressions for the AtomicLibrary.Physics namespace.</summary>
-
 using System.Diagnostics.CodeAnalysis;
 
-[assembly: SuppressMessage("Style", "IDE0160:In namespace eines Blockbereichs konvertieren", Justification = "<Ausstehend>", Scope = "namespace", Target = "~N:AtomicLibrary.Physics")]
+[assembly: SuppressMessage("Style", "IDE0160:In namespace eines Blockbereichs konvertieren", Justification = "The project standard uses file-scoped namespaces across source files.", Scope = "namespace", Target = "~N:AtomicLibrary.Physics")]

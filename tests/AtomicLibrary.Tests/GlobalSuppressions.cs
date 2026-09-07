@@ -3,8 +3,6 @@
 // Project-level suppressions either have no target or are given
 // a specific target and scoped to a namespace, type, member, etc.
 
-
-/// <summary>Suppresses the StyleCop warning for converting to a block-scoped namespace in the AtomicLibrary.Tests namespace.</summary>
 using System.Diagnostics.CodeAnalysis;
 
-[assembly: SuppressMessage("Style", "IDE0160:In namespace eines Blockbereichs konvertieren", Justification = "<Ausstehend>", Scope = "namespace", Target = "~N:AtomicLibrary.Tests")]
+[assembly: SuppressMessage("Style", "IDE0160:In namespace eines Blockbereichs konvertieren", Justification = "The project standard uses file-scoped namespaces across source and test files.", Scope = "namespace", Target = "~N:AtomicLibrary.Tests")]

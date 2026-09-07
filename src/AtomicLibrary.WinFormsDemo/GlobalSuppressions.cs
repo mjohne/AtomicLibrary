@@ -5,4 +5,4 @@
 
 using System.Diagnostics.CodeAnalysis;
 
-[assembly: SuppressMessage("Style", "IDE0160:In namespace eines Blockbereichs konvertieren", Justification = "<Ausstehend>", Scope = "namespace", Target = "~N:AtomicLibrary.WinFormsDemo")]
+[assembly: SuppressMessage("Style", "IDE0160:In namespace eines Blockbereichs konvertieren", Justification = "The project standard uses file-scoped namespaces across source files.", Scope = "namespace", Target = "~N:AtomicLibrary.WinFormsDemo")]

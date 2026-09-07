@@ -11,7 +11,7 @@ public static class IsotopeDataLoader
 {
 	/// <summary>Loads isotope data from a JSON file and returns an <see cref="IsotopeRepository"/> containing the isotopes.</summary>
 	/// <param name="filePath">The path to the JSON file containing isotope data.</param>
-	/// <param name="periodicTable">The <see cref="PeriodicTable"/> instance to use for element lookup.</param>
+	/// <param name="periodicTable">The <see cref="PeriodicTable.PeriodicTable"/> instance to use for element lookup.</param>
 	/// <returns>An <see cref="IsotopeRepository"/> containing the isotopes.</returns>
 	/// <exception cref="FormatException">Thrown if the JSON data contains invalid decay mode values.</exception>
 	public static IsotopeRepository LoadFromJson(string filePath, PeriodicTable.PeriodicTable periodicTable)

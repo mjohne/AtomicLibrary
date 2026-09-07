@@ -27,7 +27,7 @@ This document defines binding guidelines and recommended practices for contribut
 
 ## Code of Conduct
 
-All contributors are expected to interact in a respectful, constructive, and professional manner. Feedback should be factual and solution-oriented.
+All contributors are expected to interact in a respectful, constructive, and professional manner. Feedback should be factual and solution-oriented. Please also review the project's [Code of Conduct](CODE_OF_CONDUCT.md).
 
 Discriminatory, offensive, or inappropriate behavior will not be tolerated. Maintainers reserve the right to moderate discussions or reject contributions to ensure a productive working environment.
 
@@ -37,7 +37,7 @@ Discriminatory, offensive, or inappropriate behavior will not be tolerated. Main
 
 Contributing to this project typically requires:
 
-- A current .NET SDK version (see `global.json` or README)
+- [.NET 8 SDK](https://dotnet.microsoft.com/download/dotnet/8.0)
 - An IDE such as Visual Studio, Rider, or VS Code
 - Basic knowledge of C#, .NET, and the `dotnet` CLI
 - Optional: GitHub CLI for working with pull requests
@@ -64,7 +64,7 @@ Small changes such as typo fixes, naming corrections, or comments are also appre
 Please familiarize yourself with the existing solution (`.sln`) structure. Typical conventions include:
 
 - `src/` – production code
-- `tests/` – test projects (xUnit, NUnit, MSTest)
+- `tests/` – xUnit test project
 - `docs/` – additional documentation
 - `build/` or `.github/` – build and CI configuration
 

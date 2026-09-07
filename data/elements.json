@@ -2,6 +2,7 @@
   {
     "AtomicNumber": 1,
     "Symbol": "H",
+    "NameLatin": "Hydrogenium",
     "NameEnglish": "Hydrogen",
     "NameGerman": "Wasserstoff",
     "Period": 1,
@@ -26,6 +27,7 @@
   {
     "AtomicNumber": 2,
     "Symbol": "He",
+    "NameLatin": "Helium",
     "NameEnglish": "Helium",
     "NameGerman": "Helium",
     "Period": 1,
@@ -47,6 +49,7 @@
   {
     "AtomicNumber": 3,
     "Symbol": "Li",
+    "NameLatin": "Lithium",
     "NameEnglish": "Lithium",
     "NameGerman": "Lithium",
     "Period": 2,
@@ -70,6 +73,7 @@
   {
     "AtomicNumber": 4,
     "Symbol": "Be",
+    "NameLatin": "Beryllium",
     "NameEnglish": "Beryllium",
     "NameGerman": "Beryllium",
     "Period": 2,
@@ -93,6 +97,7 @@
   {
     "AtomicNumber": 5,
     "Symbol": "B",
+    "NameLatin": "Boron",
     "NameEnglish": "Boron",
     "NameGerman": "Bor",
     "Period": 2,
@@ -116,6 +121,7 @@
   {
     "AtomicNumber": 6,
     "Symbol": "C",
+    "NameLatin": "Carbonium",
     "NameEnglish": "Carbon",
     "NameGerman": "Kohlenstoff",
     "Period": 2,
@@ -140,6 +146,7 @@
   {
     "AtomicNumber": 7,
     "Symbol": "N",
+    "NameLatin": "Nitrogenium",
     "NameEnglish": "Nitrogen",
     "NameGerman": "Stickstoff",
     "Period": 2,
@@ -165,6 +172,7 @@
   {
     "AtomicNumber": 8,
     "Symbol": "O",
+    "NameLatin": "Oxygenium",
     "NameEnglish": "Oxygen",
     "NameGerman": "Sauerstoff",
     "Period": 2,
@@ -188,6 +196,7 @@
   {
     "AtomicNumber": 9,
     "Symbol": "F",
+    "NameLatin": "Fluor",
     "NameEnglish": "Fluorine",
     "NameGerman": "Fluor",
     "Period": 2,
@@ -211,6 +220,7 @@
   {
     "AtomicNumber": 10,
     "Symbol": "Ne",
+    "NameLatin": "Neon",
     "NameEnglish": "Neon",
     "NameGerman": "Neon",
     "Period": 2,
@@ -232,6 +242,7 @@
   {
     "AtomicNumber": 11,
     "Symbol": "Na",
+    "NameLatin": "Natrium",
     "NameEnglish": "Sodium",
     "NameGerman": "Natrium",
     "Period": 3,
@@ -255,6 +266,7 @@
   {
     "AtomicNumber": 12,
     "Symbol": "Mg",
+    "NameLatin": "Magnesium",
     "NameEnglish": "Magnesium",
     "NameGerman": "Magnesium",
     "Period": 3,
@@ -278,6 +290,7 @@
   {
     "AtomicNumber": 13,
     "Symbol": "Al",
+    "NameLatin": "Aluminum",
     "NameEnglish": "Aluminum",
     "NameGerman": "Aluminum",
     "Period": 3,
@@ -301,6 +314,7 @@
   {
     "AtomicNumber": 14,
     "Symbol": "Si",
+    "NameLatin": "Silicium",
     "NameEnglish": "Silicon",
     "NameGerman": "Silizium",
     "Period": 3,
@@ -325,6 +339,7 @@
   {
     "AtomicNumber": 15,
     "Symbol": "P",
+    "NameLatin": "Phosphorus",
     "NameEnglish": "Phosphorus",
     "NameGerman": "Phosphor",
     "Period": 3,
@@ -350,6 +365,7 @@
   {
     "AtomicNumber": 16,
     "Symbol": "S",
+    "NameLatin": "Sulfur",
     "NameEnglish": "Sulfur",
     "NameGerman": "Schwefel",
     "Period": 3,
@@ -376,6 +392,7 @@
   {
     "AtomicNumber": 17,
     "Symbol": "Cl",
+    "NameLatin": "Chlorum",
     "NameEnglish": "Chlorine",
     "NameGerman": "Chlor",
     "Period": 3,
@@ -403,6 +420,7 @@
   {
     "AtomicNumber": 18,
     "Symbol": "Ar",
+    "NameLatin": "Argon",
     "NameEnglish": "Argon",
     "NameGerman": "Argon",
     "Period": 3,
@@ -424,6 +442,7 @@
   {
     "AtomicNumber": 19,
     "Symbol": "K",
+    "NameLatin": "Kalium",
     "NameEnglish": "Potassium",
     "NameGerman": "Kalium",
     "Period": 4,
@@ -447,6 +466,7 @@
   {
     "AtomicNumber": 20,
     "Symbol": "Ca",
+    "NameLatin": "Calcium",
     "NameEnglish": "Calcium",
     "NameGerman": "Kalzium",
     "Period": 4,
@@ -470,6 +490,7 @@
   {
     "AtomicNumber": 21,
     "Symbol": "Sc",
+    "Namelatin": "Scandium",
     "NameEnglish": "Scandium",
     "NameGerman": "Scandium",
     "Period": 4,
@@ -493,6 +514,7 @@
   {
     "AtomicNumber": 22,
     "Symbol": "Ti",
+    "NameLatin": "Titanium",
     "NameEnglish": "Titanium",
     "NameGerman": "Titan",
     "Period": 4,
@@ -516,6 +538,7 @@
   {
     "AtomicNumber": 23,
     "Symbol": "V",
+    "NameLatin": "Vanadium",
     "NameEnglish": "Vanadium",
     "NameGerman": "Vanadium",
     "Period": 4,
@@ -539,6 +562,7 @@
   {
     "AtomicNumber": 24,
     "Symbol": "Cr",
+    "NameLatin": "Chromium",
     "NameEnglish": "Chromium",
     "NameGerman": "Chrom",
     "Period": 4,
@@ -563,6 +587,7 @@
   {
     "AtomicNumber": 25,
     "Symbol": "Mn",
+    "NameLatin": "Manganum",
     "NameEnglish": "Manganese",
     "NameGerman": "Mangan",
     "Period": 4,
@@ -588,6 +613,7 @@
   {
     "AtomicNumber": 26,
     "Symbol": "Fe",
+    "NameLatin": "Ferrum",
     "NameEnglish": "Iron",
     "NameGerman": "Eisen",
     "Period": 4,
@@ -612,6 +638,7 @@
   {
     "AtomicNumber": 27,
     "Symbol": "Co",
+    "NameLatin": "Cobaltum",
     "NameEnglish": "Cobalt",
     "NameGerman": "Kobalt",
     "Period": 4,
@@ -636,6 +663,7 @@
   {
     "AtomicNumber": 28,
     "Symbol": "Ni",
+    "NameLatin": "Niccolum",
     "NameEnglish": "Nickel",
     "NameGerman": "Nickel",
     "Period": 4,
@@ -659,6 +687,7 @@
   {
     "AtomicNumber": 29,
     "Symbol": "Cu",
+    "NameLatin": "Cuprum",
     "NameEnglish": "Copper",
     "NameGerman": "Kupfer",
     "Period": 4,
@@ -682,6 +711,7 @@
   {
     "AtomicNumber": 30,
     "Symbol": "Zn",
+    "NameLatin": "Zincum",
     "NameEnglish": "Zinc",
     "NameGerman": "Zink",
     "Period": 4,
@@ -705,6 +735,7 @@
   {
     "AtomicNumber": 31,
     "Symbol": "Ga",
+    "NameLatin": "Gallium",
     "NameEnglish": "Gallium",
     "NameGerman": "Gallium",
     "Period": 4,
@@ -728,6 +759,7 @@
   {
     "AtomicNumber": 32,
     "Symbol": "Ge",
+    "NameLatin": "Germanium",
     "NameEnglish": "Germanium",
     "NameGerman": "Germanium",
     "Period": 4,
@@ -753,6 +785,7 @@
   {
     "AtomicNumber": 33,
     "Symbol": "As",
+    "NameLatin": "Arsenicum",
     "NameEnglish": "Arsenic",
     "NameGerman": "Arsen",
     "Period": 4,
@@ -778,6 +811,7 @@
   {
     "AtomicNumber": 34,
     "Symbol": "Se",
+    "NameLatin": "Selenium",
     "NameEnglish": "Selenium",
     "NameGerman": "Selen",
     "Period": 4,
@@ -804,6 +838,7 @@
   {
     "AtomicNumber": 35,
     "Symbol": "Br",
+    "NameLatin": "Bromum",
     "NameEnglish": "Bromine",
     "NameGerman": "Brom",
     "Period": 4,
@@ -830,6 +865,7 @@
   {
     "AtomicNumber": 36,
     "Symbol": "Kr",
+    "NameLatin": "Krypton",
     "NameEnglish": "Krypton",
     "NameGerman": "Krypton",
     "Period": 4,
@@ -853,6 +889,7 @@
   {
     "AtomicNumber": 37,
     "Symbol": "Rb",
+    "NameLatin": "Rubidium",
     "NameEnglish": "Rubidium",
     "NameGerman": "Rubidium",
     "Period": 5,
@@ -876,6 +913,7 @@
   {
     "AtomicNumber": 38,
     "Symbol": "Sr",
+    "NameLatin": "Strontium",
     "NameEnglish": "Strontium",
     "NameGerman": "Strontium",
     "Period": 5,
@@ -899,6 +937,7 @@
   {
     "AtomicNumber": 39,
     "Symbol": "Y",
+    "NameLatin": "Yttrium",
     "NameEnglish": "Yttrium",
     "NameGerman": "Yttrium",
     "Period": 5,
@@ -922,6 +961,7 @@
   {
     "AtomicNumber": 40,
     "Symbol": "Zr",
+    "NameLatin": "Zirconium",
     "NameEnglish": "Zirconium",
     "NameGerman": "Zirkonium",
     "Period": 5,
@@ -945,6 +985,7 @@
   {
     "AtomicNumber": 41,
     "Symbol": "Nb",
+    "NameLatin": "Niobium",
     "NameEnglish": "Niobium",
     "NameGerman": "Niob",
     "Period": 5,
@@ -968,6 +1009,7 @@
   {
     "AtomicNumber": 42,
     "Symbol": "Mo",
+    "Namelatin": "Molybdenum",
     "NameEnglish": "Molybdenum",
     "NameGerman": "Molybdän",
     "Period": 5,
@@ -992,6 +1034,7 @@
   {
     "AtomicNumber": 43,
     "Symbol": "Tc",
+    "NameLatin": "Technetium",
     "NameEnglish": "Technetium",
     "NameGerman": "Technetium",
     "Period": 5,
@@ -1016,6 +1059,7 @@
   {
     "AtomicNumber": 44,
     "Symbol": "Ru",
+    "NameLatin": "Ruthenium",
     "NameEnglish": "Ruthenium",
     "NameGerman": "Ruthenium",
     "Period": 5,
@@ -1040,6 +1084,7 @@
   {
     "AtomicNumber": 45,
     "Symbol": "Rh",
+    "NameLatin": "Rhodium",
     "NameEnglish": "Rhodium",
     "NameGerman": "Rhodium",
     "Period": 5,
@@ -1063,6 +1108,7 @@
   {
     "AtomicNumber": 46,
     "Symbol": "Pd",
+    "NameLatin": "Palladium",
     "NameEnglish": "Palladium",
     "NameGerman": "Palladium",
     "Period": 5,
@@ -1087,6 +1133,7 @@
   {
     "AtomicNumber": 47,
     "Symbol": "Ag",
+    "NameLatin": "Argentum",
     "NameEnglish": "Silver",
     "NameGerman": "Silber",
     "Period": 5,
@@ -1110,6 +1157,7 @@
   {
     "AtomicNumber": 48,
     "Symbol": "Cd",
+    "NameLatin": "Cadmium",
     "NameEnglish": "Cadmium",
     "NameGerman": "Kadmium",
     "Period": 5,
@@ -1133,6 +1181,7 @@
   {
     "AtomicNumber": 49,
     "Symbol": "In",
+    "NameLatin": "Indium",
     "NameEnglish": "Indium",
     "NameGerman": "Indium",
     "Period": 5,
@@ -1156,6 +1205,7 @@
   {
     "AtomicNumber": 50,
     "Symbol": "Sn",
+    "NameLatin": "Stannum",
     "NameEnglish": "Tin",
     "NameGerman": "Zinn",
     "Period": 5,
@@ -1181,8 +1231,9 @@
   {
     "AtomicNumber": 51,
     "Symbol": "Sb",
+    "NameLatin": "Antimonium",
     "NameEnglish": "Antimony",
-    "NameGerman": "Antimony",
+    "NameGerman": "Antimon",
     "Period": 5,
     "Group": 15,
     "Block": "P",
@@ -1206,6 +1257,7 @@
   {
     "AtomicNumber": 52,
     "Symbol": "Te",
+    "NameLatin": "Tellurium",
     "NameEnglish": "Tellurium",
     "NameGerman": "Tellur",
     "Period": 5,
@@ -1232,6 +1284,7 @@
   {
     "AtomicNumber": 53,
     "Symbol": "I",
+    "NameLatin": "Iodum",
     "NameEnglish": "Iodine",
     "NameGerman": "Jod",
     "Period": 5,
@@ -1259,6 +1312,7 @@
   {
     "AtomicNumber": 54,
     "Symbol": "Xe",
+    "NameLatin": "Xenon",
     "NameEnglish": "Xenon",
     "NameGerman": "Xenon",
     "Period": 5,
@@ -1284,6 +1338,7 @@
   {
     "AtomicNumber": 55,
     "Symbol": "Cs",
+    "NameLatin": "Caesium",
     "NameEnglish": "Cesium",
     "NameGerman": "Cäsium",
     "Period": 6,
@@ -1307,6 +1362,7 @@
   {
     "AtomicNumber": 56,
     "Symbol": "Ba",
+    "NameLatin": "Barium",
     "NameEnglish": "Barium",
     "NameGerman": "Barium",
     "Period": 6,
@@ -1330,6 +1386,7 @@
   {
     "AtomicNumber": 57,
     "Symbol": "La",
+    "NameLatin": "Lanthanum",
     "NameEnglish": "Lanthanum",
     "NameGerman": "Lanthan",
     "Period": 6,
@@ -1353,6 +1410,7 @@
   {
     "AtomicNumber": 58,
     "Symbol": "Ce",
+    "NameLatin": "Cerium",
     "NameEnglish": "Cerium",
     "NameGerman": "Cer",
     "Period": 6,
@@ -1377,6 +1435,7 @@
   {
     "AtomicNumber": 59,
     "Symbol": "Pr",
+    "NameLatin": "Praseodymium",
     "NameEnglish": "Praseodymium",
     "NameGerman": "Praseodym",
     "Period": 6,
@@ -1400,6 +1459,7 @@
   {
     "AtomicNumber": 60,
     "Symbol": "Nd",
+    "NameLatin": "Neodymium",
     "NameEnglish": "Neodymium",
     "NameGerman": "Neodym",
     "Period": 6,
@@ -1423,6 +1483,7 @@
   {
     "AtomicNumber": 61,
     "Symbol": "Pm",
+    "NameLatin": "Promethium",
     "NameEnglish": "Promethium",
     "NameGerman": "Promethium",
     "Period": 6,
@@ -1446,6 +1507,7 @@
   {
     "AtomicNumber": 62,
     "Symbol": "Sm",
+    "NameLatin": "Samarium",
     "NameEnglish": "Samarium",
     "NameGerman": "Samarium",
     "Period": 6,
@@ -1469,6 +1531,7 @@
   {
     "AtomicNumber": 63,
     "Symbol": "Eu",
+    "NameLatin": "Europium",
     "NameEnglish": "Europium",
     "NameGerman": "Europium",
     "Period": 6,
@@ -1493,6 +1556,7 @@
   {
     "AtomicNumber": 64,
     "Symbol": "Gd",
+    "NameLatin": "Gadolinium",
     "NameEnglish": "Gadolinium",
     "NameGerman": "Gadolinium",
     "Period": 6,
@@ -1516,6 +1580,7 @@
   {
     "AtomicNumber": 65,
     "Symbol": "Tb",
+    "NameLatin": "Terbium",
     "NameEnglish": "Terbium",
     "NameGerman": "Terbium",
     "Period": 6,
@@ -1539,6 +1604,7 @@
   {
     "AtomicNumber": 66,
     "Symbol": "Dy",
+    "NameLatin": "Dysprosium",
     "NameEnglish": "Dysprosium",
     "NameGerman": "Dysprosium",
     "Period": 6,
@@ -1562,6 +1628,7 @@
   {
     "AtomicNumber": 67,
     "Symbol": "Ho",
+    "NameLatin": "Holmium",
     "NameEnglish": "Holmium",
     "NameGerman": "Holmium",
     "Period": 6,
@@ -1585,6 +1652,7 @@
   {
     "AtomicNumber": 68,
     "Symbol": "Er",
+    "NameLatin": "Erbium",
     "NameEnglish": "Erbium",
     "NameGerman": "Erbium",
     "Period": 6,
@@ -1608,6 +1676,7 @@
   {
     "AtomicNumber": 69,
     "Symbol": "Tm",
+    "NameLatin": "Thulium",
     "NameEnglish": "Thulium",
     "NameGerman": "Thulium",
     "Period": 6,
@@ -1631,6 +1700,7 @@
   {
     "AtomicNumber": 70,
     "Symbol": "Yb",
+    "NameLatin": "Ytterbium",
     "NameEnglish": "Ytterbium",
     "NameGerman": "Ytterbium",
     "Period": 6,
@@ -1654,6 +1724,7 @@
   {
     "AtomicNumber": 71,
     "Symbol": "Lu",
+    "NameLatin": "Lutetium",
     "NameEnglish": "Lutetium",
     "NameGerman": "Lutetium",
     "Period": 6,
@@ -1677,6 +1748,7 @@
   {
     "AtomicNumber": 72,
     "Symbol": "Hf",
+    "NameLatin": "Hafnium",
     "NameEnglish": "Hafnium",
     "NameGerman": "Hafnium",
     "Period": 6,
@@ -1700,6 +1772,7 @@
   {
     "AtomicNumber": 73,
     "Symbol": "Ta",
+    "NameLatin": "Tantalum",
     "NameEnglish": "Tantalum",
     "NameGerman": "Tantal",
     "Period": 6,
@@ -1723,6 +1796,7 @@
   {
     "AtomicNumber": 74,
     "Symbol": "W",
+    "NameLatin": "Wolframium",
     "NameEnglish": "Tungsten",
     "NameGerman": "Wolfram",
     "Period": 6,
@@ -1747,6 +1821,7 @@
   {
     "AtomicNumber": 75,
     "Symbol": "Re",
+    "NameLatin": "Rhenium",
     "NameEnglish": "Rhenium",
     "NameGerman": "Rhenium",
     "Period": 6,
@@ -1770,6 +1845,7 @@
   {
     "AtomicNumber": 76,
     "Symbol": "Os",
+    "NameLatin": "Osmium",
     "NameEnglish": "Osmium",
     "NameGerman": "Osmium",
     "Period": 6,
@@ -1793,6 +1869,7 @@
   {
     "AtomicNumber": 77,
     "Symbol": "Ir",
+    "NameLatin": "Iridium",
     "NameEnglish": "Iridium",
     "NameGerman": "Iridium",
     "Period": 6,
@@ -1817,6 +1894,7 @@
   {
     "AtomicNumber": 78,
     "Symbol": "Pt",
+    "NameLatin": "Platinum",
     "NameEnglish": "Platinum",
     "NameGerman": "Platin",
     "Period": 6,
@@ -1841,6 +1919,7 @@
   {
     "AtomicNumber": 79,
     "Symbol": "Au",
+    "NameLatin": "Aurum",
     "NameEnglish": "Gold",
     "NameGerman": "Gold",
     "Period": 6,
@@ -1864,6 +1943,7 @@
   {
     "AtomicNumber": 80,
     "Symbol": "Hg",
+    "NameLatin": "Hydrargyrum ",
     "NameEnglish": "Mercury",
     "NameGerman": "Quecksilber",
     "Period": 6,
@@ -1888,6 +1968,7 @@
   {
     "AtomicNumber": 81,
     "Symbol": "Tl",
+    "NameLatin": "Thallium",
     "NameEnglish": "Thallium",
     "NameGerman": "Thallium",
     "Period": 6,
@@ -1912,6 +1993,7 @@
   {
     "AtomicNumber": 82,
     "Symbol": "Pb",
+    "NameLatin": "Plumbum",
     "NameEnglish": "Lead",
     "NameGerman": "Blei",
     "Period": 6,
@@ -1936,6 +2018,7 @@
   {
     "AtomicNumber": 83,
     "Symbol": "Bi",
+    "NameLatin": "Bisemutum",
     "NameEnglish": "Bismuth",
     "NameGerman": "Bismut",
     "Period": 6,
@@ -1959,6 +2042,7 @@
   {
     "AtomicNumber": 84,
     "Symbol": "Po",
+    "NameLatin": "Polonium",
     "NameEnglish": "Polonium",
     "NameGerman": "Polonium",
     "Period": 6,
@@ -1984,6 +2068,7 @@
   {
     "AtomicNumber": 85,
     "Symbol": "At",
+    "NameLatin": "Astatum",
     "NameEnglish": "Astatine",
     "NameGerman": "Astat",
     "Period": 6,
@@ -2008,6 +2093,7 @@
   {
     "AtomicNumber": 86,
     "Symbol": "Rn",
+    "NameLatin": "Radon",
     "NameEnglish": "Radon",
     "NameGerman": "Radon",
     "Period": 6,
@@ -2029,6 +2115,7 @@
   {
     "AtomicNumber": 87,
     "Symbol": "Fr",
+    "NameLatin": "Francium",
     "NameEnglish": "Francium",
     "NameGerman": "Francium",
     "Period": 7,
@@ -2052,6 +2139,7 @@
   {
     "AtomicNumber": 88,
     "Symbol": "Ra",
+    "NameLatin": "Radium",
     "NameEnglish": "Radium",
     "NameGerman": "Radium",
     "Period": 7,
@@ -2075,6 +2163,7 @@
   {
     "AtomicNumber": 89,
     "Symbol": "Ac",
+    "NameLatin": "Actinium",
     "NameEnglish": "Actinium",
     "NameGerman": "Actinium",
     "Period": 7,
@@ -2098,6 +2187,7 @@
   {
     "AtomicNumber": 90,
     "Symbol": "Th",
+    "NameLatin": "Thorium",
     "NameEnglish": "Thorium",
     "NameGerman": "Thorium",
     "Period": 7,
@@ -2121,6 +2211,7 @@
   {
     "AtomicNumber": 91,
     "Symbol": "Pa",
+    "NameLatin": "Protactinium",
     "NameEnglish": "Protactinium",
     "NameGerman": "Protactinium",
     "Period": 7,
@@ -2144,6 +2235,7 @@
   {
     "AtomicNumber": 92,
     "Symbol": "U",
+    "NameLatin": "Uranium",
     "NameEnglish": "Uranium",
     "NameGerman": "Uran",
     "Period": 7,
@@ -2167,6 +2259,7 @@
   {
     "AtomicNumber": 93,
     "Symbol": "Np",
+    "NameLatin": "Neptunium",
     "NameEnglish": "Neptunium",
     "NameGerman": "Neptunium",
     "Period": 7,
@@ -2190,6 +2283,7 @@
   {
     "AtomicNumber": 94,
     "Symbol": "Pu",
+    "NameLatin": "Plutonium",
     "NameEnglish": "Plutonium",
     "NameGerman": "Plutonium",
     "Period": 7,
@@ -2213,6 +2307,7 @@
   {
     "AtomicNumber": 95,
     "Symbol": "Am",
+    "NameLatin": "Americium",
     "NameEnglish": "Americium",
     "NameGerman": "Americium",
     "Period": 7,
@@ -2236,6 +2331,7 @@
   {
     "AtomicNumber": 96,
     "Symbol": "Cm",
+    "NameLatin": "Curium",
     "NameEnglish": "Curium",
     "NameGerman": "Curium",
     "Period": 7,
@@ -2259,6 +2355,7 @@
   {
     "AtomicNumber": 97,
     "Symbol": "Bk",
+    "NameLatin": "Berkelium",
     "NameEnglish": "Berkelium",
     "NameGerman": "Berkelium",
     "Period": 7,
@@ -2282,6 +2379,7 @@
   {
     "AtomicNumber": 98,
     "Symbol": "Cf",
+    "NameLatin": "Californium",
     "NameEnglish": "Californium",
     "NameGerman": "Californium",
     "Period": 7,
@@ -2305,6 +2403,7 @@
   {
     "AtomicNumber": 99,
     "Symbol": "Es",
+    "NameLatin": "Einsteinium",
     "NameEnglish": "Einsteinium",
     "NameGerman": "Einsteinium",
     "Period": 7,
@@ -2328,6 +2427,7 @@
   {
     "AtomicNumber": 100,
     "Symbol": "Fm",
+    "NameLatin": "Fermium",
     "NameEnglish": "Fermium",
     "NameGerman": "Fermium",
     "Period": 7,
@@ -2351,6 +2451,7 @@
   {
     "AtomicNumber": 101,
     "Symbol": "Md",
+    "NameLatin": "Mendelevium",
     "NameEnglish": "Mendelevium",
     "NameGerman": "Mendelevium",
     "Period": 7,
@@ -2374,6 +2475,7 @@
   {
     "AtomicNumber": 102,
     "Symbol": "No",
+    "NameLatin": "Nobelium",
     "NameEnglish": "Nobelium",
     "NameGerman": "Nobelium",
     "Period": 7,
@@ -2397,6 +2499,7 @@
   {
     "AtomicNumber": 103,
     "Symbol": "Lr",
+    "NameLatin": "Lawrencium",
     "NameEnglish": "Lawrencium",
     "NameGerman": "Lawrencium",
     "Period": 7,
@@ -2420,6 +2523,7 @@
   {
     "AtomicNumber": 104,
     "Symbol": "Rf",
+    "NameLatin": "Rutherfordium",
     "NameEnglish": "Rutherfordium",
     "NameGerman": "Rutherfordium",
     "Period": 7,
@@ -2443,6 +2547,7 @@
   {
     "AtomicNumber": 105,
     "Symbol": "Db",
+    "NameLatin": "Dubnium",
     "NameEnglish": "Dubnium",
     "NameGerman": "Dubnium",
     "Period": 7,
@@ -2464,6 +2569,7 @@
   {
     "AtomicNumber": 106,
     "Symbol": "Sg",
+    "NameLatin": "Seaborgium",
     "NameEnglish": "Seaborgium",
     "NameGerman": "Seaborgium",
     "Period": 7,
@@ -2485,6 +2591,7 @@
   {
     "AtomicNumber": 107,
     "Symbol": "Bh",
+    "Namelatin": "Bohrium",
     "NameEnglish": "Bohrium",
     "NameGerman": "Bohrium",
     "Period": 7,
@@ -2506,6 +2613,7 @@
   {
     "AtomicNumber": 108,
     "Symbol": "Hs",
+    "NameLatin": "Hassium",
     "NameEnglish": "Hassium",
     "NameGerman": "Hassium",
     "Period": 7,
@@ -2527,6 +2635,7 @@
   {
     "AtomicNumber": 109,
     "Symbol": "Mt",
+    "NameLatin": "Meitnerium",
     "NameEnglish": "Meitnerium",
     "NameGerman": "Meitnerium",
     "Period": 7,
@@ -2548,6 +2657,7 @@
   {
     "AtomicNumber": 110,
     "Symbol": "Ds",
+    "NameLatin": "Darmstadtium",
     "NameEnglish": "Darmstadtium",
     "NameGerman": "Darmstadtium",
     "Period": 7,
@@ -2569,6 +2679,7 @@
   {
     "AtomicNumber": 111,
     "Symbol": "Rg",
+    "NameLatin": "Roentgenium",
     "NameEnglish": "Roentgenium",
     "NameGerman": "Roentgenium",
     "Period": 7,
@@ -2590,6 +2701,7 @@
   {
     "AtomicNumber": 112,
     "Symbol": "Cn",
+    "NameLatin": "Copernicium",
     "NameEnglish": "Copernicium",
     "NameGerman": "Copernicium",
     "Period": 7,
@@ -2611,6 +2723,7 @@
   {
     "AtomicNumber": 113,
     "Symbol": "Nh",
+    "NameLatin": "Nihonium",
     "NameEnglish": "Nihonium",
     "NameGerman": "Nihonium",
     "Period": 7,
@@ -2632,6 +2745,7 @@
   {
     "AtomicNumber": 114,
     "Symbol": "Fl",
+    "NameLatin": "Flerovium",
     "NameEnglish": "Flerovium",
     "NameGerman": "Flerovium",
     "Period": 7,
@@ -2653,6 +2767,7 @@
   {
     "AtomicNumber": 115,
     "Symbol": "Mc",
+    "NameLatin": "Moscovium",
     "NameEnglish": "Moscovium",
     "NameGerman": "Moscovium",
     "Period": 7,
@@ -2674,6 +2789,7 @@
   {
     "AtomicNumber": 116,
     "Symbol": "Lv",
+    "NameLatin": "Livermorium",
     "NameEnglish": "Livermorium",
     "NameGerman": "Livermorium",
     "Period": 7,
@@ -2695,6 +2811,7 @@
   {
     "AtomicNumber": 117,
     "Symbol": "Ts",
+    "NameLatin": "Tennessum",
     "NameEnglish": "Tennessine",
     "NameGerman": "Tenness",
     "Period": 7,
@@ -2716,6 +2833,7 @@
   {
     "AtomicNumber": 118,
     "Symbol": "Og",
+    "NameLatin": "Oganessonum",
     "NameEnglish": "Oganesson",
     "NameGerman": "Oganesson",
     "Period": 7,

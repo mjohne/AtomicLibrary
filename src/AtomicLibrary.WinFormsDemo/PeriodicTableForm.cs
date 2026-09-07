@@ -20,7 +20,11 @@ internal sealed partial class PeriodicTableForm : Form
 		_periodicTable = periodicTable ?? throw new ArgumentNullException(paramName: nameof(periodicTable));
 		InitializeComponent();
 		BuildPeriodicTable();
-		ShowElementDetails(element: _periodicTable.All.OrderBy(keySelector: static element => element.AtomicNumber).First());
+		Element? firstElement = _periodicTable.All.OrderBy(keySelector: static element => element.AtomicNumber).FirstOrDefault();
+		if (firstElement is not null)
+		{
+			ShowElementDetails(element: firstElement);
+		}
 	}
 
 	/// <summary>Builds the periodic table grid dynamically from the loaded element data.</summary>

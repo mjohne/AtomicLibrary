@@ -1,9 +1,9 @@
-using System.Drawing;
+using AtomicLibrary.Core.Elements;
 
-namespace AtomicLibrary.Core.Elements;
+namespace AtomicLibrary.WinFormsDemo;
 
 /// <summary>Provides UI colors for element categories.</summary>
-public static class ElementCategoryColorMapper
+internal static class ElementCategoryColorMapper
 {
 	/// <summary>Gets the background color for the specified element category.</summary>
 	/// <param name="category">The element category.</param>

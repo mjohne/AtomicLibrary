@@ -9,7 +9,7 @@ public partial class Form1 : Form
 {
 	private readonly PeriodicTable.PeriodicTable _periodicTable;
 	private readonly IsotopeRepository _isotopes;
-	private readonly BindingSource _bindingSource = new();
+	private readonly BindingSource _bindingSource = [];
 
 	/// <summary>Initializes a new instance of the <see cref="Form1"/> class.</summary>
 	public Form1()

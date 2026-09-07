@@ -19,13 +19,9 @@ partial class Form1
 	/// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
 	protected override void Dispose(bool disposing)
 	{
-		if (disposing && (components != null))
-		{
-			components.Dispose();
-			_bindingSource.Dispose();
-		}
 		if (disposing)
 		{
+			components?.Dispose();
 			_bindingSource.Dispose();
 		}
 		base.Dispose(disposing);

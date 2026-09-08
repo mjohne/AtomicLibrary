@@ -42,6 +42,9 @@ public partial class Form1 : Form
 		// Configure the DataGridView to display the elements and bind the elements to the grid.
 		ConfigureGrid();
 		BindElements(elements: _periodicTable.All);
+		// Populate the periodic table view with the loaded elements and route clicks back to the details view.
+		periodicTableView.LoadElements(periodicTable: _periodicTable);
+		periodicTableView.ElementSelected += OnPeriodicTableElementSelected;
 		// Attach event handlers for search text changes, selection changes in the DataGridView, and row pre-painting to customize row appearance.
 		txtSearch.TextChanged += (_, _) => ApplyFilter();
 		dgvElements.SelectionChanged += (_, _) => ShowSelectedElementDetails();
@@ -134,6 +137,29 @@ public partial class Form1 : Form
 		{
 			lvIsotopes.EndUpdate();
 		}
+	}
+
+	/// <summary>Handles an element being selected in the periodic table view: clears the search filter, selects the matching grid row, and switches to the details tab.</summary>
+	/// <param name="sender">The event source.</param>
+	/// <param name="e">The event data containing the selected element.</param>
+	private void OnPeriodicTableElementSelected(object? sender, ElementSelectedEventArgs e)
+	{
+		ArgumentNullException.ThrowIfNull(argument: e);
+		Element element = e.Element;
+		if (!string.IsNullOrEmpty(value: txtSearch.Text))
+		{
+			txtSearch.Text = string.Empty;
+		}
+		foreach (DataGridViewRow row in dgvElements.Rows)
+		{
+			if (row.DataBoundItem is ElementRow elementRow && elementRow.AtomicNumber == element.AtomicNumber)
+			{
+				row.Selected = true;
+				dgvElements.CurrentCell = row.Cells[0];
+				break;
+			}
+		}
+		tabControl.SelectedTab = tabDetails;
 	}
 
 	/// <summary>Handles the RowPrePaint event of the DataGridView to set the background color of each row based on the element's category.</summary>

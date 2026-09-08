@@ -9,6 +9,8 @@ partial class Form1
 	private DataGridView dgvElements = null!;
 	private TabControl tabControl = null!;
 	private TabPage tabOverview = null!;
+	private TabPage tabPeriodicTable = null!;
+	private PeriodicTableView periodicTableView = null!;
 	private TabPage tabDetails = null!;
 	private TableLayoutPanel detailsLayout = null!;
 	private TextBox txtElementDetails = null!;
@@ -39,6 +41,8 @@ partial class Form1
 		dgvElements = new DataGridView();
 		tabControl = new TabControl();
 		tabOverview = new TabPage();
+		tabPeriodicTable = new TabPage();
+		periodicTableView = new PeriodicTableView();
 		tabDetails = new TabPage();
 		detailsLayout = new TableLayoutPanel();
 		txtElementDetails = new TextBox();
@@ -60,9 +64,13 @@ partial class Form1
 		tabControl.Location = new Point(12, 45);
 		tabControl.Size = new Size(960, 600);
 		tabControl.Controls.Add(tabOverview);
+		tabControl.Controls.Add(tabPeriodicTable);
 		tabControl.Controls.Add(tabDetails);
 		tabOverview.Text = "Elemente";
 		tabOverview.Controls.Add(dgvElements);
+		tabPeriodicTable.Text = "Periodensystem";
+		tabPeriodicTable.Controls.Add(periodicTableView);
+		periodicTableView.Dock = DockStyle.Fill;
 		dgvElements.Dock = DockStyle.Fill;
 		dgvElements.ReadOnly = true;
 		dgvElements.AllowUserToAddRows = false;

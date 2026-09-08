@@ -29,6 +29,9 @@ public sealed class PeriodicTableView : UserControl
 	/// <summary>Tooltip shown when the user hovers over an element button.</summary>
 	private readonly ToolTip _toolTip;
 
+	/// <summary>Shared bold font used by all element buttons.</summary>
+	private readonly Font _elementButtonFont;
+
 	/// <summary>Raised when the user selects an element by clicking its button.</summary>
 	public event EventHandler<ElementSelectedEventArgs>? ElementSelected;
 
@@ -36,6 +39,7 @@ public sealed class PeriodicTableView : UserControl
 	public PeriodicTableView()
 	{
 		_toolTip = new ToolTip();
+		_elementButtonFont = new Font(prototype: Font, newStyle: FontStyle.Bold);
 		_grid = new TableLayoutPanel
 		{
 			Dock = DockStyle.Fill,
@@ -50,8 +54,10 @@ public sealed class PeriodicTableView : UserControl
 		}
 		for (int r = 0; r < RowCount; r++)
 		{
-			float value = r == SpacerRow ? 40f : 100f;
-			_ = _grid.RowStyles.Add(rowStyle: new RowStyle(sizeType: SizeType.Percent, height: value));
+			RowStyle rowStyle = r == SpacerRow
+				? new RowStyle(sizeType: SizeType.Absolute, height: 8f)
+				: new RowStyle(sizeType: SizeType.Percent, height: 100f);
+			_ = _grid.RowStyles.Add(rowStyle: rowStyle);
 		}
 		Controls.Add(value: _grid);
 	}
@@ -64,15 +70,15 @@ public sealed class PeriodicTableView : UserControl
 		_grid.SuspendLayout();
 		try
 		{
+			foreach (Control control in _grid.Controls)
+			{
+				control.Dispose();
+			}
 			_grid.Controls.Clear();
 			// Number the f-block cells left-to-right in atomic-number order (Ce..Lu, Th..Lr).
 			int nextLanthanideColumn = 3;
 			int nextActinideColumn = 3;
-			foreach (Element element in periodicTable.All.OrderBy(keySelector: static e =>
-			{
-				ArgumentNullException.ThrowIfNull(argument: e);
-				return e.AtomicNumber;
-			}))
+			foreach (Element element in periodicTable.All)
 			{
 				(int row, int column) = GetCell(element: element, nextLanthanideColumn: ref nextLanthanideColumn, nextActinideColumn: ref nextActinideColumn);
 				if (row < 0 || column < 0)
@@ -130,7 +136,7 @@ public sealed class PeriodicTableView : UserControl
 			Margin = new Padding(all: 1),
 			FlatStyle = FlatStyle.Flat,
 			TextAlign = ContentAlignment.MiddleCenter,
-			Font = new Font(familyName: "Segoe UI", emSize: 8f, style: FontStyle.Bold),
+			Font = _elementButtonFont,
 			BackColor = GetCategoryColor(category: element.Category),
 			Text = $"{element.AtomicNumber}\n{element.Symbol}",
 			Tag = element,
@@ -181,6 +187,7 @@ public sealed class PeriodicTableView : UserControl
 		if (disposing)
 		{
 			_toolTip.Dispose();
+			_elementButtonFont.Dispose();
 			_grid.Dispose();
 		}
 		base.Dispose(disposing: disposing);

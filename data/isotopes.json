@@ -692,7 +692,7 @@
   {
     "AtomicNumber": 7,
     "MassNumber": 9,
-    "AtomicMass": null,
+    "AtomicMass": 0.0,
     "IsStable": false,
     "HalfLifeSeconds": null,
     "DecayMode": "None",

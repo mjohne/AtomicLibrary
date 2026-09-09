@@ -4,7 +4,7 @@
 * Updated isotopes data by @mjohne in https://github.com/mjohne/AtomicLibrary/pull/50
 * Reformatted isotopes data entries by @mjohne in https://github.com/mjohne/AtomicLibrary/pull/51
 * Renamed `Form1` to `MainForm` by @mjohne in https://github.com/mjohne/AtomicLibrary/pull/52
-* Renamed `AtomicLibrary.WinFormDemo` to `AtomicLibrary.Explorer` by @mjohne in https://github.com/mjohne/AtomicLibrary/pull/53
+* Renamed `AtomicLibrary.WinFormsDemo` to `AtomicLibrary.Explorer` by @mjohne in https://github.com/mjohne/AtomicLibrary/pull/53
 * Replaced project format from `SLN` to `SLNX` by @mjohne in https://github.com/mjohne/AtomicLibrary/pull/54
 * Added `dotnet.config` by @mjohne in https://github.com/mjohne/AtomicLibrary/pull/55
 * Enhanced `.gitignore` for Visual Studio and built outputs by @mjohne in https://github.com/mjohne/AtomicLibrary/pull/56

@@ -101,12 +101,11 @@ internal partial class Form1 : Form
 	/// <summary>Displays the details of the selected element in the UI.</summary>
 	private void ShowSelectedElementDetails()
 	{
-		if (dgvElements.SelectedRows.Count == 0)
+		if (dgvElements.SelectedRows.Count == 0 || dgvElements.SelectedRows[index: 0].DataBoundItem is not ElementRow row)
 		{
 			return;
 		}
-		ElementRow row = (ElementRow)dgvElements.SelectedRows[0].DataBoundItem;
-		Element element = _periodicTable.GetByAtomicNumber(row.AtomicNumber);
+		Element element = _periodicTable.GetByAtomicNumber(atomicNumber: row.AtomicNumber);
 		List<Isotope> isotopes = [.. _isotopes.GetByAtomicNumber(atomicNumber: element.AtomicNumber).OrderBy(keySelector: static i => i.MassNumber)];
 		txtElementDetails.Text =
 			$"{element.NameEnglish} / {element.NameGerman} ({element.Symbol})\n" +

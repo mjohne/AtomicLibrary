@@ -1,3 +1,17 @@
+## Atomic Library 0.2.0.5
+
+* Updated CHANGELOG for version 0.1.3.4 by @mjohne in https://github.com/mjohne/AtomicLibrary/pull/36
+* Added classic periodic table implementation in `WinForms` by @mjohne with @Claude in https://github.com/mjohne/AtomicLibrary/pull/39
+* Added property `IsRadioactive` by @mjohne in https://github.com/mjohne/AtomicLibrary/pull/40
+* Updated isotopes data by @mjohne in https://github.com/mjohne/AtomicLibrary/pull/41
+* Added missing `GetDebuggerDisplay` by @mjohne in https://github.com/mjohne/AtomicLibrary/pull/42
+* Refactored source code by @mjohne in https://github.com/mjohne/AtomicLibrary/pull/43
+* Fixed `Form1` by @mjohne in https://github.com/mjohne/AtomicLibrary/pull/44
+* Updated to version 0.2.0.5 and .NET 10 by @mjohne in https://github.com/mjohne/AtomicLibrary/pull/47
+
+**Full Changelog**: https://github.com/mjohne/AtomicLibrary/compare/0.1.3.4...0.2.0.5
+
+
 ## Atomic Library 0.1.3.4
 
 * Updated CHANGELOG for version 0.1.2.3 by @mjohne in https://github.com/mjohne/AtomicLibrary/pull/28

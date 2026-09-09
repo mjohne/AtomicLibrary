@@ -35,7 +35,6 @@ partial class Form1
 	/// <summary>Required method for Designer support - do not modify the contents of this method with the code editor.</summary>
 	private void InitializeComponent()
 	{
-		components = new System.ComponentModel.Container();
 		txtSearch = new TextBox();
 		lblSearch = new Label();
 		dgvElements = new DataGridView();
@@ -51,75 +50,160 @@ partial class Form1
 		((System.ComponentModel.ISupportInitialize)dgvElements).BeginInit();
 		tabControl.SuspendLayout();
 		tabOverview.SuspendLayout();
+		tabPeriodicTable.SuspendLayout();
 		tabDetails.SuspendLayout();
 		detailsLayout.SuspendLayout();
 		SuspendLayout();
-		lblSearch.AutoSize = true;
-		lblSearch.Location = new Point(12, 15);
-		lblSearch.Text = "Suche:";
+		// 
+		// txtSearch
+		// 
 		txtSearch.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
 		txtSearch.Location = new Point(70, 12);
-		txtSearch.Size = new Size(900, 23);
+		txtSearch.Name = "txtSearch";
+		txtSearch.Size = new Size(924, 23);
+		txtSearch.TabIndex = 1;
+		// 
+		// lblSearch
+		// 
+		lblSearch.AutoSize = true;
+		lblSearch.Location = new Point(12, 15);
+		lblSearch.Name = "lblSearch";
+		lblSearch.Size = new Size(42, 15);
+		lblSearch.TabIndex = 2;
+		lblSearch.Text = "Suche:";
+		// 
+		// dgvElements
+		// 
+		dgvElements.AllowUserToAddRows = false;
+		dgvElements.AllowUserToDeleteRows = false;
+		dgvElements.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+		dgvElements.Dock = DockStyle.Fill;
+		dgvElements.Location = new Point(0, 0);
+		dgvElements.MultiSelect = false;
+		dgvElements.Name = "dgvElements";
+		dgvElements.ReadOnly = true;
+		dgvElements.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+		dgvElements.Size = new Size(976, 512);
+		dgvElements.TabIndex = 0;
+		// 
+		// tabControl
+		// 
 		tabControl.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-		tabControl.Location = new Point(12, 45);
-		tabControl.Size = new Size(960, 600);
 		tabControl.Controls.Add(tabOverview);
 		tabControl.Controls.Add(tabPeriodicTable);
 		tabControl.Controls.Add(tabDetails);
-		tabOverview.Text = "Elemente";
+		tabControl.Location = new Point(12, 45);
+		tabControl.Name = "tabControl";
+		tabControl.SelectedIndex = 0;
+		tabControl.Size = new Size(984, 540);
+		tabControl.TabIndex = 0;
+		// 
+		// tabOverview
+		// 
 		tabOverview.Controls.Add(dgvElements);
-		tabPeriodicTable.Text = "Periodensystem";
+		tabOverview.Location = new Point(4, 24);
+		tabOverview.Name = "tabOverview";
+		tabOverview.Size = new Size(976, 512);
+		tabOverview.TabIndex = 0;
+		tabOverview.Text = "Elemente";
+		// 
+		// tabPeriodicTable
+		// 
 		tabPeriodicTable.Controls.Add(periodicTableView);
+		tabPeriodicTable.Location = new Point(4, 24);
+		tabPeriodicTable.Name = "tabPeriodicTable";
+		tabPeriodicTable.Size = new Size(976, 512);
+		tabPeriodicTable.TabIndex = 1;
+		tabPeriodicTable.Text = "Periodensystem";
+		// 
+		// periodicTableView
+		// 
 		periodicTableView.Dock = DockStyle.Fill;
-		dgvElements.Dock = DockStyle.Fill;
-		dgvElements.ReadOnly = true;
-		dgvElements.AllowUserToAddRows = false;
-		dgvElements.AllowUserToDeleteRows = false;
-		dgvElements.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-		dgvElements.MultiSelect = false;
-		dgvElements.AutoGenerateColumns = false;
-		dgvElements.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-		tabDetails.Text = "Details";
+		periodicTableView.Location = new Point(0, 0);
+		periodicTableView.Name = "periodicTableView";
+		periodicTableView.Size = new Size(976, 512);
+		periodicTableView.TabIndex = 0;
+		// 
+		// tabDetails
+		// 
 		tabDetails.Controls.Add(detailsLayout);
-		detailsLayout.Dock = DockStyle.Fill;
-		detailsLayout.RowCount = 3;
+		tabDetails.Location = new Point(4, 24);
+		tabDetails.Name = "tabDetails";
+		tabDetails.Size = new Size(976, 512);
+		tabDetails.TabIndex = 2;
+		tabDetails.Text = "Details";
+		// 
+		// detailsLayout
+		// 
 		detailsLayout.ColumnCount = 1;
-		detailsLayout.RowStyles.Add(new RowStyle(SizeType.Absolute, 140));
-		detailsLayout.RowStyles.Add(new RowStyle(SizeType.Absolute, 40));
-		detailsLayout.RowStyles.Add(new RowStyle(SizeType.Percent, 100));
-		txtElementDetails.Dock = DockStyle.Fill;
-		txtElementDetails.Multiline = true;
-		txtElementDetails.ReadOnly = true;
-		txtElementDetails.ScrollBars = ScrollBars.Vertical;
-		txtElementDetails.BorderStyle = BorderStyle.None;
-		txtElementDetails.BackColor = SystemColors.Control;
-		txtElementDetails.Text = "Element wählen...";
-		lblElectronConfiguration.Dock = DockStyle.Fill;
-		lblElectronConfiguration.AutoSize = false;
-		lblElectronConfiguration.AutoEllipsis = true;
-		lblElectronConfiguration.TextAlign = ContentAlignment.MiddleLeft;
-		lvIsotopes.Dock = DockStyle.Fill;
-		lvIsotopes.View = View.Details;
-		lvIsotopes.FullRowSelect = true;
-		lvIsotopes.Columns.Add("Isotop", 120);
-		lvIsotopes.Columns.Add("Stabil", 80);
-		lvIsotopes.Columns.Add("Halbwertszeit (s)", 180);
-		lvIsotopes.Columns.Add("Zerfall", 120);
-		lvIsotopes.Columns.Add("Häufigkeit (%)", 120);
+		detailsLayout.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 20F));
 		detailsLayout.Controls.Add(txtElementDetails, 0, 0);
 		detailsLayout.Controls.Add(lblElectronConfiguration, 0, 1);
 		detailsLayout.Controls.Add(lvIsotopes, 0, 2);
+		detailsLayout.Dock = DockStyle.Fill;
+		detailsLayout.Location = new Point(0, 0);
+		detailsLayout.Name = "detailsLayout";
+		detailsLayout.RowCount = 3;
+		detailsLayout.RowStyles.Add(new RowStyle(SizeType.Absolute, 140F));
+		detailsLayout.RowStyles.Add(new RowStyle(SizeType.Absolute, 40F));
+		detailsLayout.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
+		detailsLayout.Size = new Size(976, 512);
+		detailsLayout.TabIndex = 0;
+		// 
+		// txtElementDetails
+		// 
+		txtElementDetails.BackColor = SystemColors.Control;
+		txtElementDetails.BorderStyle = BorderStyle.None;
+		txtElementDetails.Dock = DockStyle.Fill;
+		txtElementDetails.Location = new Point(3, 3);
+		txtElementDetails.Multiline = true;
+		txtElementDetails.Name = "txtElementDetails";
+		txtElementDetails.ReadOnly = true;
+		txtElementDetails.ScrollBars = ScrollBars.Vertical;
+		txtElementDetails.Size = new Size(970, 134);
+		txtElementDetails.TabIndex = 0;
+		txtElementDetails.Text = "Element wählen...";
+		// 
+		// lblElectronConfiguration
+		// 
+		lblElectronConfiguration.AutoEllipsis = true;
+		lblElectronConfiguration.Dock = DockStyle.Fill;
+		lblElectronConfiguration.Location = new Point(3, 140);
+		lblElectronConfiguration.Name = "lblElectronConfiguration";
+		lblElectronConfiguration.Size = new Size(970, 40);
+		lblElectronConfiguration.TabIndex = 1;
+		lblElectronConfiguration.TextAlign = ContentAlignment.MiddleLeft;
+		// 
+		// lvIsotopes
+		// 
+		lvIsotopes.Dock = DockStyle.Fill;
+		lvIsotopes.FullRowSelect = true;
+		lvIsotopes.Location = new Point(3, 183);
+		lvIsotopes.Name = "lvIsotopes";
+		lvIsotopes.ShowItemToolTips = true;
+		lvIsotopes.Size = new Size(970, 326);
+		lvIsotopes.TabIndex = 2;
+		lvIsotopes.UseCompatibleStateImageBehavior = false;
+		lvIsotopes.View = View.Details;
+		// 
+		// Form1
+		// 
+		AutoScaleDimensions = new SizeF(7F, 15F);
 		AutoScaleMode = AutoScaleMode.Font;
-		ClientSize = new Size(984, 661);
+		ClientSize = new Size(1008, 601);
 		Controls.Add(tabControl);
 		Controls.Add(txtSearch);
 		Controls.Add(lblSearch);
+		Name = "Form1";
+		StartPosition = FormStartPosition.CenterScreen;
 		Text = "AtomicLibrary Demo";
 		((System.ComponentModel.ISupportInitialize)dgvElements).EndInit();
 		tabControl.ResumeLayout(false);
 		tabOverview.ResumeLayout(false);
+		tabPeriodicTable.ResumeLayout(false);
 		tabDetails.ResumeLayout(false);
 		detailsLayout.ResumeLayout(false);
+		detailsLayout.PerformLayout();
 		ResumeLayout(false);
 		PerformLayout();
 	}

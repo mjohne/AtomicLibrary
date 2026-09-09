@@ -1,0 +1,23 @@
+<Solution>
+  <Configurations>
+    <Configuration Name="Debug" Platform="Any CPU" />
+    <Configuration Name="Release" Platform="Any CPU" />
+    <Configuration Name="Debug" Platform="x64" />
+    <Configuration Name="Release" Platform="x64" />
+    <Configuration Name="Debug" Platform="x86" />
+    <Configuration Name="Release" Platform="x86" />
+  </Configurations>
+  <Folder Name="/Solution Items/">
+    <File Path=".editorconfig" />
+  </Folder>
+  <Folder Name="/src/">
+    <Project Path="src/AtomicLibrary.Core/AtomicLibrary.Core.csproj" />
+    <Project Path="src/AtomicLibrary.Explorer/AtomicLibrary.Explorer.csproj" />
+    <Project Path="src/AtomicLibrary.Isotopes/AtomicLibrary.Isotopes.csproj" />
+    <Project Path="src/AtomicLibrary.PeriodicTable/AtomicLibrary.PeriodicTable.csproj" />
+    <Project Path="src/AtomicLibrary.Physics/AtomicLibrary.Physics.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/AtomicLibrary.Tests/AtomicLibrary.Tests.csproj" />
+  </Folder>
+</Solution>

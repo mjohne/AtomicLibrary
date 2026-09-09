@@ -2,10 +2,15 @@ using AtomicLibrary.Core.Elements;
 using AtomicLibrary.Core.Isotopes;
 using AtomicLibrary.Isotopes;
 
+using System.Diagnostics;
+
 namespace AtomicLibrary.Tests;
 
+/// <summary>Tests for the <see cref="IsotopeRepository"/> class.</summary>
+[DebuggerDisplay($"{{{nameof(GetDebuggerDisplay)}(),nq}}")]
 public class IsotopeRepositoryTests
 {
+	/// <summary>Tests that the behavior of the <see cref="IsotopeRepository"/> class is consistent when invalid input is provided.</summary>
 	[Fact]
 	public void InvalidInputBehaviorIsConsistent()
 	{
@@ -41,11 +46,17 @@ public class IsotopeRepositoryTests
 			decayMode: DecayMode.None,
 			decayEnergyMeV: null,
 			naturalAbundance: 98.93);
-		IsotopeRepository repository = new([carbon12]);
-
+		IsotopeRepository repository = new(isotopes: [carbon12]);
 		_ = Assert.Throws<ArgumentOutOfRangeException>(() => repository.GetByAtomicAndMassNumber(atomicNumber: 6, massNumber: 0));
 		bool found = repository.TryGetByAtomicAndMassNumber(atomicNumber: 6, massNumber: 0, out Isotope? isotope);
 		Assert.False(condition: found);
 		Assert.Null(@object: isotope);
+	}
+
+	/// <summary>Returns a string representation of the object for debugging purposes.</summary>
+	/// <returns>A string representation of the object.</returns>
+	private string GetDebuggerDisplay()
+	{
+		return ToString() ?? string.Empty;
 	}
 }

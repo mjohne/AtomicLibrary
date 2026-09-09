@@ -1,3 +1,18 @@
+## Atomic Library 0.2.1.6
+
+* Updated CHANGELOG for version 0.2.0.5 by @mjohne in https://github.com/mjohne/AtomicLibrary/pull/49
+* Updated isotopes data by @mjohne in https://github.com/mjohne/AtomicLibrary/pull/50
+* Reformatted isotopes data entries by @mjohne in https://github.com/mjohne/AtomicLibrary/pull/51
+* Renamed `Form1` to `MainForm` by @mjohne in https://github.com/mjohne/AtomicLibrary/pull/52
+* Renamed `AtomicLibrary.WinFormsDemo` to `AtomicLibrary.Explorer` by @mjohne in https://github.com/mjohne/AtomicLibrary/pull/53
+* Replaced project format from `SLN` to `SLNX` by @mjohne in https://github.com/mjohne/AtomicLibrary/pull/54
+* Added `dotnet.config` by @mjohne in https://github.com/mjohne/AtomicLibrary/pull/55
+* Enhanced `.gitignore` for Visual Studio and built outputs by @mjohne in https://github.com/mjohne/AtomicLibrary/pull/56
+* Updated to version 0.2.1.6 by @mjohne in https://github.com/mjohne/AtomicLibrary/pull/57
+
+**Full Changelog**: https://github.com/mjohne/AtomicLibrary/compare/0.2.0.5...0.2.1.6
+
+
 ## Atomic Library 0.2.0.5
 
 * Updated CHANGELOG for version 0.1.3.4 by @mjohne in https://github.com/mjohne/AtomicLibrary/pull/36

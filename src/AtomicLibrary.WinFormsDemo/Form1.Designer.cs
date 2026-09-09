@@ -76,6 +76,7 @@ partial class Form1
 		// 
 		dgvElements.AllowUserToAddRows = false;
 		dgvElements.AllowUserToDeleteRows = false;
+		dgvElements.AutoGenerateColumns = false;
 		dgvElements.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
 		dgvElements.Dock = DockStyle.Fill;
 		dgvElements.Location = new Point(0, 0);
@@ -136,7 +137,7 @@ partial class Form1
 		// detailsLayout
 		// 
 		detailsLayout.ColumnCount = 1;
-		detailsLayout.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 20F));
+		detailsLayout.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 100F));
 		detailsLayout.Controls.Add(txtElementDetails, 0, 0);
 		detailsLayout.Controls.Add(lblElectronConfiguration, 0, 1);
 		detailsLayout.Controls.Add(lvIsotopes, 0, 2);
@@ -185,6 +186,14 @@ partial class Form1
 		lvIsotopes.TabIndex = 2;
 		lvIsotopes.UseCompatibleStateImageBehavior = false;
 		lvIsotopes.View = View.Details;
+		lvIsotopes.Columns.AddRange(
+		[
+			new ColumnHeader { Text = "Isotop", Width = 120 },
+			new ColumnHeader { Text = "Stabil", Width = 80 },
+			new ColumnHeader { Text = "Halbwertszeit (s)", Width = 180 },
+			new ColumnHeader { Text = "Zerfall", Width = 120 },
+			new ColumnHeader { Text = "Häufigkeit (%)", Width = 120 }
+		]);
 		// 
 		// Form1
 		// 

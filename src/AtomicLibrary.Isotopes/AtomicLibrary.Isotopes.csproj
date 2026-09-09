@@ -27,7 +27,7 @@
     <RepositoryUrl>https://github.com/mjohne/AtomicLibrary</RepositoryUrl>
     <EnforceCodeStyleInBuild>True</EnforceCodeStyleInBuild>
     <AnalysisLevel>preview-all</AnalysisLevel>
-    <Description>Comprehensive, science-oriented C#/.NET 8 class library for atom, isotope, and periodic table properties, including a WinForms demo</Description>
+    <Description>Comprehensive, science-oriented C#/.NET 10 class library for atom, isotope, and periodic table properties, including a WinForms demo</Description>
     <Title>Atomic Library</Title>
     <Authors>Michael Johne</Authors>
     <Company>Mijo Software</Company>

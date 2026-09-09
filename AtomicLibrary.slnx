@@ -1,0 +1,20 @@
+<Solution>
+  <Configurations>
+    <Platform Name="Any CPU" />
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Folder Name="/Solution Items/">
+    <File Path=".editorconfig" />
+  </Folder>
+  <Folder Name="/src/">
+    <Project Path="src/AtomicLibrary.Core/AtomicLibrary.Core.csproj" />
+    <Project Path="src/AtomicLibrary.Explorer/AtomicLibrary.Explorer.csproj" />
+    <Project Path="src/AtomicLibrary.Isotopes/AtomicLibrary.Isotopes.csproj" />
+    <Project Path="src/AtomicLibrary.PeriodicTable/AtomicLibrary.PeriodicTable.csproj" />
+    <Project Path="src/AtomicLibrary.Physics/AtomicLibrary.Physics.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/AtomicLibrary.Tests/AtomicLibrary.Tests.csproj" />
+  </Folder>
+</Solution>

@@ -35,6 +35,7 @@ public sealed class IsotopeRepository
 	/// <returns>The isotope with the specified atomic and mass numbers.</returns>
 	public Isotope GetByAtomicAndMassNumber(int atomicNumber, int massNumber)
 	{
+		ArgumentOutOfRangeException.ThrowIfNegativeOrZero(value: atomicNumber);
 		ArgumentOutOfRangeException.ThrowIfNegativeOrZero(value: massNumber);
 		return _byKey[key: (AtomicNumber: atomicNumber, MassNumber: massNumber)];
 	}
@@ -58,7 +59,12 @@ public sealed class IsotopeRepository
 	/// <returns>true if the isotope was found; otherwise, false.</returns>
 	public bool TryGetByAtomicAndMassNumber(int atomicNumber, int massNumber, out Isotope? isotope)
 	{
-		ArgumentOutOfRangeException.ThrowIfNegativeOrZero(value: massNumber);
+		if (atomicNumber <= 0 || massNumber <= 0)
+		{
+			isotope = null;
+			return false;
+		}
+
 		return _byKey.TryGetValue((AtomicNumber: atomicNumber, MassNumber: massNumber), out isotope);
 	}
 

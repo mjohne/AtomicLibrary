@@ -200,7 +200,7 @@ partial class MainForm
 		Controls.Add(tabControl);
 		Controls.Add(txtSearch);
 		Controls.Add(lblSearch);
-		Name = "Form1";
+		Name = "MainForm";
 		StartPosition = FormStartPosition.CenterScreen;
 		Text = "AtomicLibrary Demo";
 		((System.ComponentModel.ISupportInitialize)dgvElements).EndInit();

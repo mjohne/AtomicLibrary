@@ -171,20 +171,7 @@ internal partial class MainForm : Form
 			return;
 		}
 		Element element = _periodicTable.GetByAtomicNumber(atomicNumber: elementRow.AtomicNumber);
-		row.DefaultCellStyle.BackColor = element.Category switch
-		{
-			ElementCategory.AlkaliMetal => Color.LightSalmon,
-			ElementCategory.AlkalineEarthMetal => Color.LightGoldenrodYellow,
-			ElementCategory.TransitionMetal => Color.LightSteelBlue,
-			ElementCategory.PostTransitionMetal => Color.Moccasin,
-			ElementCategory.Metalloid => Color.PaleTurquoise,
-			ElementCategory.Nonmetal => Color.Honeydew,
-			ElementCategory.Halogen => Color.LavenderBlush,
-			ElementCategory.NobleGas => Color.Lavender,
-			ElementCategory.Lanthanide => Color.LightCyan,
-			ElementCategory.Actinide => Color.LightPink,
-			_ => Color.White
-		};
+		row.DefaultCellStyle.BackColor = PeriodicTableView.GetCategoryColor(category: element.Category);
 	}
 
 	/// <summary>Represents a row in the DataGridView for displaying element information.</summary>
@@ -213,4 +200,3 @@ internal partial class MainForm : Form
 		}
 	}
 }
-

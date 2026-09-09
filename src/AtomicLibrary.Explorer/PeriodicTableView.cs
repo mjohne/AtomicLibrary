@@ -70,9 +70,9 @@ internal sealed class PeriodicTableView : UserControl
 		_grid.SuspendLayout();
 		try
 		{
-			foreach (Control control in _grid.Controls)
+			for (int i = _grid.Controls.Count - 1; i >= 0; i--)
 			{
-				control.Dispose();
+				_grid.Controls[i].Dispose();
 			}
 			_grid.Controls.Clear();
 			// Number the f-block cells left-to-right in atomic-number order (Ce..Lu, Th..Lr).
@@ -216,4 +216,3 @@ internal sealed class ElementSelectedEventArgs(Element element) : EventArgs
 		return ToString() ?? string.Empty;
 	}
 }
-

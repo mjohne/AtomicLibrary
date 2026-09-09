@@ -186,14 +186,11 @@ partial class Form1
 		lvIsotopes.TabIndex = 2;
 		lvIsotopes.UseCompatibleStateImageBehavior = false;
 		lvIsotopes.View = View.Details;
-		lvIsotopes.Columns.AddRange(
-		[
-			new ColumnHeader { Text = "Isotop", Width = 120 },
-			new ColumnHeader { Text = "Stabil", Width = 80 },
-			new ColumnHeader { Text = "Halbwertszeit (s)", Width = 180 },
-			new ColumnHeader { Text = "Zerfall", Width = 120 },
-			new ColumnHeader { Text = "Häufigkeit (%)", Width = 120 }
-		]);
+		lvIsotopes.Columns.Add("Isotop", 120);
+		lvIsotopes.Columns.Add("Stabil", 80);
+		lvIsotopes.Columns.Add("Halbwertszeit (s)", 180);
+		lvIsotopes.Columns.Add("Zerfall", 120);
+		lvIsotopes.Columns.Add("Häufigkeit (%)", 120);
 		// 
 		// Form1
 		// 

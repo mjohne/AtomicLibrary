@@ -10,7 +10,7 @@ namespace AtomicLibrary.Isotopes;
 public sealed class IsotopeRepository
 {
 	/// <summary>A dictionary that maps a tuple of atomic number and mass number to the corresponding isotope.</summary>
-	private readonly IReadOnlyDictionary<(int AtomicNumber, int MassNumber), Isotope> _byKey;
+	private readonly Dictionary<(int AtomicNumber, int MassNumber), Isotope> _byKey;
 
 	/// <summary>
 	/// Initializes a new instance of the <see cref="IsotopeRepository"/> class with the specified isotopes.</summary>
@@ -35,6 +35,7 @@ public sealed class IsotopeRepository
 	/// <returns>The isotope with the specified atomic and mass numbers.</returns>
 	public Isotope GetByAtomicAndMassNumber(int atomicNumber, int massNumber)
 	{
+		ArgumentOutOfRangeException.ThrowIfNegativeOrZero(value: atomicNumber);
 		ArgumentOutOfRangeException.ThrowIfNegativeOrZero(value: massNumber);
 		return _byKey[key: (AtomicNumber: atomicNumber, MassNumber: massNumber)];
 	}
@@ -58,7 +59,12 @@ public sealed class IsotopeRepository
 	/// <returns>true if the isotope was found; otherwise, false.</returns>
 	public bool TryGetByAtomicAndMassNumber(int atomicNumber, int massNumber, out Isotope? isotope)
 	{
-		ArgumentOutOfRangeException.ThrowIfNegativeOrZero(value: massNumber);
+		if (atomicNumber <= 0 || massNumber <= 0)
+		{
+			isotope = null;
+			return false;
+		}
+
 		return _byKey.TryGetValue((AtomicNumber: atomicNumber, MassNumber: massNumber), out isotope);
 	}
 
@@ -66,6 +72,6 @@ public sealed class IsotopeRepository
 	/// <returns>A string representation of the current instance.</returns>
 	private string GetDebuggerDisplay()
 	{
-		return ToString();
+		return ToString() ?? string.Empty;
 	}
 }

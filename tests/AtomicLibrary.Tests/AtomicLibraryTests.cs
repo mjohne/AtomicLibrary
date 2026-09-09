@@ -57,6 +57,18 @@ public class AtomicLibraryTests
 		Assert.Equal(expected: -2, actual: anion.Charge);
 	}
 
+	/// <summary>Tests that isotope lookups validate atomic numbers for throwing APIs and return false for invalid Try lookups.</summary>
+	[Fact]
+	public void IsotopeRepositoryLookupGuardsInvalidAtomicAndMassNumbers()
+	{
+		_ = Assert.Throws<ArgumentOutOfRangeException>(() => Isotopes.GetByAtomicAndMassNumber(atomicNumber: 0, massNumber: 1));
+		_ = Assert.Throws<ArgumentOutOfRangeException>(() => Isotopes.GetByAtomicAndMassNumber(atomicNumber: 1, massNumber: 0));
+		Assert.False(condition: Isotopes.TryGetByAtomicAndMassNumber(atomicNumber: 0, massNumber: 1, out Isotope? invalidAtomicNumber));
+		Assert.Null(@object: invalidAtomicNumber);
+		Assert.False(condition: Isotopes.TryGetByAtomicAndMassNumber(atomicNumber: 1, massNumber: 0, out Isotope? invalidMassNumber));
+		Assert.Null(@object: invalidMassNumber);
+	}
+
 	/// <summary>Tests that the electron configuration's ToString method produces the expected format.</summary>
 	[Fact]
 	public void ElectronConfigurationToStringFormatIsExpected()

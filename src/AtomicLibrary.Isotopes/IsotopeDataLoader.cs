@@ -21,7 +21,7 @@ public static class IsotopeDataLoader
 	/// <exception cref="FormatException">Thrown if the JSON data contains invalid decay mode values.</exception>
 	public static IsotopeRepository LoadFromJson(string filePath, PeriodicTable.PeriodicTable periodicTable)
 	{
-		string json = File.ReadAllText(filePath);
+		string json = File.ReadAllText(path: filePath);
 		List<IsotopeRecord> records = JsonSerializer.Deserialize<List<IsotopeRecord>>(json: json, options: _jsonOptions) ?? [];
 		IEnumerable<Isotope> isotopes = records.Select(selector: record =>
 		{

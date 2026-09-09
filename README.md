@@ -65,7 +65,7 @@ dotnet test tests/AtomicLibrary.Tests/AtomicLibrary.Tests.csproj
 dotnet run --project src/AtomicLibrary.WinFormsDemo
 ```
 
-The demo loads `data/elements.json` and `data/isotopes.json` at startup, displays all 118 elements in a filterable table, and shows detailed data and known isotopes (including decay chains) for the selected element.
+The demo loads `data/elements.json` and `data/isotopes.json` at startup, displays all 118 elements in a filterable table, and shows detailed data and known isotopes (including decay chains) for the selected element. A "Periodensystem" tab renders the classic periodic table as a grid of buttons, colored by element category; clicking an element opens its details.
 
 ## Data Source Conventions
 

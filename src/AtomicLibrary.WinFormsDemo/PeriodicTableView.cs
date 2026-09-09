@@ -6,7 +6,7 @@ namespace AtomicLibrary.WinFormsDemo;
 
 /// <summary>Displays a classic periodic table of elements as a grid of buttons, colored by element category. Raises <see cref="ElementSelected"/> when the user clicks an element.</summary>
 [DebuggerDisplay($"{{{nameof(GetDebuggerDisplay)}(),nq}}")]
-public sealed class PeriodicTableView : UserControl
+internal sealed class PeriodicTableView : UserControl
 {
 	/// <summary>Number of group columns in the main periodic table grid (groups 1..18).</summary>
 	private const int GroupCount = 18;
@@ -203,8 +203,16 @@ public sealed class PeriodicTableView : UserControl
 
 /// <summary>Provides data for the <see cref="PeriodicTableView.ElementSelected"/> event.</summary>
 /// <param name="element">The element that was selected.</param>
-public sealed class ElementSelectedEventArgs(Element element) : EventArgs
+[DebuggerDisplay($"{{{nameof(GetDebuggerDisplay)}(),nq}}")]
+internal sealed class ElementSelectedEventArgs(Element element) : EventArgs
 {
 	/// <summary>Gets the element that was selected in the periodic table view.</summary>
 	public Element Element { get; } = element;
+
+	/// <summary>Returns a string representation of the current instance for debugging purposes.</summary>
+	/// <returns>A string representation of the current instance.</returns>
+	private string GetDebuggerDisplay()
+	{
+		return ToString() ?? string.Empty;
+	}
 }

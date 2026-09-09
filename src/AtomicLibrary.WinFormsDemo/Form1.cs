@@ -197,6 +197,7 @@ public partial class Form1 : Form
 	/// <param name="Period">The period of the element.</param>
 	/// <param name="Category">The category of the element.</param>
 	/// <param name="StandardAtomicWeight">The standard atomic weight of the element.</param>
+	[DebuggerDisplay($"{{{nameof(GetDebuggerDisplay)}(),nq}}")]
 	private sealed record ElementRow(
 		int AtomicNumber,
 		string Symbol,
@@ -204,5 +205,13 @@ public partial class Form1 : Form
 		int Group,
 		int Period,
 		string Category,
-		double StandardAtomicWeight);
+		double StandardAtomicWeight)
+	{
+		/// <summary>Returns a string representation of the current instance for debugging purposes.</summary>
+		/// <returns>A string representation of the current instance.</returns>
+		private string GetDebuggerDisplay()
+		{
+			return ToString() ?? string.Empty;
+		}
+	}
 }

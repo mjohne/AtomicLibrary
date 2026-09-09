@@ -49,7 +49,8 @@ public static class ElementDataLoader
 					MeltingPoint = r.MeltingPoint,
 					BoilingPoint = r.BoilingPoint,
 					OxidationStates = r.OxidationStates ?? [],
-					ElectronConfiguration = r.ElectronConfiguration
+					ElectronConfiguration = r.ElectronConfiguration,
+					IsRadioactive = r.IsRadioactive
 				};
 		}));
 	}
@@ -120,5 +121,8 @@ public static class ElementDataLoader
 
 		/// <summary>Gets or sets the electron configuration of the element.</summary>
 		public string ElectronConfiguration { get; set; } = string.Empty;
+
+		/// <summary>Gets or sets whether the element is radioactive.</summary>
+		public bool IsRadioactive { get; set; }
 	}
 }

@@ -22,7 +22,8 @@
       -1,
       1
     ],
-    "ElectronConfiguration": "1s1"
+    "ElectronConfiguration": "1s1",
+    "IsRadioactive": false
   },
   {
     "AtomicNumber": 2,
@@ -44,7 +45,8 @@
     "MeltingPoint": 0.0,
     "BoilingPoint": 4.22199999999998,
     "OxidationStates": [],
-    "ElectronConfiguration": "1s2"
+    "ElectronConfiguration": "1s2",
+    "IsRadioactive": false
   },
   {
     "AtomicNumber": 3,
@@ -68,7 +70,8 @@
     "OxidationStates": [
       1
     ],
-    "ElectronConfiguration": "1s2 2s1"
+    "ElectronConfiguration": "1s2 2s1",
+    "IsRadioactive": false
   },
   {
     "AtomicNumber": 4,
@@ -92,7 +95,8 @@
     "OxidationStates": [
       2
     ],
-    "ElectronConfiguration": "1s2 2s2"
+    "ElectronConfiguration": "1s2 2s2",
+    "IsRadioactive": false
   },
   {
     "AtomicNumber": 5,
@@ -116,7 +120,8 @@
     "OxidationStates": [
       3
     ],
-    "ElectronConfiguration": "1s2 2s2 2p1"
+    "ElectronConfiguration": "1s2 2s2 2p1",
+    "IsRadioactive": false
   },
   {
     "AtomicNumber": 6,
@@ -141,7 +146,8 @@
       -4,
       4
     ],
-    "ElectronConfiguration": "1s2 2s2 2p2"
+    "ElectronConfiguration": "1s2 2s2 2p2",
+    "IsRadioactive": false
   },
   {
     "AtomicNumber": 7,
@@ -167,7 +173,8 @@
       3,
       5
     ],
-    "ElectronConfiguration": "1s2 2s2 2p3"
+    "ElectronConfiguration": "1s2 2s2 2p3",
+    "IsRadioactive": false
   },
   {
     "AtomicNumber": 8,
@@ -191,7 +198,8 @@
     "OxidationStates": [
       -2
     ],
-    "ElectronConfiguration": "1s2 2s2 2p4"
+    "ElectronConfiguration": "1s2 2s2 2p4",
+    "IsRadioactive": false
   },
   {
     "AtomicNumber": 9,
@@ -215,7 +223,8 @@
     "OxidationStates": [
       -1
     ],
-    "ElectronConfiguration": "1s2 2s2 2p5"
+    "ElectronConfiguration": "1s2 2s2 2p5",
+    "IsRadioactive": false
   },
   {
     "AtomicNumber": 10,
@@ -237,7 +246,8 @@
     "MeltingPoint": 24.559999999999974,
     "BoilingPoint": 27.103999999999985,
     "OxidationStates": [],
-    "ElectronConfiguration": "1s2 2s2 2p6"
+    "ElectronConfiguration": "1s2 2s2 2p6",
+    "IsRadioactive": false
   },
   {
     "AtomicNumber": 11,
@@ -261,7 +271,8 @@
     "OxidationStates": [
       1
     ],
-    "ElectronConfiguration": "1s2 2s2 2p6 3s1"
+    "ElectronConfiguration": "1s2 2s2 2p6 3s1",
+    "IsRadioactive": false
   },
   {
     "AtomicNumber": 12,
@@ -285,7 +296,8 @@
     "OxidationStates": [
       2
     ],
-    "ElectronConfiguration": "1s2 2s2 2p6 3s2"
+    "ElectronConfiguration": "1s2 2s2 2p6 3s2",
+    "IsRadioactive": false
   },
   {
     "AtomicNumber": 13,
@@ -309,7 +321,8 @@
     "OxidationStates": [
       3
     ],
-    "ElectronConfiguration": "1s2 2s2 2p6 3s2 3p1"
+    "ElectronConfiguration": "1s2 2s2 2p6 3s2 3p1",
+    "IsRadioactive": false
   },
   {
     "AtomicNumber": 14,
@@ -334,7 +347,8 @@
       -4,
       4
     ],
-    "ElectronConfiguration": "1s2 2s2 2p6 3s2 3p2"
+    "ElectronConfiguration": "1s2 2s2 2p6 3s2 3p2",
+    "IsRadioactive": false
   },
   {
     "AtomicNumber": 15,
@@ -360,7 +374,8 @@
       3,
       5
     ],
-    "ElectronConfiguration": "1s2 2s2 2p6 3s2 3p3"
+    "ElectronConfiguration": "1s2 2s2 2p6 3s2 3p3",
+    "IsRadioactive": false
   },
   {
     "AtomicNumber": 16,
@@ -387,7 +402,8 @@
       4,
       6
     ],
-    "ElectronConfiguration": "1s2 2s2 2p6 3s2 3p4"
+    "ElectronConfiguration": "1s2 2s2 2p6 3s2 3p4",
+    "IsRadioactive": false
   },
   {
     "AtomicNumber": 17,
@@ -415,7 +431,8 @@
       5,
       7
     ],
-    "ElectronConfiguration": "1s2 2s2 2p6 3s2 3p5"
+    "ElectronConfiguration": "1s2 2s2 2p6 3s2 3p5",
+    "IsRadioactive": false
   },
   {
     "AtomicNumber": 18,
@@ -437,7 +454,8 @@
     "MeltingPoint": 83.80999999999997,
     "BoilingPoint": 87.30199999999996,
     "OxidationStates": [],
-    "ElectronConfiguration": "1s2 2s2 2p6 3s2 3p6"
+    "ElectronConfiguration": "1s2 2s2 2p6 3s2 3p6",
+    "IsRadioactive": false
   },
   {
     "AtomicNumber": 19,
@@ -461,7 +479,8 @@
     "OxidationStates": [
       1
     ],
-    "ElectronConfiguration": "1s2 2s2 2p6 3s2 3p6 4s1"
+    "ElectronConfiguration": "1s2 2s2 2p6 3s2 3p6 4s1",
+    "IsRadioactive": false
   },
   {
     "AtomicNumber": 20,
@@ -485,7 +504,8 @@
     "OxidationStates": [
       2
     ],
-    "ElectronConfiguration": "1s2 2s2 2p6 3s2 3p6 4s2"
+    "ElectronConfiguration": "1s2 2s2 2p6 3s2 3p6 4s2",
+    "IsRadioactive": false
   },
   {
     "AtomicNumber": 21,
@@ -509,7 +529,8 @@
     "OxidationStates": [
       3
     ],
-    "ElectronConfiguration": "1s2 2s2 2p6 3s2 3p6 3d1 4s2"
+    "ElectronConfiguration": "1s2 2s2 2p6 3s2 3p6 3d1 4s2",
+    "IsRadioactive": false
   },
   {
     "AtomicNumber": 22,
@@ -533,7 +554,8 @@
     "OxidationStates": [
       4
     ],
-    "ElectronConfiguration": "1s2 2s2 2p6 3s2 3p6 3d2 4s2"
+    "ElectronConfiguration": "1s2 2s2 2p6 3s2 3p6 3d2 4s2",
+    "IsRadioactive": false
   },
   {
     "AtomicNumber": 23,
@@ -557,7 +579,8 @@
     "OxidationStates": [
       5
     ],
-    "ElectronConfiguration": "1s2 2s2 2p6 3s2 3p6 3d3 4s2"
+    "ElectronConfiguration": "1s2 2s2 2p6 3s2 3p6 3d3 4s2",
+    "IsRadioactive": false
   },
   {
     "AtomicNumber": 24,
@@ -582,7 +605,8 @@
       3,
       6
     ],
-    "ElectronConfiguration": "1s2 2s2 2p6 3s2 3p6 3d5 4s1"
+    "ElectronConfiguration": "1s2 2s2 2p6 3s2 3p6 3d5 4s1",
+    "IsRadioactive": false
   },
   {
     "AtomicNumber": 25,
@@ -608,7 +632,8 @@
       4,
       7
     ],
-    "ElectronConfiguration": "1s2 2s2 2p6 3s2 3p6 3d5 4s2"
+    "ElectronConfiguration": "1s2 2s2 2p6 3s2 3p6 3d5 4s2",
+    "IsRadioactive": false
   },
   {
     "AtomicNumber": 26,
@@ -633,7 +658,8 @@
       2,
       3
     ],
-    "ElectronConfiguration": "1s2 2s2 2p6 3s2 3p6 3d6 4s2"
+    "ElectronConfiguration": "1s2 2s2 2p6 3s2 3p6 3d6 4s2",
+    "IsRadioactive": false
   },
   {
     "AtomicNumber": 27,
@@ -658,7 +684,8 @@
       2,
       3
     ],
-    "ElectronConfiguration": "1s2 2s2 2p6 3s2 3p6 3d7 4s2"
+    "ElectronConfiguration": "1s2 2s2 2p6 3s2 3p6 3d7 4s2",
+    "IsRadioactive": false
   },
   {
     "AtomicNumber": 28,
@@ -682,7 +709,8 @@
     "OxidationStates": [
       2
     ],
-    "ElectronConfiguration": "1s2 2s2 2p6 3s2 3p6 3d8 4s2"
+    "ElectronConfiguration": "1s2 2s2 2p6 3s2 3p6 3d8 4s2",
+    "IsRadioactive": false
   },
   {
     "AtomicNumber": 29,
@@ -706,7 +734,8 @@
     "OxidationStates": [
       2
     ],
-    "ElectronConfiguration": "1s2 2s2 2p6 3s2 3p6 3d10 4s1"
+    "ElectronConfiguration": "1s2 2s2 2p6 3s2 3p6 3d10 4s1",
+    "IsRadioactive": false
   },
   {
     "AtomicNumber": 30,
@@ -730,7 +759,8 @@
     "OxidationStates": [
       2
     ],
-    "ElectronConfiguration": "1s2 2s2 2p6 3s2 3p6 3d10 4s2"
+    "ElectronConfiguration": "1s2 2s2 2p6 3s2 3p6 3d10 4s2",
+    "IsRadioactive": false
   },
   {
     "AtomicNumber": 31,
@@ -754,7 +784,8 @@
     "OxidationStates": [
       3
     ],
-    "ElectronConfiguration": "1s2 2s2 2p6 3s2 3p6 3d10 4s2 4p1"
+    "ElectronConfiguration": "1s2 2s2 2p6 3s2 3p6 3d10 4s2 4p1",
+    "IsRadioactive": false
   },
   {
     "AtomicNumber": 32,
@@ -780,7 +811,8 @@
       2,
       4
     ],
-    "ElectronConfiguration": "1s2 2s2 2p6 3s2 3p6 3d10 4s2 4p2"
+    "ElectronConfiguration": "1s2 2s2 2p6 3s2 3p6 3d10 4s2 4p2",
+    "IsRadioactive": false
   },
   {
     "AtomicNumber": 33,
@@ -806,7 +838,8 @@
       3,
       5
     ],
-    "ElectronConfiguration": "1s2 2s2 2p6 3s2 3p6 3d10 4s2 4p3"
+    "ElectronConfiguration": "1s2 2s2 2p6 3s2 3p6 3d10 4s2 4p3",
+    "IsRadioactive": false
   },
   {
     "AtomicNumber": 34,
@@ -833,7 +866,8 @@
       4,
       6
     ],
-    "ElectronConfiguration": "1s2 2s2 2p6 3s2 3p6 3d10 4s2 4p4"
+    "ElectronConfiguration": "1s2 2s2 2p6 3s2 3p6 3d10 4s2 4p4",
+    "IsRadioactive": false
   },
   {
     "AtomicNumber": 35,
@@ -860,7 +894,8 @@
       3,
       5
     ],
-    "ElectronConfiguration": "1s2 2s2 2p6 3s2 3p6 3d10 4s2 4p5"
+    "ElectronConfiguration": "1s2 2s2 2p6 3s2 3p6 3d10 4s2 4p5",
+    "IsRadioactive": false
   },
   {
     "AtomicNumber": 36,
@@ -884,7 +919,8 @@
     "OxidationStates": [
       2
     ],
-    "ElectronConfiguration": "1s2 2s2 2p6 3s2 3p6 3d10 4s2 4p6"
+    "ElectronConfiguration": "1s2 2s2 2p6 3s2 3p6 3d10 4s2 4p6",
+    "IsRadioactive": false
   },
   {
     "AtomicNumber": 37,
@@ -908,7 +944,8 @@
     "OxidationStates": [
       1
     ],
-    "ElectronConfiguration": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s1"
+    "ElectronConfiguration": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s1",
+    "IsRadioactive": false
   },
   {
     "AtomicNumber": 38,
@@ -932,7 +969,8 @@
     "OxidationStates": [
       2
     ],
-    "ElectronConfiguration": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2"
+    "ElectronConfiguration": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2",
+    "IsRadioactive": false
   },
   {
     "AtomicNumber": 39,
@@ -956,7 +994,8 @@
     "OxidationStates": [
       3
     ],
-    "ElectronConfiguration": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 4d1 5s2"
+    "ElectronConfiguration": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 4d1 5s2",
+    "IsRadioactive": false
   },
   {
     "AtomicNumber": 40,
@@ -980,7 +1019,8 @@
     "OxidationStates": [
       4
     ],
-    "ElectronConfiguration": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 4d2 5s2"
+    "ElectronConfiguration": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 4d2 5s2",
+    "IsRadioactive": false
   },
   {
     "AtomicNumber": 41,
@@ -1004,7 +1044,8 @@
     "OxidationStates": [
       5
     ],
-    "ElectronConfiguration": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 4d4 5s1"
+    "ElectronConfiguration": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 4d4 5s1",
+    "IsRadioactive": false
   },
   {
     "AtomicNumber": 42,
@@ -1029,7 +1070,8 @@
       4,
       6
     ],
-    "ElectronConfiguration": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 4d5 5s1"
+    "ElectronConfiguration": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 4d5 5s1",
+    "IsRadioactive": false
   },
   {
     "AtomicNumber": 43,
@@ -1054,7 +1096,8 @@
       4,
       7
     ],
-    "ElectronConfiguration": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 4d5 5s2"
+    "ElectronConfiguration": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 4d5 5s2",
+    "IsRadioactive": true
   },
   {
     "AtomicNumber": 44,
@@ -1079,7 +1122,8 @@
       3,
       4
     ],
-    "ElectronConfiguration": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 4d7 5s1"
+    "ElectronConfiguration": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 4d7 5s1",
+    "IsRadioactive": false
   },
   {
     "AtomicNumber": 45,
@@ -1103,7 +1147,8 @@
     "OxidationStates": [
       3
     ],
-    "ElectronConfiguration": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 4d8 5s1"
+    "ElectronConfiguration": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 4d8 5s1",
+    "IsRadioactive": false
   },
   {
     "AtomicNumber": 46,
@@ -1128,7 +1173,8 @@
       2,
       4
     ],
-    "ElectronConfiguration": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 4d10"
+    "ElectronConfiguration": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 4d10",
+    "IsRadioactive": false
   },
   {
     "AtomicNumber": 47,
@@ -1152,7 +1198,8 @@
     "OxidationStates": [
       1
     ],
-    "ElectronConfiguration": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 4d10 5s1"
+    "ElectronConfiguration": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 4d10 5s1",
+    "IsRadioactive": false
   },
   {
     "AtomicNumber": 48,
@@ -1176,7 +1223,8 @@
     "OxidationStates": [
       2
     ],
-    "ElectronConfiguration": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 4d10 5s2"
+    "ElectronConfiguration": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 4d10 5s2",
+    "IsRadioactive": false
   },
   {
     "AtomicNumber": 49,
@@ -1200,7 +1248,8 @@
     "OxidationStates": [
       3
     ],
-    "ElectronConfiguration": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 4d10 5s2 5p1"
+    "ElectronConfiguration": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 4d10 5s2 5p1",
+    "IsRadioactive": false
   },
   {
     "AtomicNumber": 50,
@@ -1226,7 +1275,8 @@
       2,
       4
     ],
-    "ElectronConfiguration": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 4d10 5s2 5p2"
+    "ElectronConfiguration": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 4d10 5s2 5p2",
+    "IsRadioactive": false
   },
   {
     "AtomicNumber": 51,
@@ -1252,7 +1302,8 @@
       3,
       5
     ],
-    "ElectronConfiguration": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 4d10 5s2 5p3"
+    "ElectronConfiguration": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 4d10 5s2 5p3",
+    "IsRadioactive": false
   },
   {
     "AtomicNumber": 52,
@@ -1279,7 +1330,8 @@
       4,
       6
     ],
-    "ElectronConfiguration": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 4d10 5s2 5p4"
+    "ElectronConfiguration": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 4d10 5s2 5p4",
+    "IsRadioactive": false
   },
   {
     "AtomicNumber": 53,
@@ -1307,7 +1359,8 @@
       5,
       7
     ],
-    "ElectronConfiguration": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 4d10 5s2 5p5"
+    "ElectronConfiguration": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 4d10 5s2 5p5",
+    "IsRadioactive": false
   },
   {
     "AtomicNumber": 54,
@@ -1333,7 +1386,8 @@
       4,
       6
     ],
-    "ElectronConfiguration": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 4d10 5s2 5p6"
+    "ElectronConfiguration": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 4d10 5s2 5p6",
+    "IsRadioactive": false
   },
   {
     "AtomicNumber": 55,
@@ -1357,7 +1411,8 @@
     "OxidationStates": [
       1
     ],
-    "ElectronConfiguration": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s1"
+    "ElectronConfiguration": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s1",
+    "IsRadioactive": false
   },
   {
     "AtomicNumber": 56,
@@ -1381,7 +1436,8 @@
     "OxidationStates": [
       2
     ],
-    "ElectronConfiguration": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2"
+    "ElectronConfiguration": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2",
+    "IsRadioactive": false
   },
   {
     "AtomicNumber": 57,
@@ -1405,7 +1461,8 @@
     "OxidationStates": [
       3
     ],
-    "ElectronConfiguration": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 5d1 6s2"
+    "ElectronConfiguration": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 5d1 6s2",
+    "IsRadioactive": false
   },
   {
     "AtomicNumber": 58,
@@ -1430,7 +1487,8 @@
       3,
       4
     ],
-    "ElectronConfiguration": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 4f1 5d1 6s2"
+    "ElectronConfiguration": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 4f1 5d1 6s2",
+    "IsRadioactive": false
   },
   {
     "AtomicNumber": 59,
@@ -1454,7 +1512,8 @@
     "OxidationStates": [
       3
     ],
-    "ElectronConfiguration": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 4f3 6s2"
+    "ElectronConfiguration": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 4f3 6s2",
+    "IsRadioactive": false
   },
   {
     "AtomicNumber": 60,
@@ -1478,7 +1537,8 @@
     "OxidationStates": [
       3
     ],
-    "ElectronConfiguration": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 4f4 6s2"
+    "ElectronConfiguration": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 4f4 6s2",
+    "IsRadioactive": false
   },
   {
     "AtomicNumber": 61,
@@ -1502,7 +1562,8 @@
     "OxidationStates": [
       3
     ],
-    "ElectronConfiguration": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 4f5 6s2"
+    "ElectronConfiguration": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 4f5 6s2",
+    "IsRadioactive": true
   },
   {
     "AtomicNumber": 62,
@@ -1526,7 +1587,8 @@
     "OxidationStates": [
       3
     ],
-    "ElectronConfiguration": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 4f6 6s2"
+    "ElectronConfiguration": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 4f6 6s2",
+    "IsRadioactive": false
   },
   {
     "AtomicNumber": 63,
@@ -1551,7 +1613,8 @@
       2,
       3
     ],
-    "ElectronConfiguration": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 4f7 6s2"
+    "ElectronConfiguration": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 4f7 6s2",
+    "IsRadioactive": false
   },
   {
     "AtomicNumber": 64,
@@ -1575,7 +1638,8 @@
     "OxidationStates": [
       3
     ],
-    "ElectronConfiguration": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 4f7 5d1 6s2"
+    "ElectronConfiguration": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 4f7 5d1 6s2",
+    "IsRadioactive": false
   },
   {
     "AtomicNumber": 65,
@@ -1599,7 +1663,8 @@
     "OxidationStates": [
       3
     ],
-    "ElectronConfiguration": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 4f9 6s2"
+    "ElectronConfiguration": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 4f9 6s2",
+    "IsRadioactive": false
   },
   {
     "AtomicNumber": 66,
@@ -1623,7 +1688,8 @@
     "OxidationStates": [
       3
     ],
-    "ElectronConfiguration": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 4f10 6s2"
+    "ElectronConfiguration": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 4f10 6s2",
+    "IsRadioactive": false
   },
   {
     "AtomicNumber": 67,
@@ -1647,7 +1713,8 @@
     "OxidationStates": [
       3
     ],
-    "ElectronConfiguration": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 4f11 6s2"
+    "ElectronConfiguration": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 4f11 6s2",
+    "IsRadioactive": false
   },
   {
     "AtomicNumber": 68,
@@ -1671,7 +1738,8 @@
     "OxidationStates": [
       3
     ],
-    "ElectronConfiguration": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 4f12 6s2"
+    "ElectronConfiguration": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 4f12 6s2",
+    "IsRadioactive": false
   },
   {
     "AtomicNumber": 69,
@@ -1695,7 +1763,8 @@
     "OxidationStates": [
       3
     ],
-    "ElectronConfiguration": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 4f13 6s2"
+    "ElectronConfiguration": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 4f13 6s2",
+    "IsRadioactive": false
   },
   {
     "AtomicNumber": 70,
@@ -1719,7 +1788,8 @@
     "OxidationStates": [
       3
     ],
-    "ElectronConfiguration": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 4f14 6s2"
+    "ElectronConfiguration": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 4f14 6s2",
+    "IsRadioactive": false
   },
   {
     "AtomicNumber": 71,
@@ -1743,7 +1813,8 @@
     "OxidationStates": [
       3
     ],
-    "ElectronConfiguration": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 4f14 5d1 6s2"
+    "ElectronConfiguration": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 4f14 5d1 6s2",
+    "IsRadioactive": false
   },
   {
     "AtomicNumber": 72,
@@ -1767,7 +1838,8 @@
     "OxidationStates": [
       4
     ],
-    "ElectronConfiguration": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 4f14 5d2 6s2"
+    "ElectronConfiguration": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 4f14 5d2 6s2",
+    "IsRadioactive": false
   },
   {
     "AtomicNumber": 73,
@@ -1791,7 +1863,8 @@
     "OxidationStates": [
       5
     ],
-    "ElectronConfiguration": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 4f14 5d3 6s2"
+    "ElectronConfiguration": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 4f14 5d3 6s2",
+    "IsRadioactive": false
   },
   {
     "AtomicNumber": 74,
@@ -1816,7 +1889,8 @@
       4,
       6
     ],
-    "ElectronConfiguration": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 4f14 5d4 6s2"
+    "ElectronConfiguration": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 4f14 5d4 6s2",
+    "IsRadioactive": false
   },
   {
     "AtomicNumber": 75,
@@ -1840,7 +1914,8 @@
     "OxidationStates": [
       4
     ],
-    "ElectronConfiguration": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 4f14 5d5 6s2"
+    "ElectronConfiguration": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 4f14 5d5 6s2",
+    "IsRadioactive": false
   },
   {
     "AtomicNumber": 76,
@@ -1864,7 +1939,8 @@
     "OxidationStates": [
       4
     ],
-    "ElectronConfiguration": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 4f14 5d6 6s2"
+    "ElectronConfiguration": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 4f14 5d6 6s2",
+    "IsRadioactive": false
   },
   {
     "AtomicNumber": 77,
@@ -1889,7 +1965,8 @@
       3,
       4
     ],
-    "ElectronConfiguration": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 4f14 5d7 6s2"
+    "ElectronConfiguration": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 4f14 5d7 6s2",
+    "IsRadioactive": false
   },
   {
     "AtomicNumber": 78,
@@ -1914,7 +1991,8 @@
       2,
       4
     ],
-    "ElectronConfiguration": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 4f14 5d9 6s1"
+    "ElectronConfiguration": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 4f14 5d9 6s1",
+    "IsRadioactive": false
   },
   {
     "AtomicNumber": 79,
@@ -1938,7 +2016,8 @@
     "OxidationStates": [
       3
     ],
-    "ElectronConfiguration": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 4f14 5d10 6s1"
+    "ElectronConfiguration": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 4f14 5d10 6s1",
+    "IsRadioactive": false
   },
   {
     "AtomicNumber": 80,
@@ -1963,7 +2042,8 @@
       1,
       2
     ],
-    "ElectronConfiguration": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 4f14 5d10 6s2"
+    "ElectronConfiguration": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 4f14 5d10 6s2",
+    "IsRadioactive": false
   },
   {
     "AtomicNumber": 81,
@@ -1988,7 +2068,8 @@
       1,
       3
     ],
-    "ElectronConfiguration": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 4f14 5d10 6s2 6p1"
+    "ElectronConfiguration": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 4f14 5d10 6s2 6p1",
+    "IsRadioactive": false
   },
   {
     "AtomicNumber": 82,
@@ -2013,7 +2094,8 @@
       2,
       4
     ],
-    "ElectronConfiguration": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 4f14 5d10 6s2 6p2"
+    "ElectronConfiguration": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 4f14 5d10 6s2 6p2",
+    "IsRadioactive": false
   },
   {
     "AtomicNumber": 83,
@@ -2037,7 +2119,8 @@
     "OxidationStates": [
       3
     ],
-    "ElectronConfiguration": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 4f14 5d10 6s2 6p3"
+    "ElectronConfiguration": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 4f14 5d10 6s2 6p3",
+    "IsRadioactive": true
   },
   {
     "AtomicNumber": 84,
@@ -2063,7 +2146,8 @@
       2,
       4
     ],
-    "ElectronConfiguration": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 4f14 5d10 6s2 6p4"
+    "ElectronConfiguration": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 4f14 5d10 6s2 6p4",
+    "IsRadioactive": true
   },
   {
     "AtomicNumber": 85,
@@ -2088,7 +2172,8 @@
       -1,
       1
     ],
-    "ElectronConfiguration": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 4f14 5d10 6s2 6p5"
+    "ElectronConfiguration": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 4f14 5d10 6s2 6p5",
+    "IsRadioactive": true
   },
   {
     "AtomicNumber": 86,
@@ -2110,7 +2195,8 @@
     "MeltingPoint": 202.14999999999998,
     "BoilingPoint": 211.45,
     "OxidationStates": [],
-    "ElectronConfiguration": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 4f14 5d10 6s2 6p6"
+    "ElectronConfiguration": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 4f14 5d10 6s2 6p6",
+    "IsRadioactive": true
   },
   {
     "AtomicNumber": 87,
@@ -2134,7 +2220,8 @@
     "OxidationStates": [
       1
     ],
-    "ElectronConfiguration": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f14 5d10 6p6 7s1"
+    "ElectronConfiguration": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f14 5d10 6p6 7s1",
+    "IsRadioactive": true
   },
   {
     "AtomicNumber": 88,
@@ -2158,7 +2245,8 @@
     "OxidationStates": [
       2
     ],
-    "ElectronConfiguration": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f14 5d10 6p6 7s2"
+    "ElectronConfiguration": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f14 5d10 6p6 7s2",
+    "IsRadioactive": true
   },
   {
     "AtomicNumber": 89,
@@ -2182,7 +2270,8 @@
     "OxidationStates": [
       3
     ],
-    "ElectronConfiguration": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f14 5d10 6p6 6d1 7s2"
+    "ElectronConfiguration": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f14 5d10 6p6 6d1 7s2",
+    "IsRadioactive": true
   },
   {
     "AtomicNumber": 90,
@@ -2206,7 +2295,8 @@
     "OxidationStates": [
       4
     ],
-    "ElectronConfiguration": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f14 5d10 6p6 6d2 7s2"
+    "ElectronConfiguration": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f14 5d10 6p6 6d2 7s2",
+    "IsRadioactive": true
   },
   {
     "AtomicNumber": 91,
@@ -2230,7 +2320,8 @@
     "OxidationStates": [
       5
     ],
-    "ElectronConfiguration": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f14 5d10 6p6 5f2 6d1 7s2"
+    "ElectronConfiguration": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f14 5d10 6p6 5f2 6d1 7s2",
+    "IsRadioactive": true
   },
   {
     "AtomicNumber": 92,
@@ -2254,7 +2345,8 @@
     "OxidationStates": [
       6
     ],
-    "ElectronConfiguration": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f14 5d10 6p6 5f3 6d1 7s2"
+    "ElectronConfiguration": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f14 5d10 6p6 5f3 6d1 7s2",
+    "IsRadioactive": true
   },
   {
     "AtomicNumber": 93,
@@ -2278,7 +2370,8 @@
     "OxidationStates": [
       5
     ],
-    "ElectronConfiguration": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f14 5d10 6p6 5f4 6d1 7s2"
+    "ElectronConfiguration": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f14 5d10 6p6 5f4 6d1 7s2",
+    "IsRadioactive": true
   },
   {
     "AtomicNumber": 94,
@@ -2302,7 +2395,8 @@
     "OxidationStates": [
       4
     ],
-    "ElectronConfiguration": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f14 5d10 6p6 5f6 7s2"
+    "ElectronConfiguration": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f14 5d10 6p6 5f6 7s2",
+    "IsRadioactive": true
   },
   {
     "AtomicNumber": 95,
@@ -2326,7 +2420,8 @@
     "OxidationStates": [
       3
     ],
-    "ElectronConfiguration": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f14 5d10 6p6 5f7 7s2"
+    "ElectronConfiguration": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f14 5d10 6p6 5f7 7s2",
+    "IsRadioactive": true
   },
   {
     "AtomicNumber": 96,
@@ -2350,7 +2445,8 @@
     "OxidationStates": [
       3
     ],
-    "ElectronConfiguration": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f14 5d10 6p6 5f7 6d1 7s2"
+    "ElectronConfiguration": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f14 5d10 6p6 5f7 6d1 7s2",
+    "IsRadioactive": true
   },
   {
     "AtomicNumber": 97,
@@ -2374,7 +2470,8 @@
     "OxidationStates": [
       3
     ],
-    "ElectronConfiguration": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f14 5d10 6p6 5f9 7s2"
+    "ElectronConfiguration": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f14 5d10 6p6 5f9 7s2",
+    "IsRadioactive": true
   },
   {
     "AtomicNumber": 98,
@@ -2398,7 +2495,8 @@
     "OxidationStates": [
       3
     ],
-    "ElectronConfiguration": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f14 5d10 6p6 5f10 7s2"
+    "ElectronConfiguration": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f14 5d10 6p6 5f10 7s2",
+    "IsRadioactive": true
   },
   {
     "AtomicNumber": 99,
@@ -2422,7 +2520,8 @@
     "OxidationStates": [
       3
     ],
-    "ElectronConfiguration": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f14 5d10 6p6 5f11 7s2"
+    "ElectronConfiguration": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f14 5d10 6p6 5f11 7s2",
+    "IsRadioactive": true
   },
   {
     "AtomicNumber": 100,
@@ -2446,7 +2545,8 @@
     "OxidationStates": [
       3
     ],
-    "ElectronConfiguration": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f14 5d10 6p6 5f12 7s2"
+    "ElectronConfiguration": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f14 5d10 6p6 5f12 7s2",
+    "IsRadioactive": true
   },
   {
     "AtomicNumber": 101,
@@ -2470,7 +2570,8 @@
     "OxidationStates": [
       3
     ],
-    "ElectronConfiguration": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f14 5d10 6p6 5f13 7s2"
+    "ElectronConfiguration": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f14 5d10 6p6 5f13 7s2",
+    "IsRadioactive": true
   },
   {
     "AtomicNumber": 102,
@@ -2494,7 +2595,8 @@
     "OxidationStates": [
       3
     ],
-    "ElectronConfiguration": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f14 5d10 6p6 5f14 7s2"
+    "ElectronConfiguration": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f14 5d10 6p6 5f14 7s2",
+    "IsRadioactive": true
   },
   {
     "AtomicNumber": 103,
@@ -2518,7 +2620,8 @@
     "OxidationStates": [
       3
     ],
-    "ElectronConfiguration": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f14 5d10 6p6 5f14 7s2 7p1"
+    "ElectronConfiguration": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f14 5d10 6p6 5f14 7s2 7p1",
+    "IsRadioactive": true
   },
   {
     "AtomicNumber": 104,
@@ -2542,7 +2645,8 @@
     "OxidationStates": [
       4
     ],
-    "ElectronConfiguration": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f14 5d10 6p6 5f14 6d2 7s2"
+    "ElectronConfiguration": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f14 5d10 6p6 5f14 6d2 7s2",
+    "IsRadioactive": true
   },
   {
     "AtomicNumber": 105,
@@ -2564,7 +2668,8 @@
     "MeltingPoint": 0.0,
     "BoilingPoint": 0.0,
     "OxidationStates": [],
-    "ElectronConfiguration": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f14 5d10 6p6 5f14 6d3 7s2"
+    "ElectronConfiguration": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f14 5d10 6p6 5f14 6d3 7s2",
+    "IsRadioactive": true
   },
   {
     "AtomicNumber": 106,
@@ -2586,7 +2691,8 @@
     "MeltingPoint": 0.0,
     "BoilingPoint": 0.0,
     "OxidationStates": [],
-    "ElectronConfiguration": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f14 5d10 6p6 5f14 6d4 7s2"
+    "ElectronConfiguration": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f14 5d10 6p6 5f14 6d4 7s2",
+    "IsRadioactive": true
   },
   {
     "AtomicNumber": 107,
@@ -2608,7 +2714,8 @@
     "MeltingPoint": 0.0,
     "BoilingPoint": 0.0,
     "OxidationStates": [],
-    "ElectronConfiguration": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f14 5d10 6p6 5f14 6d5 7s2"
+    "ElectronConfiguration": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f14 5d10 6p6 5f14 6d5 7s2",
+    "IsRadioactive": true
   },
   {
     "AtomicNumber": 108,
@@ -2630,7 +2737,8 @@
     "MeltingPoint": 0.0,
     "BoilingPoint": 0.0,
     "OxidationStates": [],
-    "ElectronConfiguration": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f14 5d10 6p6 5f14 6d6 7s2"
+    "ElectronConfiguration": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f14 5d10 6p6 5f14 6d6 7s2",
+    "IsRadioactive": true
   },
   {
     "AtomicNumber": 109,
@@ -2652,7 +2760,8 @@
     "MeltingPoint": 0.0,
     "BoilingPoint": 0.0,
     "OxidationStates": [],
-    "ElectronConfiguration": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f14 5d10 6p6 5f14 6d7 7s2"
+    "ElectronConfiguration": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f14 5d10 6p6 5f14 6d7 7s2",
+    "IsRadioactive": true
   },
   {
     "AtomicNumber": 110,
@@ -2674,7 +2783,8 @@
     "MeltingPoint": 0.0,
     "BoilingPoint": 0.0,
     "OxidationStates": [],
-    "ElectronConfiguration": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f14 5d10 6p6 5f14 6d9 7s1"
+    "ElectronConfiguration": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f14 5d10 6p6 5f14 6d9 7s1",
+    "IsRadioactive": true
   },
   {
     "AtomicNumber": 111,
@@ -2696,7 +2806,8 @@
     "MeltingPoint": 0.0,
     "BoilingPoint": 0.0,
     "OxidationStates": [],
-    "ElectronConfiguration": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f14 5d10 6p6 5f14 6d10 7s1"
+    "ElectronConfiguration": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f14 5d10 6p6 5f14 6d10 7s1",
+    "IsRadioactive": true
   },
   {
     "AtomicNumber": 112,
@@ -2718,7 +2829,8 @@
     "MeltingPoint": 0.0,
     "BoilingPoint": 0.0,
     "OxidationStates": [],
-    "ElectronConfiguration": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f14 5d10 6p6 5f14 6d10 7s2"
+    "ElectronConfiguration": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f14 5d10 6p6 5f14 6d10 7s2",
+    "IsRadioactive": true
   },
   {
     "AtomicNumber": 113,
@@ -2740,7 +2852,8 @@
     "MeltingPoint": 0.0,
     "BoilingPoint": 0.0,
     "OxidationStates": [],
-    "ElectronConfiguration": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f14 5d10 6p6 5f14 6d10 7s2 7p1"
+    "ElectronConfiguration": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f14 5d10 6p6 5f14 6d10 7s2 7p1",
+    "IsRadioactive": true
   },
   {
     "AtomicNumber": 114,
@@ -2762,7 +2875,8 @@
     "MeltingPoint": 0.0,
     "BoilingPoint": 0.0,
     "OxidationStates": [],
-    "ElectronConfiguration": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f14 5d10 6p6 5f14 6d10 7s2 7p2"
+    "ElectronConfiguration": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f14 5d10 6p6 5f14 6d10 7s2 7p2",
+    "IsRadioactive": true
   },
   {
     "AtomicNumber": 115,
@@ -2784,7 +2898,8 @@
     "MeltingPoint": 0.0,
     "BoilingPoint": 0.0,
     "OxidationStates": [],
-    "ElectronConfiguration": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f14 5d10 6p6 5f14 6d10 7s2 7p3"
+    "ElectronConfiguration": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f14 5d10 6p6 5f14 6d10 7s2 7p3",
+    "IsRadioactive": true
   },
   {
     "AtomicNumber": 116,
@@ -2806,7 +2921,8 @@
     "MeltingPoint": 0.0,
     "BoilingPoint": 0.0,
     "OxidationStates": [],
-    "ElectronConfiguration": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f14 5d10 6p6 5f14 6d10 7s2 7p4"
+    "ElectronConfiguration": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f14 5d10 6p6 5f14 6d10 7s2 7p4",
+    "IsRadioactive": true
   },
   {
     "AtomicNumber": 117,
@@ -2828,7 +2944,8 @@
     "MeltingPoint": 0.0,
     "BoilingPoint": 0.0,
     "OxidationStates": [],
-    "ElectronConfiguration": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f14 5d10 6p6 5f14 6d10 7s2 7p5"
+    "ElectronConfiguration": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f14 5d10 6p6 5f14 6d10 7s2 7p5",
+    "IsRadioactive": true
   },
   {
     "AtomicNumber": 118,
@@ -2850,6 +2967,7 @@
     "MeltingPoint": 0.0,
     "BoilingPoint": 0.0,
     "OxidationStates": [],
-    "ElectronConfiguration": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f14 5d10 6p6 5f14 6d10 7s2 7p6"
+    "ElectronConfiguration": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f14 5d10 6p6 5f14 6d10 7s2 7p6",
+    "IsRadioactive": true
   }
 ]

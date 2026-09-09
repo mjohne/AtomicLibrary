@@ -10,7 +10,7 @@ namespace AtomicLibrary.Isotopes;
 public sealed class IsotopeRepository
 {
 	/// <summary>A dictionary that maps a tuple of atomic number and mass number to the corresponding isotope.</summary>
-	private readonly IReadOnlyDictionary<(int AtomicNumber, int MassNumber), Isotope> _byKey;
+	private readonly Dictionary<(int AtomicNumber, int MassNumber), Isotope> _byKey;
 
 	/// <summary>
 	/// Initializes a new instance of the <see cref="IsotopeRepository"/> class with the specified isotopes.</summary>
@@ -66,6 +66,6 @@ public sealed class IsotopeRepository
 	/// <returns>A string representation of the current instance.</returns>
 	private string GetDebuggerDisplay()
 	{
-		return ToString();
+		return ToString() ?? string.Empty;
 	}
 }

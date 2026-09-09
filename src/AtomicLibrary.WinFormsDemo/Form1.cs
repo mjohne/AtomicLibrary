@@ -10,7 +10,7 @@ namespace AtomicLibrary.WinFormsDemo;
 
 /// <summary>Represents the main form of the AtomicLibrary WinForms demo application, which displays a periodic table of elements and their isotopes.</summary>
 [DebuggerDisplay($"{{{nameof(GetDebuggerDisplay)}(),nq}}")]
-public partial class Form1 : Form
+internal partial class Form1 : Form
 {
 	/// <summary>The periodic table instance containing all elements and their properties.</summary>
 	private readonly PeriodicTable.PeriodicTable _periodicTable;

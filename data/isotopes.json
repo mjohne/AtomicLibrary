@@ -22,10 +22,50 @@
   {
     "AtomicNumber": 1,
     "MassNumber": 3,
-    "AtomicMass": 3.0,
+    "AtomicMass": 3.0160492779,
     "IsStable": false,
     "HalfLifeSeconds": 388781648.64,
     "DecayMode": "BetaMinus",
+    "DecayEnergyMeV": null,
+    "NaturalAbundance": null
+  },
+  {
+    "AtomicNumber": 1,
+    "MassNumber": 4,
+    "AtomicMass": 4.02643,
+    "IsStable": false,
+    "HalfLifeSeconds": null,
+    "DecayMode": "None",
+    "DecayEnergyMeV": null,
+    "NaturalAbundance": null
+  },
+  {
+    "AtomicNumber": 1,
+    "MassNumber": 5,
+    "AtomicMass": 5.03531,
+    "IsStable": false,
+    "HalfLifeSeconds": null,
+    "DecayMode": "None",
+    "DecayEnergyMeV": null,
+    "NaturalAbundance": null
+  },
+  {
+    "AtomicNumber": 1,
+    "MassNumber": 6,
+    "AtomicMass": 6.04496,
+    "IsStable": false,
+    "HalfLifeSeconds": null,
+    "DecayMode": "None",
+    "DecayEnergyMeV": null,
+    "NaturalAbundance": null
+  },
+  {
+    "AtomicNumber": 1,
+    "MassNumber": 7,
+    "AtomicMass": 7.052750,
+    "IsStable": false,
+    "HalfLifeSeconds": null,
+    "DecayMode": "None",
     "DecayEnergyMeV": null,
     "NaturalAbundance": null
   },
@@ -50,6 +90,86 @@
     "NaturalAbundance": 99.9998
   },
   {
+    "AtomicNumber": 2,
+    "MassNumber": 5,
+    "AtomicMass": 5.012057,
+    "IsStable": false,
+    "HalfLifeSeconds": null,
+    "DecayMode": "None",
+    "DecayEnergyMeV": null,
+    "NaturalAbundance": null
+  },
+  {
+    "AtomicNumber": 2,
+    "MassNumber": 6,
+    "AtomicMass": 6.01888589,
+    "IsStable": false,
+    "HalfLifeSeconds": null,
+    "DecayMode": "BetaMinus",
+    "DecayEnergyMeV": null,
+    "NaturalAbundance": null
+  },
+  {
+    "AtomicNumber": 2,
+    "MassNumber": 7,
+    "AtomicMass": 7.027991,
+    "IsStable": false,
+    "HalfLifeSeconds": null,
+    "DecayMode": "None",
+    "DecayEnergyMeV": null,
+    "NaturalAbundance": null
+  },
+  {
+    "AtomicNumber": 2,
+    "MassNumber": 8,
+    "AtomicMass": 8.03393439,
+    "IsStable": false,
+    "HalfLifeSeconds": null,
+    "DecayMode": "None",
+    "DecayEnergyMeV": null,
+    "NaturalAbundance": null
+  },
+  {
+    "AtomicNumber": 2,
+    "MassNumber": 9,
+    "AtomicMass": 9.043950,
+    "IsStable": false,
+    "HalfLifeSeconds": null,
+    "DecayMode": "None",
+    "DecayEnergyMeV": null,
+    "NaturalAbundance": null
+  },
+  {
+    "AtomicNumber": 2,
+    "MassNumber": 10,
+    "AtomicMass": 10.05282,
+    "IsStable": false,
+    "HalfLifeSeconds": null,
+    "DecayMode": "None",
+    "DecayEnergyMeV": null,
+    "NaturalAbundance": null
+  },
+   {
+    "AtomicNumber": 3,
+    "MassNumber": 4,
+    "AtomicMass": 4.02719,
+    "IsStable": false,
+    "HalfLifeSeconds": null,
+    "DecayMode": "None",
+    "DecayEnergyMeV": null,
+    "NaturalAbundance": null
+  },
+  {
+    "AtomicNumber": 3,
+    "MassNumber": 5,
+    "AtomicMass": 5.012540,
+    "IsStable": false,
+    "HalfLifeSeconds": null,
+    "DecayMode": "None",
+    "DecayEnergyMeV": null,
+    "NaturalAbundance": null
+  },
+  {
     "AtomicNumber": 3,
     "MassNumber": 6,
     "AtomicMass": 6.01512288742,
@@ -68,6 +188,96 @@
     "DecayMode": "None",
     "DecayEnergyMeV": null,
     "NaturalAbundance": 95.15
+  },
+  {
+    "AtomicNumber": 3,
+    "MassNumber": 8,
+    "AtomicMass": 8.02248624,
+    "IsStable": false,
+    "HalfLifeSeconds": null,
+    "DecayMode": "BetaMinus",
+    "DecayEnergyMeV": null,
+    "NaturalAbundance": null
+  },
+  {
+    "AtomicNumber": 3,
+    "MassNumber": 9,
+    "AtomicMass": 9.02679019,
+    "IsStable": false,
+    "HalfLifeSeconds": null,
+    "DecayMode": "None",
+    "DecayEnergyMeV": null,
+    "NaturalAbundance": null
+  },
+  {
+    "AtomicNumber": 3,
+    "MassNumber": 10,
+    "AtomicMass": 10.035483,
+    "IsStable": false,
+    "HalfLifeSeconds": null,
+    "DecayMode": "None",
+    "DecayEnergyMeV": null,
+    "NaturalAbundance": null
+  },
+  {
+    "AtomicNumber": 3,
+    "MassNumber": 11,
+    "AtomicMass": 11.0437236,
+    "IsStable": false,
+    "HalfLifeSeconds": null,
+    "DecayMode": "None",
+    "DecayEnergyMeV": null,
+    "NaturalAbundance": null
+  },
+  {
+    "AtomicNumber": 3,
+    "MassNumber": 12,
+    "AtomicMass": 12.052610,
+    "IsStable": false,
+    "HalfLifeSeconds": null,
+    "DecayMode": "None",
+    "DecayEnergyMeV": null,
+    "NaturalAbundance": null
+  },
+  {
+    "AtomicNumber": 3,
+    "MassNumber": 13,
+    "AtomicMass": 13.061171503,
+    "IsStable": false,
+    "HalfLifeSeconds": null,
+    "DecayMode": "None",
+    "DecayEnergyMeV": null,
+    "NaturalAbundance": null
+  },
+  {
+    "AtomicNumber": 4,
+    "MassNumber": 5,
+    "AtomicMass": 5.0399,
+    "IsStable": false,
+    "HalfLifeSeconds": null,
+    "DecayMode": "None",
+    "DecayEnergyMeV": null,
+    "NaturalAbundance": null
+  },
+  {
+    "AtomicNumber": 4,
+    "MassNumber": 6,
+    "AtomicMass": 6.0197264,
+    "IsStable": false,
+    "HalfLifeSeconds": null,
+    "DecayMode": "None",
+    "DecayEnergyMeV": null,
+    "NaturalAbundance": null
+  },
+  {
+    "AtomicNumber": 4,
+    "MassNumber": 7,
+    "AtomicMass": 7.016928717,
+    "IsStable": false,
+    "HalfLifeSeconds": null,
+    "DecayMode": "None",
+    "DecayEnergyMeV": null,
+    "NaturalAbundance": null
   },
   {
     "AtomicNumber": 4,
@@ -90,6 +300,116 @@
     "NaturalAbundance": 100.0
   },
   {
+    "AtomicNumber": 4,
+    "MassNumber": 10,
+    "AtomicMass": 10.013534695,
+    "IsStable": false,
+    "HalfLifeSeconds": null,
+    "DecayMode": "BetaMinus",
+    "DecayEnergyMeV": null,
+    "NaturalAbundance": null
+  },
+  {
+    "AtomicNumber": 4,
+    "MassNumber": 11,
+    "AtomicMass": 11.02166108,
+    "IsStable": false,
+    "HalfLifeSeconds": null,
+    "DecayMode": "None",
+    "DecayEnergyMeV": null,
+    "NaturalAbundance": null
+  },
+  {
+    "AtomicNumber": 4,
+    "MassNumber": 12,
+    "AtomicMass": 12.0269221,
+    "IsStable": false,
+    "HalfLifeSeconds": null,
+    "DecayMode": "None",
+    "DecayEnergyMeV": null,
+    "NaturalAbundance": null
+  },
+  {
+    "AtomicNumber": 4,
+    "MassNumber": 13,
+    "AtomicMass": 13.036135,
+    "IsStable": false,
+    "HalfLifeSeconds": null,
+    "DecayMode": "None",
+    "DecayEnergyMeV": null,
+    "NaturalAbundance": null
+  },
+  {
+    "AtomicNumber": 4,
+    "MassNumber": 14,
+    "AtomicMass": 14.04289,
+    "IsStable": false,
+    "HalfLifeSeconds": null,
+    "DecayMode": "None",
+    "DecayEnergyMeV": null,
+    "NaturalAbundance": null
+  },
+  {
+    "AtomicNumber": 4,
+    "MassNumber": 15,
+    "AtomicMass": 15.05349,
+    "IsStable": false,
+    "HalfLifeSeconds": null,
+    "DecayMode": "None",
+    "DecayEnergyMeV": null,
+    "NaturalAbundance": null
+  },
+    {
+    "AtomicNumber": 4,
+    "MassNumber": 16,
+    "AtomicMass": 16.06167,
+    "IsStable": false,
+    "HalfLifeSeconds": null,
+    "DecayMode": "None",
+    "DecayEnergyMeV": null,
+    "NaturalAbundance": null
+  },
+  {
+    "AtomicNumber": 5,
+    "MassNumber": 6,
+    "AtomicMass": 6.0508,
+    "IsStable": false,
+    "HalfLifeSeconds": null,
+    "DecayMode": "None",
+    "DecayEnergyMeV": null,
+    "NaturalAbundance": null
+  },
+  {
+    "AtomicNumber": 5,
+    "MassNumber": 7,
+    "AtomicMass": 7.029712,
+    "IsStable": false,
+    "HalfLifeSeconds": null,
+    "DecayMode": "None",
+    "DecayEnergyMeV": null,
+    "NaturalAbundance": null
+  },
+  {
+    "AtomicNumber": 5,
+    "MassNumber": 8,
+    "AtomicMass": 8.0246073,
+    "IsStable": false,
+    "HalfLifeSeconds": null,
+    "DecayMode": "None",
+    "DecayEnergyMeV": null,
+    "NaturalAbundance": null
+  },
+  {
+    "AtomicNumber": 5,
+    "MassNumber": 9,
+    "AtomicMass": 9.01332965,
+    "IsStable": false,
+    "HalfLifeSeconds": null,
+    "DecayMode": "None",
+    "DecayEnergyMeV": null,
+    "NaturalAbundance": null
+  },
+  {
     "AtomicNumber": 5,
     "MassNumber": 10,
     "AtomicMass": 10.012936862,
@@ -108,6 +428,146 @@
     "DecayMode": "None",
     "DecayEnergyMeV": null,
     "NaturalAbundance": 80.35
+  },
+  {
+    "AtomicNumber": 5,
+    "MassNumber": 12,
+    "AtomicMass": 12.0143526,
+    "IsStable": false,
+    "HalfLifeSeconds": null,
+    "DecayMode": "None",
+    "DecayEnergyMeV": null,
+    "NaturalAbundance": null
+  },
+  {
+    "AtomicNumber": 5,
+    "MassNumber": 13,
+    "AtomicMass": 13.0177802,
+    "IsStable": false,
+    "HalfLifeSeconds": null,
+    "DecayMode": "None",
+    "DecayEnergyMeV": null,
+    "NaturalAbundance": null
+  },
+  {
+    "AtomicNumber": 5,
+    "MassNumber": 14,
+    "AtomicMass": 14.025404,
+    "IsStable": false,
+    "HalfLifeSeconds": null,
+    "DecayMode": "None",
+    "DecayEnergyMeV": null,
+    "NaturalAbundance": null
+  },
+  {
+    "AtomicNumber": 5,
+    "MassNumber": 15,
+    "AtomicMass": 15.031087,
+    "IsStable": false,
+    "HalfLifeSeconds": null,
+    "DecayMode": "None",
+    "DecayEnergyMeV": null,
+    "NaturalAbundance": null
+  },
+  {
+    "AtomicNumber": 5,
+    "MassNumber": 16,
+    "AtomicMass": 16.039842,
+    "IsStable": false,
+    "HalfLifeSeconds": null,
+    "DecayMode": "None",
+    "DecayEnergyMeV": null,
+    "NaturalAbundance": null
+  },
+  {
+    "AtomicNumber": 5,
+    "MassNumber": 17,
+    "AtomicMass": 17.04699,
+    "IsStable": false,
+    "HalfLifeSeconds": null,
+    "DecayMode": "None",
+    "DecayEnergyMeV": null,
+    "NaturalAbundance": null
+  },
+  {
+    "AtomicNumber": 5,
+    "MassNumber": 18,
+    "AtomicMass": 18.05566,
+    "IsStable": false,
+    "HalfLifeSeconds": null,
+    "DecayMode": "None",
+    "DecayEnergyMeV": null,
+    "NaturalAbundance": null
+  },
+  {
+    "AtomicNumber": 5,
+    "MassNumber": 19,
+    "AtomicMass": 19.06310,
+    "IsStable": false,
+    "HalfLifeSeconds": null,
+    "DecayMode": "None",
+    "DecayEnergyMeV": null,
+    "NaturalAbundance": null
+  },
+  {
+    "AtomicNumber": 5,
+    "MassNumber": 20,
+    "AtomicMass": 20.074510,
+    "IsStable": false,
+    "HalfLifeSeconds": null,
+    "DecayMode": "None",
+    "DecayEnergyMeV": null,
+    "NaturalAbundance": null
+  },
+  {
+    "AtomicNumber": 5,
+    "MassNumber": 21,
+    "AtomicMass": 21.084150,
+    "IsStable": false,
+    "HalfLifeSeconds": null,
+    "DecayMode": "None",
+    "DecayEnergyMeV": null,
+    "NaturalAbundance": null
+  },
+  {
+    "AtomicNumber": 6,
+    "MassNumber": 8,
+    "AtomicMass": 8.037643,
+    "IsStable": false,
+    "HalfLifeSeconds": null,
+    "DecayMode": "None",
+    "DecayEnergyMeV": null,
+    "NaturalAbundance": null
+  },
+  {
+    "AtomicNumber": 6,
+    "MassNumber": 9,
+    "AtomicMass": 9.0310372,
+    "IsStable": false,
+    "HalfLifeSeconds": null,
+    "DecayMode": "None",
+    "DecayEnergyMeV": null,
+    "NaturalAbundance": null
+  },
+  {
+    "AtomicNumber": 6,
+    "MassNumber": 10,
+    "AtomicMass": 10.01685322,
+    "IsStable": false,
+    "HalfLifeSeconds": null,
+    "DecayMode": "BetaPlus",
+    "DecayEnergyMeV": null,
+    "NaturalAbundance": null
+  },
+  {
+    "AtomicNumber": 6,
+    "MassNumber": 11,
+    "AtomicMass": 11.01143360,
+    "IsStable": false,
+    "HalfLifeSeconds": null,
+    "DecayMode": "BetaPlus",
+    "DecayEnergyMeV": null,
+    "NaturalAbundance": null
   },
   {
     "AtomicNumber": 6,
@@ -140,6 +600,146 @@
     "NaturalAbundance": null
   },
   {
+    "AtomicNumber": 6,
+    "MassNumber": 15,
+    "AtomicMass": 15.0105993,
+    "IsStable": false,
+    "HalfLifeSeconds": null,
+    "DecayMode": "BetaMinus",
+    "DecayEnergyMeV": null,
+    "NaturalAbundance": null
+  },
+  {
+    "AtomicNumber": 6,
+    "MassNumber": 16,
+    "AtomicMass": 16.014701,
+    "IsStable": false,
+    "HalfLifeSeconds": null,
+    "DecayMode": "None",
+    "DecayEnergyMeV": null,
+    "NaturalAbundance": null
+  },
+  {
+    "AtomicNumber": 6,
+    "MassNumber": 17,
+    "AtomicMass": 17.022577,
+    "IsStable": false,
+    "HalfLifeSeconds": null,
+    "DecayMode": "None",
+    "DecayEnergyMeV": null,
+    "NaturalAbundance": null
+  },
+  {
+    "AtomicNumber": 6,
+    "MassNumber": 18,
+    "AtomicMass": 18.026751,
+    "IsStable": false,
+    "HalfLifeSeconds": null,
+    "DecayMode": "None",
+    "DecayEnergyMeV": null,
+    "NaturalAbundance": null
+  },
+  {
+    "AtomicNumber": 6,
+    "MassNumber": 19,
+    "AtomicMass": 19.03480,
+    "IsStable": false,
+    "HalfLifeSeconds": null,
+    "DecayMode": "None",
+    "DecayEnergyMeV": null,
+    "NaturalAbundance": null
+  },
+  {
+    "AtomicNumber": 6,
+    "MassNumber": 20,
+    "AtomicMass": 20.04026,
+    "IsStable": false,
+    "HalfLifeSeconds": null,
+    "DecayMode": "None",
+    "DecayEnergyMeV": null,
+    "NaturalAbundance": null
+  },
+  {
+    "AtomicNumber": 6,
+    "MassNumber": 21,
+    "AtomicMass": 21.04900,
+    "IsStable": false,
+    "HalfLifeSeconds": null,
+    "DecayMode": "None",
+    "DecayEnergyMeV": null,
+    "NaturalAbundance": null
+  },
+  {
+    "AtomicNumber": 6,
+    "MassNumber": 22,
+    "AtomicMass": 22.05753,
+    "IsStable": false,
+    "HalfLifeSeconds": null,
+    "DecayMode": "None",
+    "DecayEnergyMeV": null,
+    "NaturalAbundance": null
+  },
+  {
+    "AtomicNumber": 6,
+    "MassNumber": 23,
+    "AtomicMass": 23.0689,
+    "IsStable": false,
+    "HalfLifeSeconds": null,
+    "DecayMode": "None",
+    "DecayEnergyMeV": null,
+    "NaturalAbundance": null
+  },
+  {
+    "AtomicNumber": 7,
+    "MassNumber": 9,
+    "AtomicMass": 0.0,
+    "IsStable": false,
+    "HalfLifeSeconds": null,
+    "DecayMode": "None",
+    "DecayEnergyMeV": null,
+    "NaturalAbundance": null
+  },
+  {
+    "AtomicNumber": 7,
+    "MassNumber": 10,
+    "AtomicMass": 10.04165,
+    "IsStable": false,
+    "HalfLifeSeconds": null,
+    "DecayMode": "None",
+    "DecayEnergyMeV": null,
+    "NaturalAbundance": null
+  },
+  {
+    "AtomicNumber": 7,
+    "MassNumber": 11,
+    "AtomicMass": 11.026158,
+    "IsStable": false,
+    "HalfLifeSeconds": null,
+    "DecayMode": "None",
+    "DecayEnergyMeV": null,
+    "NaturalAbundance": null
+  },
+  {
+    "AtomicNumber": 7,
+    "MassNumber": 12,
+    "AtomicMass": 12.0186132,
+    "IsStable": false,
+    "HalfLifeSeconds": null,
+    "DecayMode": "None",
+    "DecayEnergyMeV": null,
+    "NaturalAbundance": null
+  },
+  {
+    "AtomicNumber": 7,
+    "MassNumber": 13,
+    "AtomicMass": 13.00573861,
+    "IsStable": false,
+    "HalfLifeSeconds": null,
+    "DecayMode": "BetaPlus",
+    "DecayEnergyMeV": null,
+    "NaturalAbundance": null
+  },
+  {
     "AtomicNumber": 7,
     "MassNumber": 14,
     "AtomicMass": 14.00307400425,
@@ -158,6 +758,56 @@
     "DecayMode": "None",
     "DecayEnergyMeV": null,
     "NaturalAbundance": 0.3795
+  },
+  {
+    "AtomicNumber": 8,
+    "MassNumber": 11,
+    "AtomicMass": 11.05125,
+    "IsStable": false,
+    "HalfLifeSeconds": null,
+    "DecayMode": "None",
+    "DecayEnergyMeV": null,
+    "NaturalAbundance": null
+  },
+  {
+    "AtomicNumber": 8,
+    "MassNumber": 12,
+    "AtomicMass": 12.034368,
+    "IsStable": false,
+    "HalfLifeSeconds": null,
+    "DecayMode": "None",
+    "DecayEnergyMeV": null,
+    "NaturalAbundance": null
+  },
+  {
+    "AtomicNumber": 8,
+    "MassNumber": 13,
+    "AtomicMass": 13.024815,
+    "IsStable": false,
+    "HalfLifeSeconds": null,
+    "DecayMode": "None",
+    "DecayEnergyMeV": null,
+    "NaturalAbundance": null
+  },
+  {
+    "AtomicNumber": 8,
+    "MassNumber": 14,
+    "AtomicMass": 14.008596706,
+    "IsStable": false,
+    "HalfLifeSeconds": null,
+    "DecayMode": "BetaPlus",
+    "DecayEnergyMeV": null,
+    "NaturalAbundance": null
+  },
+  {
+    "AtomicNumber": 8,
+    "MassNumber": 15,
+    "AtomicMass": 15.0030656,
+    "IsStable": false,
+    "HalfLifeSeconds": null,
+    "DecayMode": "BetaPlus",
+    "DecayEnergyMeV": null,
+    "NaturalAbundance": null
   },
   {
     "AtomicNumber": 8,
@@ -190,12 +840,162 @@
     "NaturalAbundance": 0.2045
   },
   {
+    "AtomicNumber": 8,
+    "MassNumber": 19,
+    "AtomicMass": 19.0035780,
+    "IsStable": false,
+    "HalfLifeSeconds": null,
+    "DecayMode": "BetaMinus",
+    "DecayEnergyMeV": null,
+    "NaturalAbundance": null
+  },
+  {
+    "AtomicNumber": 8,
+    "MassNumber": 20,
+    "AtomicMass": 20.004075,
+    "IsStable": false,
+    "HalfLifeSeconds": null,
+    "DecayMode": "BetaMinus",
+    "DecayEnergyMeV": null,
+    "NaturalAbundance": null
+  },
+  {
+    "AtomicNumber": 8,
+    "MassNumber": 21,
+    "AtomicMass": 21.008655,
+    "IsStable": false,
+    "HalfLifeSeconds": null,
+    "DecayMode": "None",
+    "DecayEnergyMeV": null,
+    "NaturalAbundance": null
+  },
+  {
+    "AtomicNumber": 8,
+    "MassNumber": 22,
+    "AtomicMass": 22.009966,
+    "IsStable": false,
+    "HalfLifeSeconds": null,
+    "DecayMode": "None",
+    "DecayEnergyMeV": null,
+    "NaturalAbundance": null
+  },
+  {
+    "AtomicNumber": 8,
+    "MassNumber": 23,
+    "AtomicMass": 23.01570,
+    "IsStable": false,
+    "HalfLifeSeconds": null,
+    "DecayMode": "None",
+    "DecayEnergyMeV": null,
+    "NaturalAbundance": null
+  },
+  {
+    "AtomicNumber": 8,
+    "MassNumber": 24,
+    "AtomicMass": 24.01986,
+    "IsStable": false,
+    "HalfLifeSeconds": null,
+    "DecayMode": "None",
+    "DecayEnergyMeV": null,
+    "NaturalAbundance": null
+  },
+  {
+    "AtomicNumber": 8,
+    "MassNumber": 25,
+    "AtomicMass": 25.02934,
+    "IsStable": false,
+    "HalfLifeSeconds": null,
+    "DecayMode": "None",
+    "DecayEnergyMeV": null,
+    "NaturalAbundance": null
+  },
+  {
+    "AtomicNumber": 8,
+    "MassNumber": 26,
+    "AtomicMass": 26.03729,
+    "IsStable": false,
+    "HalfLifeSeconds": null,
+    "DecayMode": "None",
+    "DecayEnergyMeV": null,
+    "NaturalAbundance": null
+  },
+  {
+    "AtomicNumber": 8,
+    "MassNumber": 27,
+    "AtomicMass": 27.04772,
+    "IsStable": false,
+    "HalfLifeSeconds": null,
+    "DecayMode": "None",
+    "DecayEnergyMeV": null,
+    "NaturalAbundance": null
+  },
+  {
+    "AtomicNumber": 8,
+    "MassNumber": 28,
+    "AtomicMass": 28.05591,
+    "IsStable": false,
+    "HalfLifeSeconds": null,
+    "DecayMode": "None",
+    "DecayEnergyMeV": null,
+    "NaturalAbundance": null
+  },
+  {
+    "AtomicNumber": 9,
+    "MassNumber": 13,
+    "AtomicMass": 13.04512,
+    "IsStable": false,
+    "HalfLifeSeconds": null,
+    "DecayMode": "None",
+    "DecayEnergyMeV": null,
+    "NaturalAbundance": null
+  },
+  {
+    "AtomicNumber": 9,
+    "MassNumber": 14,
+    "AtomicMass": 14.034315,
+    "IsStable": false,
+    "HalfLifeSeconds": null,
+    "DecayMode": "None",
+    "DecayEnergyMeV": null,
+    "NaturalAbundance": null
+  },
+  {
+    "AtomicNumber": 9,
+    "MassNumber": 15,
+    "AtomicMass": 15.018043,
+    "IsStable": false,
+    "HalfLifeSeconds": null,
+    "DecayMode": "None",
+    "DecayEnergyMeV": null,
+    "NaturalAbundance": null
+  },
+  {
+    "AtomicNumber": 9,
+    "MassNumber": 16,
+    "AtomicMass": 16.011460,
+    "IsStable": false,
+    "HalfLifeSeconds": null,
+    "DecayMode": "None",
+    "DecayEnergyMeV": null,
+    "NaturalAbundance": null
+  },
+  {
+    "AtomicNumber": 9,
+    "MassNumber": 17,
+    "AtomicMass": 17.00209524,
+    "IsStable": false,
+    "HalfLifeSeconds": null,
+    "DecayMode": "BetaPlus",
+    "DecayEnergyMeV": null,
+    "NaturalAbundance": null
+  },
+  {
     "AtomicNumber": 9,
     "MassNumber": 18,
     "AtomicMass": 18.000937324,
     "IsStable": false,
     "HalfLifeSeconds": 6584.04,
-    "DecayMode": "BetaMinus",
+    "DecayMode": "BetaPlus",
     "DecayEnergyMeV": null,
     "NaturalAbundance": null
   },
@@ -210,6 +1010,176 @@
     "NaturalAbundance": 100.0
   },
   {
+    "AtomicNumber": 9,
+    "MassNumber": 20,
+    "AtomicMass": 19.99998125,
+    "IsStable": false,
+    "HalfLifeSeconds": null,
+    "DecayMode": "BetaMinus",
+    "DecayEnergyMeV": null,
+    "NaturalAbundance": null
+  },
+  {
+    "AtomicNumber": 9,
+    "MassNumber": 21,
+    "AtomicMass": 20.9999489,
+    "IsStable": false,
+    "HalfLifeSeconds": null,
+    "DecayMode": "BetaMinus",
+    "DecayEnergyMeV": null,
+    "NaturalAbundance": null
+  },
+  {
+    "AtomicNumber": 9,
+    "MassNumber": 22,
+    "AtomicMass": 22.002999,
+    "IsStable": false,
+    "HalfLifeSeconds": null,
+    "DecayMode": "None",
+    "DecayEnergyMeV": null,
+    "NaturalAbundance": null
+  },
+  {
+    "AtomicNumber": 9,
+    "MassNumber": 23,
+    "AtomicMass": 23.00353,
+    "IsStable": false,
+    "HalfLifeSeconds": null,
+    "DecayMode": "None",
+    "DecayEnergyMeV": null,
+    "NaturalAbundance": null
+  },
+  {
+    "AtomicNumber": 9,
+    "MassNumber": 24,
+    "AtomicMass": 24.00810,
+    "IsStable": false,
+    "HalfLifeSeconds": null,
+    "DecayMode": "None",
+    "DecayEnergyMeV": null,
+    "NaturalAbundance": null
+  },
+  {
+    "AtomicNumber": 9,
+    "MassNumber": 25,
+    "AtomicMass": 25.01217,
+    "IsStable": false,
+    "HalfLifeSeconds": null,
+    "DecayMode": "None",
+    "DecayEnergyMeV": null,
+    "NaturalAbundance": null
+  },
+  {
+    "AtomicNumber": 9,
+    "MassNumber": 26,
+    "AtomicMass": 26.02005,
+    "IsStable": false,
+    "HalfLifeSeconds": null,
+    "DecayMode": "None",
+    "DecayEnergyMeV": null,
+    "NaturalAbundance": null
+  },
+  {
+    "AtomicNumber": 9,
+    "MassNumber": 27,
+    "AtomicMass": 27.02698,
+    "IsStable": false,
+    "HalfLifeSeconds": null,
+    "DecayMode": "None",
+    "DecayEnergyMeV": null,
+    "NaturalAbundance": null
+  },
+  {
+    "AtomicNumber": 9,
+    "MassNumber": 28,
+    "AtomicMass": 28.03586,
+    "IsStable": false,
+    "HalfLifeSeconds": null,
+    "DecayMode": "None",
+    "DecayEnergyMeV": null,
+    "NaturalAbundance": null
+  },
+  {
+    "AtomicNumber": 9,
+    "MassNumber": 29,
+    "AtomicMass": 29.04310,
+    "IsStable": false,
+    "HalfLifeSeconds": null,
+    "DecayMode": "None",
+    "DecayEnergyMeV": null,
+    "NaturalAbundance": null
+  },
+  {
+    "AtomicNumber": 9,
+    "MassNumber": 30,
+    "AtomicMass": 30.05256,
+    "IsStable": false,
+    "HalfLifeSeconds": null,
+    "DecayMode": "None",
+    "DecayEnergyMeV": null,
+    "NaturalAbundance": null
+  },
+  {
+    "AtomicNumber": 9,
+    "MassNumber": 31,
+    "AtomicMass": 31.05971,
+    "IsStable": false,
+    "HalfLifeSeconds": null,
+    "DecayMode": "None",
+    "DecayEnergyMeV": null,
+    "NaturalAbundance": null
+  },
+  {
+    "AtomicNumber": 10,
+    "MassNumber": 15,
+    "AtomicMass": 15.04317,
+    "IsStable": false,
+    "HalfLifeSeconds": null,
+    "DecayMode": "None",
+    "DecayEnergyMeV": null,
+    "NaturalAbundance": null
+  },
+  {
+    "AtomicNumber": 10,
+    "MassNumber": 16,
+    "AtomicMass": 16.025751,
+    "IsStable": false,
+    "HalfLifeSeconds": null,
+    "DecayMode": "None",
+    "DecayEnergyMeV": null,
+    "NaturalAbundance": null
+  },
+  {
+    "AtomicNumber": 10,
+    "MassNumber": 17,
+    "AtomicMass": 17.0177140,
+    "IsStable": false,
+    "HalfLifeSeconds": null,
+    "DecayMode": "None",
+    "DecayEnergyMeV": null,
+    "NaturalAbundance": null
+  },
+  {
+    "AtomicNumber": 10,
+    "MassNumber": 18,
+    "AtomicMass": 18.0057087,
+    "IsStable": false,
+    "HalfLifeSeconds": null,
+    "DecayMode": "BetaPlus",
+    "DecayEnergyMeV": null,
+    "NaturalAbundance": null
+  },
+  {
+    "AtomicNumber": 10,
+    "MassNumber": 19,
+    "AtomicMass": 19.00188091,
+    "IsStable": false,
+    "HalfLifeSeconds": null,
+    "DecayMode": "BetaPlus",
+    "DecayEnergyMeV": null,
+    "NaturalAbundance": null
+  },
+    {
     "AtomicNumber": 10,
     "MassNumber": 20,
     "AtomicMass": 19.99244017525,
@@ -239,6 +1209,130 @@
     "DecayEnergyMeV": null,
     "NaturalAbundance": 9.25
   },
+  {
+    "AtomicNumber": 10,
+    "MassNumber": 23,
+    "AtomicMass": 22.99446691,
+    "IsStable": false,
+    "HalfLifeSeconds": null,
+    "DecayMode": "BetaMinus",
+    "DecayEnergyMeV": null,
+    "NaturalAbundance": null
+  },
+  {
+    "AtomicNumber": 10,
+    "MassNumber": 24,
+    "AtomicMass": 23.9936106,
+    "IsStable": false,
+    "HalfLifeSeconds": null,
+    "DecayMode": "BetaMinus",
+    "DecayEnergyMeV": null,
+    "NaturalAbundance": null
+  },
+  {
+    "AtomicNumber": 10,
+    "MassNumber": 25,
+    "AtomicMass": 24.99781,
+    "IsStable": false,
+    "HalfLifeSeconds": null,
+    "DecayMode": "BetaMinus",
+    "DecayEnergyMeV": null,
+    "NaturalAbundance": null
+  },
+  {
+    "AtomicNumber": 10,
+    "MassNumber": 26,
+    "AtomicMass": 26.000515,
+    "IsStable": false,
+    "HalfLifeSeconds": null,
+    "DecayMode": "None",
+    "DecayEnergyMeV": null,
+    "NaturalAbundance": null
+  },
+  {
+    "AtomicNumber": 10,
+    "MassNumber": 27,
+    "AtomicMass": 27.00757,
+    "IsStable": false,
+    "HalfLifeSeconds": null,
+    "DecayMode": "None",
+    "DecayEnergyMeV": null,
+    "NaturalAbundance": null
+  },
+  {
+    "AtomicNumber": 10,
+    "MassNumber": 28,
+    "AtomicMass": 28.01213,
+    "IsStable": false,
+    "HalfLifeSeconds": null,
+    "DecayMode": "None",
+    "DecayEnergyMeV": null,
+    "NaturalAbundance": null
+  },
+  {
+    "AtomicNumber": 10,
+    "MassNumber": 29,
+    "AtomicMass": 29.01975,
+    "IsStable": false,
+    "HalfLifeSeconds": null,
+    "DecayMode": "None",
+    "DecayEnergyMeV": null,
+    "NaturalAbundance": null
+  },
+  {
+    "AtomicNumber": 10,
+    "MassNumber": 30,
+    "AtomicMass": 30.02499,
+    "IsStable": false,
+    "HalfLifeSeconds": null,
+    "DecayMode": "None",
+    "DecayEnergyMeV": null,
+    "NaturalAbundance": null
+  },
+  {
+    "AtomicNumber": 10,
+    "MassNumber": 31,
+    "AtomicMass": 31.03347,
+    "IsStable": false,
+    "HalfLifeSeconds": null,
+    "DecayMode": "None",
+    "DecayEnergyMeV": null,
+    "NaturalAbundance": null
+  },
+  {
+    "AtomicNumber": 10,
+    "MassNumber": 32,
+    "AtomicMass": 32.03972,
+    "IsStable": false,
+    "HalfLifeSeconds": null,
+    "DecayMode": "None",
+    "DecayEnergyMeV": null,
+    "NaturalAbundance": null
+  },
+  {
+    "AtomicNumber": 10,
+    "MassNumber": 33,
+    "AtomicMass": 33.04952,
+    "IsStable": false,
+    "HalfLifeSeconds": null,
+    "DecayMode": "None",
+    "DecayEnergyMeV": null,
+    "NaturalAbundance": null
+  },
+  {
+    "AtomicNumber": 10,
+    "MassNumber": 34,
+    "AtomicMass": 34.05673,
+    "IsStable": false,
+    "HalfLifeSeconds": null,
+    "DecayMode": "None",
+    "DecayEnergyMeV": null,
+    "NaturalAbundance": null
+  },
+  
+  
+  
+  
   {
     "AtomicNumber": 11,
     "MassNumber": 22,

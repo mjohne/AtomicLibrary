@@ -63,6 +63,9 @@ public sealed class Element
 	/// <summary>Gets or sets the electron configuration of the element.</summary>
 	public required string ElectronConfiguration { get; init; }
 
+	/// <summary>Gets or sets whether the element is radioactive.</summary>
+	public required bool IsRadioactive { get; init; }
+
 	/// <summary>Indicates whether the element is a metal, including alkali metals, alkaline earth metals, transition metals, post-transition metals, lanthanides, and actinides.</summary>
 	public bool IsMetal => Category is ElementCategory.AlkaliMetal
 		or ElementCategory.AlkalineEarthMetal

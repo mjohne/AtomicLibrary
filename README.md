@@ -1,6 +1,6 @@
 # AtomicLibrary
 
-Comprehensive, science-oriented C#/.NET 8 class library for atom, isotope, and periodic table properties, including a WinForms demo. The domain model is clearly separated from data storage:
+Comprehensive, science-oriented C#/.NET 10 class library for atom, isotope, and periodic table properties, including a WinForms demo. The domain model is clearly separated from data storage:
 
 ```text
 Element

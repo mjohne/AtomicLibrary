@@ -41,7 +41,7 @@ Element
 
 ## Prerequisites
 
-- [.NET 8 SDK](https://dotnet.microsoft.com/download/dotnet/8.0)
+- [.NET 10 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/10.0)
 - Windows to run the WinForms demo (WinForms is Windows-specific)
 
 ## Installation

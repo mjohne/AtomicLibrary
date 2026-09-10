@@ -9,7 +9,7 @@
     <PackageProjectUrl>https://github.com/mjohne/AtomicLibrary</PackageProjectUrl>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <RepositoryUrl>https://github.com/mjohne/AtomicLibrary</RepositoryUrl>
-    <Version>0.2.1.6</Version>
+    <Version>0.2.2.7</Version>
     <EnforceCodeStyleInBuild>True</EnforceCodeStyleInBuild>
     <AnalysisLevel>preview-all</AnalysisLevel>
     <Description>Comprehensive, science-oriented C#/.NET 10 class library for atom, isotope, and periodic table properties, including a WinForms demo</Description>

@@ -4,7 +4,7 @@ Guidance for AI coding agents (Claude, Copilot, Codex, etc.) working in this rep
 
 ## Project overview
 
-AtomicLibrary is a C#/.NET 8 class library providing a science-oriented domain model
+AtomicLibrary is a C#/.NET 10 class library providing a science-oriented domain model
 for atoms, isotopes, and the periodic table, plus a WinForms demo. The domain model
 is deliberately separated from the JSON data storage:
 
@@ -29,9 +29,9 @@ See [README.md](README.md) for the user-facing overview.
 
 ## Prerequisites
 
-- [.NET 8 SDK](https://dotnet.microsoft.com/download/dotnet/8.0)
+- [.NET 10 SDK](https://dotnet.microsoft.com/download/dotnet/10.0)
 - Windows to run the WinForms demo (WinForms is Windows-specific); other projects
-  and tests build/run on any .NET 8 platform.
+  and tests build/run on any .NET 10 platform.
 
 ## Build, test, and run
 
@@ -72,7 +72,7 @@ the full solution to keep the feedback loop tight.
 
 ## Coding conventions
 
-- Target framework: .NET 8 (`net8.0`); the demo uses `net8.0-windows`.
+- Target framework: .NET 10 (`net10.0`); the demo uses `net10.0-windows`.
 - Follow the existing code style (standard .NET / C# conventions, nullable
   reference types where already enabled, file-scoped namespaces where used).
 - Data loaders throw contextual `FormatException` messages on invalid input;

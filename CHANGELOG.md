@@ -1,3 +1,14 @@
+## Atomic Library 0.2.2.7
+
+* Updated CHANGELOG for version 0.2.1.6 by @mjohne in https://github.com/mjohne/AtomicLibrary/pull/59
+* Updated .NET 10 SDK link by @mjohne in https://github.com/mjohne/AtomicLibrary/pull/60
+* Updated and expanded isotope dataset records by @mjohne in https://github.com/mjohne/AtomicLibrary/pull/61
+* Added `ImmediateCoverageTests.cs` by @mjohne in https://github.com/mjohne/AtomicLibrary/pull/62
+* Updated to version 0.2.2.7 by @mjohne in https://github.com/mjohne/AtomicLibrary/pull/63
+
+**Full Changelog**: https://github.com/mjohne/AtomicLibrary/compare/0.2.1.6...0.2.2.7
+
+
 ## Atomic Library 0.2.1.6
 
 * Updated CHANGELOG for version 0.2.0.5 by @mjohne in https://github.com/mjohne/AtomicLibrary/pull/49
